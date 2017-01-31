@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="术语编码服务概要设计-ER图_V0.0" id="6731FD7E-9FCB-B82B-ECA6-817572A61AAB" version="3.41">
+   <createdBy>Administrator</createdBy>
+   <createdTime>2012-05-02 07:16:18 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>术语编码服务概要设计-ER图_V0.0</ownerDesignName>
+   <capitalNames>false</capitalNames>
+   <designId>6731FD7E-9FCB-B82B-ECA6-817572A61AAB</designId>
+</OSDM_Design>
