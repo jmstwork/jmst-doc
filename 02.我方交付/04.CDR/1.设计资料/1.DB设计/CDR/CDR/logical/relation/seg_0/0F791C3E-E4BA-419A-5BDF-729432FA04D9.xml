@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_prescription_formula" directorySegmentName="seg_0" id="0F791C3E-E4BA-419A-5BDF-729432FA04D9">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 03:31:46 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>08A622F6-667B-BABB-AC64-B73B6EE9E819</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EF154AEB-EE1F-4BAB-1E38-4945A5F8FE0D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0BE07FB6-ED37-6CCE-0F87-B3A34C2F91A5</targetEntity>
+<transferable>true</transferable>
+</Relation>

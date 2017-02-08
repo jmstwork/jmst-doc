@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_anesthesia_procedure" directorySegmentName="seg_0" id="37657521-9CA4-A367-4016-B6613BE7A7E3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 06:22:41 UTC</createdTime>
+<comment>为了减轻患者痛苦，开一个刀口，打一次麻醉可以做多次手术。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<targetPk>2F150ED5-FC89-753E-C339-B1429DBB0A51</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>709ABBDD-1FA6-0AC1-AC4D-DA4D17AFE311</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D54DD7D1-D25F-9258-3F2A-96BB6B70C0DD</targetEntity>
+<transferable>true</transferable>
+</Relation>

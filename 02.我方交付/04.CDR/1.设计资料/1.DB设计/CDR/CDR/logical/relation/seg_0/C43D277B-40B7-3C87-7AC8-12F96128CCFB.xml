@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_prescription_treatment" directorySegmentName="seg_0" id="C43D277B-40B7-3C87-7AC8-12F96128CCFB">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-29 02:31:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>10473877-E07C-D14D-9D49-A04B6E5EE2DB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AF5844CD-693F-F62E-DAAC-2B72EE25EFC1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C96800DB-EAC9-8D63-C301-44D0A15E562B</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_anesthesia_physical_exam" directorySegmentName="seg_0" id="CE45D6A6-86B3-0B34-9168-9255AC65A606">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 09:50:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>2F150ED5-FC89-753E-C339-B1429DBB0A51</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D54DD7D1-D25F-9258-3F2A-96BB6B70C0DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>812FAE4C-220B-A2A3-A23F-CFC490F68D77</targetEntity>
+<transferable>true</transferable>
+</Relation>

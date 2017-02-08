@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_nursing_physical_exam" directorySegmentName="seg_0" id="8E79E801-F7E3-A775-9F1D-047EF3E024AA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 06:25:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>B186A006-13EC-DB9A-BB5C-6913361D404B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DA77F6AE-54DC-A532-B1BC-46292C9D5612</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>812FAE4C-220B-A2A3-A23F-CFC490F68D77</targetEntity>
+<transferable>true</transferable>
+</Relation>

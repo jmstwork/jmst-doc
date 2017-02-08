@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_blood_request_delivery" directorySegmentName="seg_0" id="F7B19FF1-D36C-54B9-EAC1-DE2C2D6A7ECA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-19 07:56:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>2E79A440-7311-BA26-B96E-9CD222530A86</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0C1510D5-31FA-D330-0945-16E6BF606D7F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>53ABBAE7-CA4A-BAE2-4FDF-4391A3173FE0</targetEntity>
+<transferable>true</transferable>
+</Relation>

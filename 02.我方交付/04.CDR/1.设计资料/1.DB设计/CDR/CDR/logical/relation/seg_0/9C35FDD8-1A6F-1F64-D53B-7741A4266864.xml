@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_code_system_ceig" directorySegmentName="seg_0" id="9C35FDD8-1A6F-1F64-D53B-7741A4266864">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-25 07:01:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>710AF085-8968-F372-49AA-2ECB3EAD359C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6466124E-9C00-8B59-8C5D-9F1DE756C9E7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B536324A-AA3E-3D0B-7E7D-CE0D74B2F9DA</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_patient_insure" directorySegmentName="seg_0" id="D2FBA36B-3B44-5993-9209-BCA3956D76F9">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-12 05:49:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>A613CF4D-8FB9-804F-42C9-0FABD8118736</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>32112973-C793-E61C-F90E-EC05A5B1900D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D578F079-57E4-F431-6597-36C00C9DCE13</targetEntity>
+<transferable>true</transferable>
+</Relation>

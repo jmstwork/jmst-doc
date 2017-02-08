@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_dispensing_record_order" directorySegmentName="seg_0" id="19FB3CFB-AA47-E803-E219-1F735D333FCD">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:00:53 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>7B67232A-F226-6278-8E45-E31EC03E8CD2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7EA55B4B-226E-B4DE-CB6C-0FDE6B0AFE75</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9CD87284-B888-C305-F932-1FE87ECBA2BA</targetEntity>
+<transferable>true</transferable>
+</Relation>

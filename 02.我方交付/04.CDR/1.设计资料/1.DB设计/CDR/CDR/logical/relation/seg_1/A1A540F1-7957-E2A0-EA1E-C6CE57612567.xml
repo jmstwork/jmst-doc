@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_warning_notice_detail" directorySegmentName="seg_1" id="A1A540F1-7957-E2A0-EA1E-C6CE57612567">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:08:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>7778B159-B0B4-4F6B-FE65-5C3243F09E87</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1A59E5BD-784C-6830-5450-C0BD9703906A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7BD8AF10-B184-E0F3-92A9-9C1AB193E1EC</targetEntity>
+<transferable>true</transferable>
+</Relation>

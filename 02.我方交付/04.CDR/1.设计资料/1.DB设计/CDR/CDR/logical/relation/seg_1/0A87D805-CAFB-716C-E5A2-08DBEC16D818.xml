@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_exam_order_sn" directorySegmentName="seg_1" id="0A87D805-CAFB-716C-E5A2-08DBEC16D818">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 01:17:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>3E23C0FA-E207-64B4-874F-CB6FED9EF8F0</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFB98E17-4C4D-756F-09FD-7DD703FDDEF0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3670BA6E-8279-A68D-F502-0A72226044F8</targetEntity>
+<transferable>true</transferable>
+</Relation>

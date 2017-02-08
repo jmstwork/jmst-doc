@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_order_sn" directorySegmentName="seg_1" id="30D21428-15F6-C246-E524-B6A7E3E27911">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-07-19 02:57:07 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>3E23C0FA-E207-64B4-874F-CB6FED9EF8F0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFB98E17-4C4D-756F-09FD-7DD703FDDEF0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F5E1F700-F7FE-F02F-9F14-984C2B624BDD</targetEntity>
+<transferable>true</transferable>
+</Relation>

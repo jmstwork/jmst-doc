@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_special_record_menu" directorySegmentName="seg_1" id="1EEA13F6-9C8A-B299-DE61-EA4A7F365303">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:33:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>BA1BC5B1-0BB7-5E69-5A5D-A98A47F986FB</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>71FB5E52-CC13-ACA2-B703-D9D4A4C9BE01</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B30A7858-3774-0C0D-16E1-06DA9F718ACD</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_patient_allergic" directorySegmentName="seg_0" id="CDF23019-27B6-A616-5B27-17019829ABBB">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 10:06:45 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>A613CF4D-8FB9-804F-42C9-0FABD8118736</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>32112973-C793-E61C-F90E-EC05A5B1900D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>58A7F985-0850-47B8-D051-409E486A9FE7</targetEntity>
+<transferable>true</transferable>
+</Relation>

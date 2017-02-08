@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_system_auth_role" directorySegmentName="seg_1" id="63F462EA-3FAD-B304-2801-08D6F74F72C3">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-24 03:00:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>3FD3D329-A1AB-CB92-7888-7AFA9B16F622</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>37E33134-5BFA-1D7A-9870-3AE1B2BAA3DB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>488FB8E2-864B-D061-2491-36A4470A9F46</targetEntity>
+<transferable>true</transferable>
+</Relation>

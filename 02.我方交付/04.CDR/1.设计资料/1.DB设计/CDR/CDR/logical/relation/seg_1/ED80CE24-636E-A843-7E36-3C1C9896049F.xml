@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_code_system_operation" directorySegmentName="seg_1" id="ED80CE24-636E-A843-7E36-3C1C9896049F">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:39:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>710AF085-8968-F372-49AA-2ECB3EAD359C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6466124E-9C00-8B59-8C5D-9F1DE756C9E7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1E6E638B-CAA2-D05E-B120-8B3D9598C223</targetEntity>
+<transferable>true</transferable>
+</Relation>

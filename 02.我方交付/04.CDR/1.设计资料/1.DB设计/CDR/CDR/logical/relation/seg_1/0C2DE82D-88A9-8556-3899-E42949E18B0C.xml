@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_blood_menu_record" directorySegmentName="seg_1" id="0C2DE82D-88A9-8556-3899-E42949E18B0C">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:15:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>BA1BC5B1-0BB7-5E69-5A5D-A98A47F986FB</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>71FB5E52-CC13-ACA2-B703-D9D4A4C9BE01</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>440987C5-081D-C86D-9368-731F0F134249</targetEntity>
+<transferable>true</transferable>
+</Relation>

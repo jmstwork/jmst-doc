@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_impression_account_log" directorySegmentName="seg_1" id="3770AEE8-0A96-FD62-EFFD-9E31405C127F">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-11-28 02:47:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>54D5860C-10A6-C412-AB35-8CCFF2644030</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6FEFD9F3-A43A-5F3C-3A3D-56CE9D7E563F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DEFE6F77-C398-DE18-6439-2BA2C0FAC2AF</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_document_present_illness" directorySegmentName="seg_0" id="041DCF98-8151-9E40-F9F4-D53D874876A9">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:54:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>52C5C303-09B6-B789-3031-A7FC5294406B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>86148079-3673-5A92-9D33-ABCD7D0D66C1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5BCB0E9B-AC1C-91A9-8276-D90079D83890</targetEntity>
+<transferable>true</transferable>
+</Relation>

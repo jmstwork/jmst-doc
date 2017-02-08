@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="19.院感模型" id="C48B3DD9-4FFF-9EDE-B31B-39D7AF87A778">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-12 02:10:25 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>2</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4AFA5A6E-C731-516F-B0AF-706104EF764F" otype="Entity" vid="27B6B652-0AC0-BBF9-74F1-5215EED28EEE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="418" y="15" width="284" height="345"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="9031C226-D4AC-FFA0-5047-860662A0B3EF" otype="Entity" vid="F57DED8A-06FB-A80D-F661-08009760D8B4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="436" y="409" width="258" height="195"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E3F0351A-B80E-D892-0DEC-8A3659B8A237" otype="Entity" vid="75E12DDF-2356-0492-6669-67E67C293987">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="48" y="15" width="282" height="525"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="53D98BA3-C85C-D752-254B-5101BB1D3027" otype="Relation" vid_source="27B6B652-0AC0-BBF9-74F1-5215EED28EEE" vid_target="F57DED8A-06FB-A80D-F661-08009760D8B4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="565" y="360"/>
+<point x="565" y="409"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="6E35883F-ADDE-73D5-6E5C-6FFA6235DAFF" otype="Relation" vid_source="75E12DDF-2356-0492-6669-67E67C293987" vid_target="27B6B652-0AC0-BBF9-74F1-5215EED28EEE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="330" y="70"/>
+<point x="418" y="70"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

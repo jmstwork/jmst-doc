@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_nursing_administration" directorySegmentName="seg_0" id="526E3FCB-0719-3082-6E56-6828E4BB510D">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 06:28:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>B186A006-13EC-DB9A-BB5C-6913361D404B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DA77F6AE-54DC-A532-B1BC-46292C9D5612</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BEFB254A-F084-2096-790F-DC7F001C1D7A</targetEntity>
+<transferable>true</transferable>
+</Relation>

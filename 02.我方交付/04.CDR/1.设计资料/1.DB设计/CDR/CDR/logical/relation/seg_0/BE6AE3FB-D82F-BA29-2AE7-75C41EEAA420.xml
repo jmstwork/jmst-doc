@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_document_charge_sum" directorySegmentName="seg_0" id="BE6AE3FB-D82F-BA29-2AE7-75C41EEAA420">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-28 02:20:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<sourcePk>52C5C303-09B6-B789-3031-A7FC5294406B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>86148079-3673-5A92-9D33-ABCD7D0D66C1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7C268829-32EC-A7AB-2FDA-14683B2FDF6A</targetEntity>
+<transferable>true</transferable>
+</Relation>
