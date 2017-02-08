@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_8" directorySegmentName="seg_0" id="5AD82D2C-D733-593A-2E63-2157C5DE9079">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-14 03:05:53 UTC</createdTime>
+<comment>mz_poison_order 毒麻处方&lt;br/&gt;yz_cdrug_order 草药医嘱(详细项目)&lt;br/&gt;yz_act_order 用药医嘱（包括中药，但是只有“草药一付”之类的名称,具体项目见草药医嘱）&lt;br/&gt;&lt;br/&gt;mz_visit_record 中包含主诉、症状,只有医生登录急诊科室后，填写急诊病历会保存&lt;br/&gt;&lt;br/&gt;门急诊打印处方时是从mz_detail_charge提取数据的。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+</Note>

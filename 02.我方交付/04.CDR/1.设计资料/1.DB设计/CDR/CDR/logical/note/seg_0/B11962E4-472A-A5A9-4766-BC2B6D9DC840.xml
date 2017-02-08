@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_2" directorySegmentName="seg_0" id="B11962E4-472A-A5A9-4766-BC2B6D9DC840">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-12 05:57:06 UTC</createdTime>
+<comment>目前在HIS系统中，医嘱和申请单都是分别开立的，没有必然的关系。计费是与医嘱挂钩还是与申请单挂钩，需要确认。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+</Note>

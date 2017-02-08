@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_3" directorySegmentName="seg_0" id="14434C71-A721-8A40-3200-2C7A46956842">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 06:07:46 UTC</createdTime>
+<comment>门诊收费和住院收费是否应该合并为一个总的收费信息表？</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+</Note>

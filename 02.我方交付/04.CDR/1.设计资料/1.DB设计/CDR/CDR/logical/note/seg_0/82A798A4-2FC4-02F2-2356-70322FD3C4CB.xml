@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_10" directorySegmentName="seg_0" id="82A798A4-2FC4-02F2-2356-70322FD3C4CB">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-07-29 02:46:48 UTC</createdTime>
+<comment>临床路径明细和变异原因和医嘱关联(用药, 治疗, 护理, 手术, 会诊, 其它, 检查, 检验)</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+</Note>
