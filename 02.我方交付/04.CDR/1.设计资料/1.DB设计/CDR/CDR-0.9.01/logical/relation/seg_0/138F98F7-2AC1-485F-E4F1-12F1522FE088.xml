@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_patient_alert" id="138F98F7-2AC1-485F-E4F1-12F1522FE088" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-22 07:23:35 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <identifying>false</identifying>
+   <optionalSource>true</optionalSource>
+   <optionalTarget>false</optionalTarget>
+   <sourceCardinality>1</sourceCardinality>
+   <sourceEntity>32112973-C793-E61C-F90E-EC05A5B1900D</sourceEntity>
+   <targetCardinalityString>*</targetCardinalityString>
+   <targetEntity>3B1D5BFF-89F3-7F65-5ACF-B18D1568B61C</targetEntity>
+   <transferable>true</transferable>
+</Relation>

@@ -1,0 +1,1269 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="过敏严重性" id="018A2FCF-461E-42DE-B34D-61B91BF62B7E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>018A2FCF-461E-42DE-B34D-61B91BF62B7E</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.58过敏严重程度代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="疫苗名称代码" id="0633D7FA-8857-4D50-BF8F-CE44C6921815">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>0633D7FA-8857-4D50-BF8F-CE44C6921815</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5303.01疫苗名称代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="感染途径" id="0B930E6E-2F79-456C-AFAB-8FD67689B65A">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>0B930E6E-2F79-456C-AFAB-8FD67689B65A</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.59传染病感染途径代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="人员字典" id="0D46A4B7-D16B-311B-4788-7F34A77EFD7B">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>0D46A4B7-D16B-311B-4788-7F34A77EFD7B</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="医疗保险-类别" id="0EC8A1BE-666D-441F-8239-7FDFCD34F8DE">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>0EC8A1BE-666D-441F-8239-7FDFCD34F8DE</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV0209.01医疗保险类别代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="民族" id="139092C5-0FC7-4360-9C8C-4181003C842D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>139092C5-0FC7-4360-9C8C-4181003C842D</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>GB 3304-1991 中国各民族名称的罗马字母拼写法和代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="体格检查项目名称" id="146F7AC5-E144-45F8-9666-B16D9E330910">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>146F7AC5-E144-45F8-9666-B16D9E330910</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>7.2 体格检查项目类目名称</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="去向" id="148C6A9A-898E-4630-9273-81C5CBA5CEAF">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>148C6A9A-898E-4630-9273-81C5CBA5CEAF</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5501.16患者去向代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="操作类型" id="162100E0-F9EC-4B80-BC70-013A48DB8B48">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>162100E0-F9EC-4B80-BC70-013A48DB8B48</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="护理操作项目类目名称" id="16B03377-4062-4271-93FC-F1E46321D8CB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>16B03377-4062-4271-93FC-F1E46321D8CB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>7.24 护理操作项目类目名称</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="卫生事件分类" id="17773325-4C9E-4D5B-99E5-02F9B563CA77">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>17773325-4C9E-4D5B-99E5-02F9B563CA77</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV4201.02事件分类代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="免疫接种状态" id="18DACD7C-EE0B-4349-B3CE-199F4D20A068">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>18DACD7C-EE0B-4349-B3CE-199F4D20A068</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.06免疫指征代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="诊断机构级别" id="1C0F5FE0-5D82-4F1C-8BF2-790555ED132F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>1C0F5FE0-5D82-4F1C-8BF2-790555ED132F</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="县以上医院"/>
+            <valueDef value="2" description="其他"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="切口愈合等级" id="1E73569B-6DF9-4AC7-8373-7EF400D50CBC">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>1E73569B-6DF9-4AC7-8373-7EF400D50CBC</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5501.14手术切口愈合等级代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="检查类别" id="210EBA43-D4DD-4349-A9C8-18091B28FCA3">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>210EBA43-D4DD-4349-A9C8-18091B28FCA3</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="手术名称" id="22763563-BD30-4345-83A7-998D69BADB73">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>22763563-BD30-4345-83A7-998D69BADB73</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>ICD-9-CM-3</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="过敏原" id="256E28D2-732B-475A-BF89-1F364D7926A9">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>256E28D2-732B-475A-BF89-1F364D7926A9</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.03过敏原代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="疾病代码" id="259A6D09-C080-4A01-ADBD-38927AC366BE">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>259A6D09-C080-4A01-ADBD-38927AC366BE</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>ICD10</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="付款方式" id="2CBB445F-7B17-4444-ADC9-712F9D8958B5">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>2CBB445F-7B17-4444-ADC9-712F9D8958B5</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5600.02支付方式代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="挂号方式" id="303692F9-C49B-43E7-AC18-4511C481131E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>303692F9-C49B-43E7-AC18-4511C481131E</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="诊断依据" id="305C5BEC-DF96-43C7-8472-67F6A4BA31B7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>305C5BEC-DF96-43C7-8472-67F6A4BA31B7</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="临床诊断"/>
+            <valueDef value="2" description="病理诊断"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="诊断类别" id="3746C804-92C1-4719-8AA4-D2AEB852B36C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>3746C804-92C1-4719-8AA4-D2AEB852B36C</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5502.20疾病诊断类别代码 CV5502.21中医疾病诊断类别代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="就诊类别" id="4A6CC615-B48D-4A5E-AF39-D8DDA19247A1">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>4A6CC615-B48D-4A5E-AF39-D8DDA19247A1</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="门诊"/>
+            <valueDef value="2" description="急诊"/>
+            <valueDef value="3" description="住院"/>
+            <valueDef value="4" description="体检"/>
+            <valueDef value="9" description="转院"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="药物剂型" id="4BBFFF32-641F-46EA-AD96-199ACCD4E185">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>4BBFFF32-641F-46EA-AD96-199ACCD4E185</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5301.01药物剂型代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="手术参与者身份" id="4BE3B248-D333-4B6A-801A-C73C3197D550">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>4BE3B248-D333-4B6A-801A-C73C3197D550</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ABO血型" id="5044A17E-67E4-4414-9361-AF339C464ABB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>5044A17E-67E4-4414-9361-AF339C464ABB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5103.02ABO血型代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="文化程度" id="5263812B-A888-4A5D-B250-C3212E048C39">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>5263812B-A888-4A5D-B250-C3212E048C39</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>GB/T 4658-1984 文化程度代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="麻醉中西医标识" id="53ECA1F5-9A62-43E5-8B80-719602490920">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>53ECA1F5-9A62-43E5-8B80-719602490920</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="0" description="西医麻醉"/>
+            <valueDef value="1" description="针灸麻醉"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="医嘱类型" id="54C2D34C-9F2A-4FCA-AB0A-8EC2E19AD03E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>54C2D34C-9F2A-4FCA-AB0A-8EC2E19AD03E</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="国籍" id="569D3BDE-B478-4D65-A958-EF88913F6F99">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>569D3BDE-B478-4D65-A958-EF88913F6F99</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>GB/T 2659-2000 世界各国和地区名称代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="婚姻状况" id="5897BF29-08FF-5ABF-B659-3A42DE4B34E8">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>5897BF29-08FF-5ABF-B659-3A42DE4B34E8</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>GB/T 2261.2-2003 个人基本信息与分类代码 婚姻状况代码</synonym>
+         <listOfValues>
+            <valueDef value="10" description="未婚"/>
+            <valueDef value="20" description="已婚"/>
+            <valueDef value="21" description="初婚"/>
+            <valueDef value="22" description="复婚"/>
+            <valueDef value="23" description="再婚"/>
+            <valueDef value="30" description="丧偶"/>
+            <valueDef value="40" description="离婚"/>
+            <valueDef value="90" description="未说明的婚姻状况"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="病区" id="5C6D2950-84CB-4E89-8C72-6E57094C8B6D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>5C6D2950-84CB-4E89-8C72-6E57094C8B6D</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="过敏病情状态" id="5E7292D7-4CCF-43BB-B03C-1B9AC1D6EF1E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>5E7292D7-4CCF-43BB-B03C-1B9AC1D6EF1E</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.57过敏病情状态代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="费用分类" id="6158C06F-D2CF-4268-B834-39A8BD70605D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>6158C06F-D2CF-4268-B834-39A8BD70605D</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="药物类型" id="62521954-7A19-4731-BCB9-58397FA70080">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>62521954-7A19-4731-BCB9-58397FA70080</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5301.06药物类型代码  CV5301.07中药类型代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="手术等级" id="6E808908-8652-4255-A3EA-F454F5CD685B">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>6E808908-8652-4255-A3EA-F454F5CD685B</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="一级手术"/>
+            <valueDef value="2" description="二级手术"/>
+            <valueDef value="3" description="三级手术"/>
+            <valueDef value="4" description="四级手术"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="互斥医嘱类型" id="6F4728E5-E727-4DF2-8925-51CC500F0815">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>6F4728E5-E727-4DF2-8925-51CC500F0815</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="严重程度" id="72417F29-31B6-4256-AD27-7018F59E68EC">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>72417F29-31B6-4256-AD27-7018F59E68EC</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="轻"/>
+            <valueDef value="2" description="中"/>
+            <valueDef value="3" description="重"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="检验类别" id="772804C7-575C-480B-8217-1A63670AF792">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>772804C7-575C-480B-8217-1A63670AF792</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="与患者关系" id="7A28EED3-FDB1-4E62-94CC-E3FADA4076E7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>7A28EED3-FDB1-4E62-94CC-E3FADA4076E7</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="检查部位" id="7AC1F60E-9D2C-46FE-A908-C795D546AA57">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>7AC1F60E-9D2C-46FE-A908-C795D546AA57</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5201.23手术/操作的人体部位代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="问诊项目" id="7B4DC785-C5EF-4BAA-B896-F9A7A9992ACB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>7B4DC785-C5EF-4BAA-B896-F9A7A9992ACB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="标本类型" id="7CAFDD4E-7E2B-4CCF-954E-1EF4745162CA">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>7CAFDD4E-7E2B-4CCF-954E-1EF4745162CA</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5197.01标本类别代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="手术部位" id="7CEB272A-F200-45AA-BB73-2BD3782383D5">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>7CEB272A-F200-45AA-BB73-2BD3782383D5</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5201.23手术/操作的人体部位代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="治疗处置-项目类别" id="7D60F66A-3456-4198-AE00-46B3947FCA75">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>7D60F66A-3456-4198-AE00-46B3947FCA75</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="过敏症状" id="83B625C0-0C2B-4422-AC3D-3447440F93EE">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>83B625C0-0C2B-4422-AC3D-3447440F93EE</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.56过敏症状代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="护理等级" id="8832B06A-7FBE-4B23-9DC9-FD531865A782">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>8832B06A-7FBE-4B23-9DC9-FD531865A782</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="一级护理"/>
+            <valueDef value="2" description="二级护理"/>
+            <valueDef value="3" description="特级护理"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="证件类型" id="8A4B57A0-076D-429C-8AE9-763CEF91C870">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>8A4B57A0-076D-429C-8AE9-763CEF91C870</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV0100.03个体标识号类别代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="处方类型" id="93DCE433-1DE6-4F68-A21D-0CCC53691918">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>93DCE433-1DE6-4F68-A21D-0CCC53691918</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="执行频率" id="96D30467-E3EF-47EE-9163-2FD514C31658">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>96D30467-E3EF-47EE-9163-2FD514C31658</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="起病节气归属" id="9A8E3E2C-CC4C-4080-836E-757F290A98A0">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>9A8E3E2C-CC4C-4080-836E-757F290A98A0</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV9900.01二十四节气代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="处方类别" id="9E4CA03D-9630-40B5-871B-080C69C8F615">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>9E4CA03D-9630-40B5-871B-080C69C8F615</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="收费项目" id="9F00F724-CB73-4F9A-BA29-977ACD11974C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>9F00F724-CB73-4F9A-BA29-977ACD11974C</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="药物类别" id="A161C0A6-34C2-49F3-9968-33AC0AD9086C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>A161C0A6-34C2-49F3-9968-33AC0AD9086C</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="性别" id="A1FE2AE8-0F0B-79FF-48A1-2465A7D0AD35">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>A1FE2AE8-0F0B-79FF-48A1-2465A7D0AD35</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>GB/T 2261.1-2003 个人基本信息分类与代码 第1部分 人的性别代码</synonym>
+         <listOfValues>
+            <valueDef value="0" description="未知的性别"/>
+            <valueDef value="1" description="男性"/>
+            <valueDef value="2" description="女性"/>
+            <valueDef value="9" description="未说明的性别"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="接种状态" id="A7BE0BF0-0037-496C-9060-E3CB8370D0FB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>A7BE0BF0-0037-496C-9060-E3CB8370D0FB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="已接种"/>
+            <valueDef value="2" description="未接种"/>
+            <valueDef value="3" description="已完成"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="就诊状态" id="AAC74AB4-EB7B-48A1-AE5F-6BE0C59BF953">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>AAC74AB4-EB7B-48A1-AE5F-6BE0C59BF953</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="问诊分类" id="AEF44D9C-221C-4AA1-9B6B-A24C500CE149">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>AEF44D9C-221C-4AA1-9B6B-A24C500CE149</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="域" id="B1AE30F3-4847-42BC-BB73-BD7D7934D4BB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>B1AE30F3-4847-42BC-BB73-BD7D7934D4BB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="HIS门急诊"/>
+            <valueDef value="2" description="HIS住院"/>
+            <valueDef value="3" description="体检"/>
+            <valueDef value="4" description="影像中心"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="文档类别" id="BF819C45-ED50-4F9B-B9DF-8215686FEA81">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>BF819C45-ED50-4F9B-B9DF-8215686FEA81</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV0000.01文档类别</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="个体危险性" id="C05032F5-3FB7-4D5C-9687-B43BC86138A2">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>C05032F5-3FB7-4D5C-9687-B43BC86138A2</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV0103.01个体危险性标识代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="RH血型" id="C3DD69FC-52B4-4C0E-9260-4D0A1D2B4F95">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>C3DD69FC-52B4-4C0E-9260-4D0A1D2B4F95</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="0" description="Rh阳性"/>
+            <valueDef value="1" description="Rh阴性"/>
+            <valueDef value="3" description="不详"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="护理类型" id="CDA63F2C-6DFE-46AF-96D4-C93279E5F76A">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>CDA63F2C-6DFE-46AF-96D4-C93279E5F76A</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="基础护理"/>
+            <valueDef value="2" description="特殊护理"/>
+            <valueDef value="9" description="其他"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="症状急性程度" id="CE10A77E-4C74-48A1-8D89-C9BCDB02DFA1">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>CE10A77E-4C74-48A1-8D89-C9BCDB02DFA1</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.38症状急性程度代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="免疫接种方法" id="CE1588B6-1314-45BC-A5B4-11CBDE72B988">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>CE1588B6-1314-45BC-A5B4-11CBDE72B988</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5201.26免疫接种方法代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="医疗付款方式" id="DFC95209-2C63-4A34-9E2C-41C47BF4FD06">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>DFC95209-2C63-4A34-9E2C-41C47BF4FD06</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5600.04医疗付款方式代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Unknown" id="DOM3000004">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-11-10 05:22:54 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>系统</ownerDesignName>
+         <importedID>DOM3000004</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT017</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="用药途径" id="E2216355-4355-4651-95C0-9AFA53559700">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>E2216355-4355-4651-95C0-9AFA53559700</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5201.22用药途径代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="疾病当前状态" id="E7489080-A131-465A-8870-E42ABE4A4B10">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>E7489080-A131-465A-8870-E42ABE4A4B10</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5101.60疾病当前状态代码表</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="症状代码" id="E940DABB-078D-4C4F-BAFC-307F4D68DFCB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>E940DABB-078D-4C4F-BAFC-307F4D68DFCB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>7.1 症状观察项目类目名称</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="免疫类型" id="EA768C99-55E5-4211-84B8-732EA972A9A8">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>EA768C99-55E5-4211-84B8-732EA972A9A8</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>CV5201.11免疫类型代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="药物" id="ECC84F18-0843-4A52-8D52-C69DD9EA1DFA">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>ECC84F18-0843-4A52-8D52-C69DD9EA1DFA</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="就诊号类" id="F07D93C6-CF4A-4CC0-B0E0-A33C8990AD8F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F07D93C6-CF4A-4CC0-B0E0-A33C8990AD8F</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="上下午" id="F0DE07BB-C817-4511-B01E-00FDE8C22627">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F0DE07BB-C817-4511-B01E-00FDE8C22627</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="上午"/>
+            <valueDef value="2" description="下午"/>
+            <valueDef value="3" description="不详"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="费用类别" id="F10E3FBB-E04E-4415-87D3-36B599CC6A34">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F10E3FBB-E04E-4415-87D3-36B599CC6A34</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="操作方法" id="F3F46AC7-AEB4-4793-BB6E-772F4982CCE5">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F3F46AC7-AEB4-4793-BB6E-772F4982CCE5</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="科室字典" id="F46EE9FA-2ECC-4FE5-8E23-53810A003233">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F46EE9FA-2ECC-4FE5-8E23-53810A003233</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="职业" id="F4F8E6AC-D885-4569-8D12-68AF3C493750">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F4F8E6AC-D885-4569-8D12-68AF3C493750</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <synonym>GB/T 6565-1999 职业分类与代码</synonym>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="检查方法" id="F765D36F-11BB-4BFB-8738-B83205C68C51">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>F765D36F-11BB-4BFB-8738-B83205C68C51</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="出院状态" id="FB4B85E8-1639-4CB0-BDEB-B86A55EFAE7D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>FB4B85E8-1639-4CB0-BDEB-B86A55EFAE7D</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="就诊号别" id="FBB95F22-FB19-4C2A-89CF-81769A2DE361">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>FBB95F22-FB19-4C2A-89CF-81769A2DE361</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="检验项" id="FCA69C69-57C4-4D8C-A183-4A7BBB7D21EB">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-08 08:34:59 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <importedID>FCA69C69-57C4-4D8C-A183-4A7BBB7D21EB</importedID>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

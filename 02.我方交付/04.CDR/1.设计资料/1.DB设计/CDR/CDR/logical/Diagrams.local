@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="sub_view" objectID="1B513D37-BE40-1716-C519-6B6122FC55B8" name="03.检查信息模型" visible="false"/>
+   <object objectType="sub_view" objectID="1C457234-BDB0-B1AF-2AD1-C8112BEF3061" name="16.警告通知模型" visible="false"/>
+   <object objectType="sub_view" objectID="4F1E0566-140C-9BF6-FF7F-A1704044EFD2" name="06.护理信息模型" visible="false"/>
+   <object objectType="main_view" objectID="504845CD-7E01-031E-50CC-59C0266E5090" name="Logical" visible="true"/>
+   <object objectType="sub_view" objectID="5998FA47-2709-8900-BE60-B6AB2F9D5779" name="13.系统设置模型" visible="false"/>
+   <object objectType="sub_view" objectID="5D65D1FD-0201-F405-3D46-45546EC438C4" name="12.病历文档模型2" visible="false"/>
+   <object objectType="sub_view" objectID="614D7561-D12D-ADC1-B61E-9441DCBA1D2F" name="18.合理用药模型" visible="false"/>
+   <object objectType="sub_view" objectID="7766D16B-07EC-552F-F1CC-360A1689C85B" name="02.诊断信息模型" visible="true"/>
+   <object objectType="sub_view" objectID="817A021C-C1EB-0A6F-3E2A-79E80B624D66" name="05.手术信息模型" visible="false"/>
+   <object objectType="sub_view" objectID="97576CFD-C247-F4C7-B7B3-9E41A221D1F3" name="15.访问控制模型" visible="false"/>
+   <object objectType="sub_view" objectID="AE26FCCB-9D4F-D3FB-AC2F-32F8E712C1E5" name="09.费用信息模型" visible="false"/>
+   <object objectType="sub_view" objectID="BF1A2D50-6CF4-B386-1EFE-E2C14A874846" name="11.病历文档模型1" visible="false"/>
+   <object objectType="sub_view" objectID="C48B3DD9-4FFF-9EDE-B31B-39D7AF87A778" name="19.院感模型" visible="false"/>
+   <object objectType="sub_view" objectID="EC4389B4-CA7F-8698-E3F3-6FA251F98DDE" name="01.患者信息模型" visible="false"/>
+   <object objectType="sub_view" objectID="EE9B7388-1754-13E8-727B-7B3A4EFAFD23" name="17.临床路径模型" visible="false"/>
+   <object objectType="sub_view" objectID="F8D31F03-81BD-ADEF-23F9-84A0BA708027" name="04.检验信息模型" visible="false"/>
+   <object objectType="sub_view" objectID="FCF14429-D253-926A-60E7-6FD154741E14" name="00.术语字典模型" visible="false"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

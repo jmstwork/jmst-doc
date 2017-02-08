@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_visit_lab_request" id="2046CBA5-9215-A1BB-99F3-8663F9CACC98" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-16 08:43:34 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <identifying>false</identifying>
+   <optionalSource>true</optionalSource>
+   <optionalTarget>false</optionalTarget>
+   <sourceCardinality>1</sourceCardinality>
+   <sourceEntity>8AA3E224-4132-A45B-674C-583CC608A0A2</sourceEntity>
+   <targetCardinalityString>*</targetCardinalityString>
+   <targetEntity>E4ED4DBA-DC58-4B16-1CBB-F7FC64D1FA72</targetEntity>
+   <transferable>true</transferable>
+</Relation>

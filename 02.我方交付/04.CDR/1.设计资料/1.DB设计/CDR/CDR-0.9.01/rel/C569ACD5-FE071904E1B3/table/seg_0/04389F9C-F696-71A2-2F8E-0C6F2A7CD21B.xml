@@ -1,0 +1,447 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="04389F9C-F696-71A2-2F8E-0C6F2A7CD21B" directorySegmentName="seg_0" name="registration_fee">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <generatorID>83B432CB-D6E8-BDBD-CF62-F1894A9D2676</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <pkName>pk_registration_fee</pkName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>列</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="registration_sn" id="5F1B3841-CC3D-CD16-089D-C225CB73B6E0">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>挂号产生费用标识</comment>
+         <generatorID>D48DC7EF-8DE7-4380-F555-CEA4479653D2</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="visit_sn" id="C060D94C-6B5D-8A9B-12BB-DC9D7ADA3631">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>就诊标识</comment>
+         <generatorID>D5146184-60AC-D8F8-DDB4-40603D80DD59</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>1E2D9950-3D6B-8BBD-DF73-685364EC879F</delegate>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+         <associations>
+            <colAssociation fkAssociation="32249049-4689-9B70-0943-DE9E6170C220" referredColumn="1E2D9950-3D6B-8BBD-DF73-685364EC879F"/>
+         </associations>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="patient_sn" id="8BD84850-4E4D-703A-2E1A-61347935AB07">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>99D2B4A1-45B5-A065-1E2C-F0DDB35D84B3</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="patient_domain" id="5C485B97-8E0D-4491-18EB-6DF5A2154905">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>DA556A1E-1865-9D99-4C53-2498689B88C3</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="patient_lid" id="F2DEB949-A631-A44B-5E03-8E518AD1F134">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>485F804A-3D9E-AB65-06D4-B0F965135A04</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>12</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ledger_count" id="8CCC3CC8-FC34-5259-ABCD-534A788FE73A">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>422EBE46-E368-D8BD-89BF-43D79A01C487</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="amount" id="7E956A03-39EA-E997-DF12-E4977D0A162D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>表示此次挂号费用</comment>
+         <generatorID>2D21BA10-CD8F-034D-1FDD-2714FB3E7D00</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+         <dataTypePrecision>8</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="payment_method" id="B3B6CD37-6B9D-51A9-DE2D-8DF6B28281A3">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>患者此次就诊挂号所发生费用的付款方式&amp;lt;br/&amp;gt;如：现金 银行卡 预付费卡</comment>
+         <generatorID>53C58178-9154-1069-330A-E1FC52CFF95D</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="charge_status" id="E2BDB7CC-E7D0-FD14-3115-328670B00C45">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>1=交&amp;lt;br/&amp;gt;2=退&amp;lt;br/&amp;gt;3=结转&amp;lt;br/&amp;gt;4=冲帐...</comment>
+         <generatorID>3D732DBB-6BF0-410B-2123-FD71D89CF836</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="quantity" id="3F5CD0DD-567E-7A33-C46C-7E31623F3B3A">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>患者挂号数量。</comment>
+         <generatorID>FA324554-EC02-B2F3-440C-278E3A504831</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="insurance_flag" id="C954D4D9-04C7-5ADF-5F8A-FAADEF56F2DF">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>患者挂号时是否使用医保卡</comment>
+         <generatorID>8C45968B-538A-8D33-0267-F168EC79B068</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="received_amount" id="31644F7C-7CDD-F857-F270-5812F6609F98">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>患者此次挂号实际应收金额</comment>
+         <generatorID>4BAC4430-254C-2ADB-98FE-EB53564AF442</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+         <dataTypePrecision>8</dataTypePrecision>
+         <dataTypeScale>4</dataTypeScale>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="payee" id="2813FF50-88E2-4C94-453D-B5CAA1B90662">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>此次费用的收款人</comment>
+         <generatorID>93EDC877-9053-9174-64E6-82CE10CD0B26</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="paid_time" id="11AC72D8-E09A-EDB7-247B-1D8E9043C1DA">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>此次费用的收款时间</comment>
+         <generatorID>B05514CC-AF5D-B0AB-F95D-D38E3C8B8ABB</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="confirm_person" id="2434C125-1EAD-CDAD-8996-ACF08763A076">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>挂号确认人</comment>
+         <generatorID>177878D3-DFFF-1C40-F6DE-80D3443F5E2C</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="confirm_time" id="9E5AD7CD-260E-C872-3978-CD72D6D17D24">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>挂号确认时间</comment>
+         <generatorID>380CA8EE-BDE4-A09E-EF79-C8A66321B344</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="confirm_window" id="C1ADF52A-BBE4-CBFD-6E99-B6AA3DA1C56F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>挂号确认窗口号</comment>
+         <generatorID>80EB3551-82DF-FABB-284D-DEBBE0CD2455</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="input_window" id="5934F3C2-168F-04C4-C02E-67E534FFDC13">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>此次收费的窗口号</comment>
+         <generatorID>B102CE04-D440-706B-99C8-66B5D2DD8D96</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="receipt_no" id="023A526A-D933-D229-2BDE-D9982FD98B15">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <comment>挂号完成时打印的发票编码</comment>
+         <generatorID>C94B5825-8874-E9DB-E196-8D44C7C4B699</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="create_time" id="7ABAC4E0-BFB0-B96D-A354-5A18B54E4405">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>BF82D0A0-9407-7CD3-59FF-402D2DF1D499</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="update_time" id="19E33D35-FA6B-F0D0-E8E6-D2CAC8D5D765">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>FDDAC1AC-546D-0F14-2FCA-FEC3175CCDBA</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="update_count" id="FE78CC64-2E03-6BE8-7EDA-307A6F3E5947">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>386E303F-04F9-19B6-9F58-9E9B6DFD6E57</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="delete_flag" id="ED612613-4C03-565D-1BA9-A2CDD65A6CEC">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>69C626F4-4B36-1024-9E36-B8C79A6A9A02</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="delete_time" id="D0107514-CA20-0D3B-8AC0-91F18F7CBAC7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>D94FF364-ACD0-E644-894B-B77A416D447C</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+   </columns>
+   <indexes>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C6007E82-1C46-D5A7-CBF5-BAED6A89C23C" name="pk_registration_fee">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>7D4CA361-B100-110F-A545-E86482DADDA8</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <indexState>Primary Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="5F1B3841-CC3D-CD16-089D-C225CB73B6E0"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="3278AB5F-A0B3-5358-EE35-AF877B172432" name="registration_fee__IDX">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <indexState>Unique Plain Index</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="C060D94C-6B5D-8A9B-12BB-DC9D7ADA3631"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="75A1CA44-80CF-668E-1348-AC522667EC93" name="fk_visit_registration">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>C5593CF4-C3DA-8DBB-864F-03D74F33F239</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <indexColumnUsage>
+            <colUsage columnID="C060D94C-6B5D-8A9B-12BB-DC9D7ADA3631"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+   </indexes>
+</Table>

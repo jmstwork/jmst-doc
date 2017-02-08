@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="SDO_GEOMETRYv1" id="47E390DE-0671-C4B1-8428-0F45CBEE18F8" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-11-21 02:00:21 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="11AD6D2E-0E15-E33F-B7A2-953B5B5B17CD" value="true"/>
+   </engineerTo>
+   <visible>false</visible>
+   <predefined>true</predefined>
+   <final>false</final>
+   <instantiable>true</instantiable>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16777056</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>方法</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>不可实例化</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>必需</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+   </fonts>
+</StructuredType>

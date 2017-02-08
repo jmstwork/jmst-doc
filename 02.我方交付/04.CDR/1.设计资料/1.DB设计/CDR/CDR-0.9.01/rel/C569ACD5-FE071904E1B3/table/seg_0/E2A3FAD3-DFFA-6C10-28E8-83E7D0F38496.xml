@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="E2A3FAD3-DFFA-6C10-28E8-83E7D0F38496" directorySegmentName="seg_0" name="patient_credential">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <generatorID>A3613EB1-AB71-1263-2683-58543BEA685E</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <pkName>pk_patient_credential</pkName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>列</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="patient_sn" id="BD6EAA22-2000-6BC8-6DCB-06242376FAD5">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>27B06EE4-F6DF-A0ED-E0BA-85B0D5A0D31F</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <delegate>01A99A33-2296-FFFB-3B09-ADF407D3AC92</delegate>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+         <associations>
+            <colAssociation fkAssociation="298D1C9B-224D-7A54-A7BD-463C604032F8" referredColumn="01A99A33-2296-FFFB-3B09-ADF407D3AC92"/>
+         </associations>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="credential_type" id="11A94B23-F7C5-CD59-8364-3885A3EF2EC2">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>9C589516-A6E8-C79D-F500-F665170E358D</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="credential_no" id="0E33AB87-278F-1CDE-0B4B-F97B75C2399B">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>03ADFE89-BA20-7212-F1F6-7E740656E79B</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>30</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="effective_date" id="D9EA2923-01D3-1F97-0DA1-38529B2681ED">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>D288C0FD-D5EB-6022-829E-FFA5B851DA9F</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="expiration_date" id="87B0103D-4426-C8AC-8B91-5C2521416FF7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>7156FDB1-4E41-22AE-B72A-05F6DF41DEC3</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="create_time" id="70715556-41A6-02A4-08FF-42D945F8DFF3">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>4E9EAB18-0741-E3E6-69D5-79FD48EE9B49</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="update_time" id="25F5CA3F-EA1A-9C43-D1A9-97D750EC4703">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>8DDFA550-493D-AD43-5E16-5A4705088B66</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="update_count" id="B701C0A3-53E5-D56F-24F8-9E623C69C648">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>65D75B33-F6B8-384F-2D31-F7225C59C824</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="delete_flag" id="33168F12-AF20-2240-BFF5-1CA5CA7785D9">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>7F8426C6-84F2-BEB4-FE64-D610F295F837</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="delete_time" id="52FF7FA3-B164-1BE6-8EC4-E64C34FB95F6">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>D12F407C-A4A4-3FD2-736E-51C5EC89FBD2</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+   </columns>
+   <indexes>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C8EFAEFC-A377-C415-3798-A9A7F9E56122" name="pk_patient_credential">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>C5137459-4634-5C98-BD62-8FDBE707A087</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <indexState>Primary Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="11A94B23-F7C5-CD59-8364-3885A3EF2EC2"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="46F21251-2650-C8E8-41EE-70E654E40236" name="fk_patient_credential">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+         <generatorID>116F496C-6547-F764-FCE1-F232D133F231</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <indexColumnUsage>
+            <colUsage columnID="BD6EAA22-2000-6BC8-6DCB-06242376FAD5"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+   </indexes>
+</Table>

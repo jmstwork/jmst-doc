@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_anesthesia_event" id="98D9D481-F3D5-3855-8AFD-D255A1881DC8" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-16 09:21:41 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <identifying>false</identifying>
+   <optionalSource>true</optionalSource>
+   <optionalTarget>false</optionalTarget>
+   <sourceCardinality>1</sourceCardinality>
+   <sourceEntity>D54DD7D1-D25F-9258-3F2A-96BB6B70C0DD</sourceEntity>
+   <targetCardinalityString>*</targetCardinalityString>
+   <targetEntity>479CC39A-D451-A24C-2184-1D235AF49B1C</targetEntity>
+   <transferable>true</transferable>
+</Relation>

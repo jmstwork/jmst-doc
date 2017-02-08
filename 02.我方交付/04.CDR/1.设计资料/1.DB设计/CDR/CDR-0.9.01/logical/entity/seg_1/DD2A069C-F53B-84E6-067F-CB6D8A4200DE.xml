@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="DD2A069C-F53B-84E6-067F-CB6D8A4200DE" directorySegmentName="seg_1" name="出院小结">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-19 00:55:14 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <shouldEngineer>false</shouldEngineer>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="false"/>
+   </engineerTo>
+   <pkName>PK_出院小结</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <preferredAbbreviation>discharge_summary</preferredAbbreviation>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="文档内部序列号" id="CA806083-2EFD-8124-309F-2C9177C47615">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 01:37:42 UTC</createdTime>
+         <generatorID>97195881-CCA5-6B9F-DF3A-575F6C0EA332</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <shouldEngineer>false</shouldEngineer>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="false"/>
+         </engineerTo>
+         <referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>document_id</preferredAbbreviation>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="69266975-C4EE-4EF4-FB32-7C10F57BD2B7" name="PK_出院小结">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 01:45:05 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <shouldEngineer>false</shouldEngineer>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="false"/>
+         </engineerTo>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>CA806083-2EFD-8124-309F-2C9177C47615</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

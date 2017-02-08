@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_4" id="06E8030C-92CB-D0D4-BDE0-A310919E062B" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-13 06:47:16 UTC</createdTime>
+   <comment>需要记录挂号的费用明细吗？</comment>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="11AD6D2E-0E15-E33F-B7A2-953B5B5B17CD" value="true"/>
+   </engineerTo>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontSize>12</fontSize>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+   </fonts>
+</Note>

@@ -1,0 +1,610 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="8AA3E224-4132-A45B-674C-583CC608A0A2" directorySegmentName="seg_0" name="就诊">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-09 01:24:37 UTC</createdTime>
+   <comment>包括门急诊挂号、门急诊就诊、住院的入院、体检的主记录</comment>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <pkName>就诊 PK</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <preferredAbbreviation>medical_visit</preferredAbbreviation>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊内部序列号" id="0C0406E0-9491-8975-C7D4-DA4A84AECFAA">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-09 01:43:23 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>visit_sn</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者内部序列号" id="766B1803-B126-9008-5948-FFDF7DBBD6DF">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-09 01:41:51 UTC</createdTime>
+         <generatorID>19A95E0C-7E81-9292-B013-5CC0D95811D3</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <referedAttribute>F6249756-CD89-FBAB-17A8-2AAB706DAAD3</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>patient_sn</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="域代码" id="CFE3FBBB-B085-28C3-1455-0A6214628125">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-12 10:41:25 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>patient_domain</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者本地ID" id="5E09CB42-1874-60D3-3677-B65FBE9F1106">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-12 10:41:25 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>12</dataTypeSize>
+         <preferredAbbreviation>patient_lid</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊次数" id="7273182C-5607-43E7-FD0A-B07FF86A3A52">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:08:42 UTC</createdTime>
+         <comment>患者来医院就诊的次数。门急诊、住院、体检分开计算。卫生部病案首页中要求记入住院次数，所以不能混合计算。</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>visit_times</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊号" id="CD5BB1E1-3843-B397-F3FC-3C665BBA5460">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:12:34 UTC</createdTime>
+         <comment>门急诊的门诊号、住院的住院号、体检的体检号</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>12</dataTypeSize>
+         <preferredAbbreviation>visit_no</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊类别" id="9670185D-71CA-ECA2-9809-453D5F1B0AAC">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:12:34 UTC</createdTime>
+         <comment>门诊、急诊、住院、体检、转院</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>visit_type</preferredAbbreviation>
+         <source>CV4201.01病人类型代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="挂号日期" id="CD1E4E6E-2EDB-6112-4B57-5F1DF2EA8D15">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:29:03 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+         <preferredAbbreviation>registered_date</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="挂号科室代码" id="E2FA46C3-9FEA-7ACD-D39E-FF7F1CA99935">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:28:12 UTC</createdTime>
+         <comment>科室</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>registered_dept</preferredAbbreviation>
+         <source>人民医院科室代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="挂号医生代码" id="EC7B5B61-4BF2-7AAE-B273-D4328B4F5FFF">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:28:12 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>registered_doctor</preferredAbbreviation>
+         <source>人民医院人员代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="入院(就诊)日期" id="666DFE2B-DE4B-F1DF-F113-0133E1896926">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:12:34 UTC</createdTime>
+         <comment>就诊日期</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+         <preferredAbbreviation>visit_date</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="入院(就诊)科室代码" id="7B0F19BC-AEDA-D9C2-F3E7-E688BB5AE6C5">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:12:34 UTC</createdTime>
+         <comment>科室</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>visit_dept</preferredAbbreviation>
+         <source>人民医院科室代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊专科" id="6F3EB04B-C42D-ADEB-9F21-E3F92209F224">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:19:11 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>7</dataTypeSize>
+         <preferredAbbreviation>visit_specialty</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊医生代码" id="87E15C49-784B-EAF6-DA82-EED7A88164C8">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:16:53 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>visit_doctor</preferredAbbreviation>
+         <source>人民医院人员代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="医疗保险-类别代码" id="F7B4A07A-5AF9-8027-60B0-667ACBCC31C6">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:12:34 UTC</createdTime>
+         <comment>医疗保险-类别代码</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>insurance_type_code</preferredAbbreviation>
+         <source>CV0209.01医疗保险类别代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="医疗保险-类别" id="63088805-CC29-3ED2-8B2B-D28D688AEC3C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:12:34 UTC</createdTime>
+         <comment>医疗保险-类别</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>insurance_type</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊号别" id="3AD43754-7E4E-063A-3ADA-A5D1FA10A835">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:19:11 UTC</createdTime>
+         <comment>号别字典：&amp;lt;br/&amp;gt;普通号&amp;lt;br/&amp;gt;急诊号&amp;lt;br/&amp;gt;知名专家教授&amp;lt;br/&amp;gt;正主任医师&amp;lt;br/&amp;gt;副主任医师&amp;lt;br/&amp;gt;主治医师&amp;lt;br/&amp;gt;优惠号&amp;lt;br/&amp;gt;灌氧气&amp;lt;br/&amp;gt;开麻醉药&amp;lt;br/&amp;gt;附加费用&amp;lt;br/&amp;gt;</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>registration_class</preferredAbbreviation>
+         <source>人民医院就诊号别</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊号类" id="551231B1-3D61-BE8A-B48B-F34CA9BE8405">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:19:11 UTC</createdTime>
+         <comment>号类字典：&amp;lt;br/&amp;gt;门诊号&amp;lt;br/&amp;gt;功能社区预约号&amp;lt;br/&amp;gt;电话预约号&amp;lt;br/&amp;gt;自助挂号&amp;lt;br/&amp;gt;诊间预约号&amp;lt;br/&amp;gt;共同体预约号&amp;lt;br/&amp;gt;诊间加号&amp;lt;br/&amp;gt;114挂号&amp;lt;br/&amp;gt;</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>registration_method</preferredAbbreviation>
+         <source>人民医院就诊号类</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="挂号序号" id="3FE30C0B-57FA-1762-D565-67A99D792C7D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:19:11 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT018</logicalDatatype>
+         <preferredAbbreviation>registered_sequence</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="挂号上下午" id="9A3B84B9-FAEE-3CA0-9230-58F627DC4F92">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:19:11 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>registered_ampm</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="医疗付款方式" id="ACB96196-1D89-F398-6A6A-31C95A8D6295">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-07 08:40:05 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>payment</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊状态" id="7C328A8C-D422-C186-ED1D-F125E37B1FE0">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:21:49 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>visit_status</preferredAbbreviation>
+         <source>人民医院就诊状态</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="挂号方式" id="38BAC959-6EFC-CCCB-BF2C-B08A96DB46C9">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-21 08:24:01 UTC</createdTime>
+         <comment>窗口挂号 &amp;lt;br/&amp;gt;窗口预约 &amp;lt;br/&amp;gt;自助机挂号 &amp;lt;br/&amp;gt;电话预约挂号 &amp;lt;br/&amp;gt;网上预约挂号 &amp;lt;br/&amp;gt;功能社区挂号 &amp;lt;br/&amp;gt;窗口人工选号&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;对于住院和体检，固定为“窗口挂号”</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>registered_way</preferredAbbreviation>
+         <source>人民医院挂号方式</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="入院医生" id="F4CD240B-452C-63E6-5FFC-AF49D3AD3915">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:46:31 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>admission_doctor</preferredAbbreviation>
+         <source>人民医院人员代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="住院医生" id="BF31AA70-9636-135D-0F93-21C7F890B1F0">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:52:21 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>resident_doctor</preferredAbbreviation>
+         <source>人民医院人员代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="主治医生" id="488AFCE9-4106-5FB8-5F8B-20A265A2F5A9">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:52:50 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>attending_doctor</preferredAbbreviation>
+         <source>人民医院人员代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="科室主任" id="FBF9A922-C447-50FF-BC8C-2842C7D7A4BA">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:52:51 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>dept_director</preferredAbbreviation>
+         <source>人民医院人员代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="入院病房" id="D69F7D49-3C46-F045-2B56-1DD34ABCAA0B">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:53:26 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>admission_wards</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="床号" id="C491C2E3-AE21-DB78-2B4F-4E1087F00960">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-30 10:30:25 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>20</dataTypeSize>
+         <preferredAbbreviation>bed_no</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="出院日期" id="6AD5767E-152C-F3BE-ECD3-4F0E1C7A1DEC">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-06 07:16:27 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+         <preferredAbbreviation>discharge_date</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="出院科室" id="CBB82648-A1EC-9AFD-7FEA-91AE72102CD2">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:54:15 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>discharge_dept</preferredAbbreviation>
+         <source>人民医院科室代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="出院状态" id="0E6D86D1-0D3B-90FA-ED85-EFFB664AA9F7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:54:21 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>discharge_status</preferredAbbreviation>
+         <source>CV5501.16患者去向代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="出院病房" id="0EC94BF0-588B-2DD6-64BD-0BA3702C4FC7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-22 11:54:38 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>discharge_wards</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="创建时间" id="202210C4-6D84-7817-533D-DD5BF74FB885">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:32 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>create_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="更新时间" id="14811A2A-76BE-F0C0-8331-C202669E1B10">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:32 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>update_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="更新回数" id="C6FE04C5-4C63-2607-F577-48DBCFD88BAF">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:32 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>update_count</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="删除标志" id="6A5D2491-8316-BF38-9992-30EF26B50AF5">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:32 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <preferredAbbreviation>delete_flag</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="删除时间" id="F7017378-82D5-91D3-83A0-64D15583C71E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:32 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>delete_time</preferredAbbreviation>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="13449B14-153D-3CBD-0B35-C376FBA1B458" name="pk_medical_visit">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-09 01:43:41 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>0C0406E0-9491-8975-C7D4-DA4A84AECFAA</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

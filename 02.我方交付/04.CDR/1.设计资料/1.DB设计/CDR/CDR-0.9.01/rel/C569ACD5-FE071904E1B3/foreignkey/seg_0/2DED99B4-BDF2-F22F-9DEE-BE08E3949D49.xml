@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="2DED99B4-BDF2-F22F-9DEE-BE08E3949D49" directorySegmentName="seg_0" name="fk_patient_risk">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <generatorID>B9F29863-892D-33D3-A366-0965308E9CBA</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <containerWithKeyObject>CB9CF674-867C-791F-1116-3F534FEB171C</containerWithKeyObject>
+   <deleteRule>RESTRICT</deleteRule>
+   <localFKIndex>E7A28513-643A-636E-155A-0D293D7A07E8</localFKIndex>
+   <keyObject>1EEA73DE-5B2B-32CB-1792-B0D61531D906</keyObject>
+   <mandatory>true</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>

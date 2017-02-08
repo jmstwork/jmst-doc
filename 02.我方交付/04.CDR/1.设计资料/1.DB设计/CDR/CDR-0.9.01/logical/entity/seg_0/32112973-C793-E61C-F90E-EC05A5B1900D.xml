@@ -1,0 +1,422 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="32112973-C793-E61C-F90E-EC05A5B1900D" directorySegmentName="seg_0" name="患者基本信息">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-09 00:41:43 UTC</createdTime>
+   <comment>患者基本信息由EMPI统一维护，CDR接收EMPI发送的更新通知进行同步更新。保存的信息与EMPI的最佳纪录（Single Best Record - SBR）保持一致。</comment>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <pkName>患者基本信息 PK</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <preferredAbbreviation>patient</preferredAbbreviation>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者内部序列号" id="F6249756-CD89-FBAB-17A8-2AAB706DAAD3">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-09 01:41:25 UTC</createdTime>
+         <comment>CDR系统为患者分配的唯一标识</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>patient_sn</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者唯一标识" id="E51DA066-C1AC-17B0-1EC0-9889A0D1569E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-06 02:11:48 UTC</createdTime>
+         <comment>EMPI的EID，为了保证EMPI不可用时CDR的数据接入能够正常工作，EID不能是必须的。对于EID为空的数据，在EMPI恢复后，通过专用batch把EID的值补上。</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>patient_eid</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者姓名" id="24CC4DF8-9427-87C3-FBC3-E7D3B6A29F39">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>患者姓名</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>200</dataTypeSize>
+         <preferredAbbreviation>patient_name</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="性别代码" id="D026CBB4-DA26-01E6-2DD3-5EAB95231B67">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>性别代码，男，女，未知等</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>gender_code</preferredAbbreviation>
+         <source>GB/T 2261.1-2003 个人基本信息分类与代码 第1部分 人的性别代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="出生日期" id="E607DE79-FEF4-BB2D-C4CC-8B7BA74AF97F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>出生日期</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>birth_date</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="婚姻状况" id="C78DCD84-9ACE-34A4-2456-FE8347E6A0B2">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>婚姻状况，已婚，未婚</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>2</dataTypeSize>
+         <preferredAbbreviation>marriage_status</preferredAbbreviation>
+         <source>GB/T 2261.2-2003 个人基本信息与分类代码 婚姻状况代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="民族代码" id="72F72EA5-67F9-AF59-1315-410F0B04D17C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>民族代码</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>3</dataTypeSize>
+         <preferredAbbreviation>nation_code</preferredAbbreviation>
+         <source>GB 3304-1991 中国各民族名称的罗马字母拼写法和代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="出生地" id="21F1C44B-9995-1CDE-3539-5B355B855E5C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>出生地</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>256</dataTypeSize>
+         <preferredAbbreviation>birth_place</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="国籍代码" id="EFE36405-F85F-BBB1-42D7-77ABE932BB80">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>国籍代码</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>16</dataTypeSize>
+         <preferredAbbreviation>nationality_code</preferredAbbreviation>
+         <source>GB/T 2659-2000 世界各国和地区名称代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="职业代码" id="0470C8D6-E720-50BE-4E95-E623207F96F8">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>职业代码</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>16</dataTypeSize>
+         <preferredAbbreviation>occupation_code</preferredAbbreviation>
+         <source>GB/T 6565-1999 职业分类与代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="文化程度代码" id="FE03E96D-8D1B-BA90-9D90-3C3A17D83DDD">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>文化程度代码</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>3</dataTypeSize>
+         <preferredAbbreviation>education_degree</preferredAbbreviation>
+         <source>GB/T 4658-1984 文化程度代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="工作单位名称" id="920496A5-DE90-8871-33B0-C37500521587">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>工作单位名称</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>work_place</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="家庭电话" id="AD55A26E-0A53-0666-3A5E-3FAE1D3E147F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>固定电话</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>16</dataTypeSize>
+         <preferredAbbreviation>telephone</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="移动电话" id="92258601-7068-7DF7-A76D-672AE762DF41">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>移动电话</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>16</dataTypeSize>
+         <preferredAbbreviation>mobile</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="电子邮件地址" id="560D2650-5DE6-0F86-7671-F063DAF7A062">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>电子邮件地址</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>64</dataTypeSize>
+         <preferredAbbreviation>email</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="联系地址" id="23017F87-8CFB-AF41-2735-79427614B94C">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-20 07:59:16 UTC</createdTime>
+         <comment>联系地址</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>64</dataTypeSize>
+         <preferredAbbreviation>contact_address</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="邮政编码" id="D57850D8-F99B-63BB-8AA0-51ACDD453685">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-07 08:47:40 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>10</dataTypeSize>
+         <preferredAbbreviation>post_code</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="ABO血型" id="A37CD272-4FBE-3BFD-372B-AB9995B0F677">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-26 05:48:20 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>blood_abo</preferredAbbreviation>
+         <source>CV5103.02ABO血型代码</source>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="RH血型" id="1FB9ABC1-46D8-3C43-7E17-944CAF3B317F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-26 05:48:44 UTC</createdTime>
+         <comment>0.Rh阳性 1.Rh阴性 3.不详</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>blood_rh</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="创建时间" id="BF21E8AD-C875-103A-FF6D-7B35F8C0FD4D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:06 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>create_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="更新时间" id="3EB832AF-69CD-F2A0-500A-704790405D6F">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:06 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>update_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="更新回数" id="3902E7D7-E7F2-F966-B8FE-64CD2AD078E1">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:06 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>update_count</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="删除标志" id="D7DD269C-E0FD-681A-1DEB-134F9202CC16">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:06 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <preferredAbbreviation>delete_flag</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="删除时间" id="36DE774A-91A6-22CD-6687-2353D60B60B0">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:13:06 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>delete_time</preferredAbbreviation>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="A613CF4D-8FB9-804F-42C9-0FABD8118736" name="pk_patient">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-09 01:41:47 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>F6249756-CD89-FBAB-17A8-2AAB706DAAD3</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

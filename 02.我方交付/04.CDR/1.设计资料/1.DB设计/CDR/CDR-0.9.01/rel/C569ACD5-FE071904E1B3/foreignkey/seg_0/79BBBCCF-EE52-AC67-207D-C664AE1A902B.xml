@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="79BBBCCF-EE52-AC67-207D-C664AE1A902B" directorySegmentName="seg_0" name="fk_blood_request_delivery">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <generatorID>F7B19FF1-D36C-54B9-EAC1-DE2C2D6A7ECA</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <containerWithKeyObject>73114DEE-EB4D-F952-51CA-FB7C5CD04315</containerWithKeyObject>
+   <deleteRule>RESTRICT</deleteRule>
+   <localFKIndex>B96F83E1-7636-66AE-1A73-7B9E5EBD1D0F</localFKIndex>
+   <keyObject>9E0E8936-66DE-0120-7EE9-B12E199831E8</keyObject>
+   <mandatory>true</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>

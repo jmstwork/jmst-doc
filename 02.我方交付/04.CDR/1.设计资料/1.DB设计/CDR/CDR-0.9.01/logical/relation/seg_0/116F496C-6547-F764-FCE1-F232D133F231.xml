@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_patient_credential" id="116F496C-6547-F764-FCE1-F232D133F231" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-22 12:02:40 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <identifying>false</identifying>
+   <optionalSource>true</optionalSource>
+   <optionalTarget>false</optionalTarget>
+   <sourceCardinality>1</sourceCardinality>
+   <sourceEntity>32112973-C793-E61C-F90E-EC05A5B1900D</sourceEntity>
+   <targetCardinalityString>*</targetCardinalityString>
+   <targetEntity>A3613EB1-AB71-1263-2683-58543BEA685E</targetEntity>
+   <transferable>true</transferable>
+</Relation>

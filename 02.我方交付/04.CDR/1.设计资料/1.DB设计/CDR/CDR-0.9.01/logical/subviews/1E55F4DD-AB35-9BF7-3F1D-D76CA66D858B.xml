@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="卫生部电子病历规范" id="1E55F4DD-AB35-9BF7-3F1D-D76CA66D858B">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-01-09 09:40:45 UTC</createdTime>
+   <autoRoute>false</autoRoute>
+   <boxInbox>true</boxInbox>
+   <showLegend>false</showLegend>
+   <showLabels>false</showLabels>
+   <showGrid>false</showGrid>
+   <diagramColor>-1</diagramColor>
+   <display>false</display>
+   <notation>2</notation>
+   <objectViews>
+      <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="337579B6-ACB8-7FAE-C4BE-AFE0A9C7DE13" otype="Entity" vid="518AC5BF-7A43-A7ED-5B3E-A98008AC65A3">
+         <bounds x="92" y="0" width="220" height="355"/>
+      </OView>
+      <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="68E9921B-DF88-D1E3-55C6-A4634CD7CDF7" otype="Entity" vid="DD2A1AB3-3609-3C74-0470-414DEE75EACE">
+         <bounds x="96" y="427" width="198" height="250"/>
+      </OView>
+   </objectViews>
+   <connectors>
+      <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A30F6532-2B35-670A-9ECC-CC32BDECDB5F" otype="Relation" vid_source="518AC5BF-7A43-A7ED-5B3E-A98008AC65A3" vid_target="DD2A1AB3-3609-3C74-0470-414DEE75EACE">
+         <lineWidth>1</lineWidth>
+         <points>
+            <point x="195" y="355"/>
+            <point x="195" y="427"/>
+         </points>
+      </Connector>
+   </connectors>
+</Diagram>

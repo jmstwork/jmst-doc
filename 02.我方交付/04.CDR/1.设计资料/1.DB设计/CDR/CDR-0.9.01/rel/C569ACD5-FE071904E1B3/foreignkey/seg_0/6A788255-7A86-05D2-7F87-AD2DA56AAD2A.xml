@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="6A788255-7A86-05D2-7F87-AD2DA56AAD2A" directorySegmentName="seg_0" name="fk_billing_receipt_item">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <generatorID>B84558F9-8C43-1659-2A69-DE21CF86AE9D</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <containerWithKeyObject>AF11EC74-8A04-33C7-DC4F-8BF6B4C542E1</containerWithKeyObject>
+   <deleteRule>SET NULL</deleteRule>
+   <localFKIndex>A223F1F5-8806-260D-4C59-C87FC4672746</localFKIndex>
+   <keyObject>DD40E578-763A-BCC4-3999-5D6AC3B0BB4F</keyObject>
+   <mandatory>false</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>

@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="00.字典表" id="FCF14429-D253-926A-60E7-6FD154741E14">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-20 07:03:53 UTC</createdTime>
+   <autoRoute>false</autoRoute>
+   <boxInbox>true</boxInbox>
+   <showLegend>false</showLegend>
+   <showLabels>false</showLabels>
+   <showGrid>false</showGrid>
+   <diagramColor>-1</diagramColor>
+   <display>false</display>
+   <notation>2</notation>
+   <objectViews>
+      <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="50C2FCBF-EB92-3DAB-EE39-05DFB42E4EB9" otype="Entity" vid="35D16717-F841-E1E9-7B70-7E33D85F54C8">
+         <bounds x="432" y="102" width="170" height="110"/>
+      </OView>
+      <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="6466124E-9C00-8B59-8C5D-9F1DE756C9E7" otype="Entity" vid="3030E500-BA1B-FD93-54B4-151E91F5D102">
+         <bounds x="96" y="103" width="203" height="105"/>
+      </OView>
+   </objectViews>
+   <connectors>
+      <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="F66BA2D3-15B5-FC91-417B-C280477C11CA" otype="Relation" vid_source="3030E500-BA1B-FD93-54B4-151E91F5D102" vid_target="35D16717-F841-E1E9-7B70-7E33D85F54C8">
+         <lineWidth>1</lineWidth>
+         <points>
+            <point x="299" y="155"/>
+            <point x="432" y="155"/>
+         </points>
+      </Connector>
+   </connectors>
+</Diagram>

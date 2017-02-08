@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_00.字典表" id="C380F6CA-6F7A-49C9-47E8-242667230283">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <autoRoute>false</autoRoute>
+   <boxInbox>true</boxInbox>
+   <showLegend>false</showLegend>
+   <showLabels>false</showLabels>
+   <showGrid>false</showGrid>
+   <diagramColor>-1</diagramColor>
+   <display>false</display>
+   <generatorId>FCF14429-D253-926A-60E7-6FD154741E14</generatorId>
+   <notation>1</notation>
+   <objectViews>
+      <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="475B6801-9F25-03FB-7707-689852784380" otype="Table" vid="1A4DF406-6D5F-8E6B-E730-B12F09F0E2D1">
+         <bounds x="432" y="102" width="170" height="110"/>
+         <generatorID>35D16717-F841-E1E9-7B70-7E33D85F54C8</generatorID>
+      </OView>
+      <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="534B092C-6A1A-2774-468F-AED0C3EE2C4B" otype="Table" vid="B053DF3F-9CC3-0CFC-B1C9-09BBF3050BAA">
+         <bounds x="96" y="103" width="203" height="105"/>
+         <generatorID>3030E500-BA1B-FD93-54B4-151E91F5D102</generatorID>
+      </OView>
+   </objectViews>
+   <connectors>
+      <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3DB1690C-1E38-248F-C0E8-3E7C9AA3DF43" otype="FKIndexAssociation" vid_source="B053DF3F-9CC3-0CFC-B1C9-09BBF3050BAA" vid_target="1A4DF406-6D5F-8E6B-E730-B12F09F0E2D1">
+         <lineWidth>1</lineWidth>
+         <points>
+            <point x="250" y="146"/>
+            <point x="432" y="146"/>
+         </points>
+      </Connector>
+   </connectors>
+</Diagram>

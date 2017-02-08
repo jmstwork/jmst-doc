@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="EC28148E-3147-3670-2461-E23B0DEAB0E0" directorySegmentName="seg_0" name="fk_anesthesia_physical_exam">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <generatorID>CE45D6A6-86B3-0B34-9168-9255AC65A606</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <containerWithKeyObject>08B5DA2D-B1EB-5EBC-A0E8-B4AD3158E145</containerWithKeyObject>
+   <deleteRule>SET NULL</deleteRule>
+   <localFKIndex>A711A184-9377-1186-D31D-4787518BCCA5</localFKIndex>
+   <keyObject>4EAD20F1-0628-7F58-4E8F-904D740D8093</keyObject>
+   <mandatory>false</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="CF279E05-0731-82E8-EC15-5428A3567197" directorySegmentName="seg_0" name="24小时入出院">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-19 00:55:34 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <shouldEngineer>false</shouldEngineer>
+   <engineerTo>
+      <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="false"/>
+   </engineerTo>
+   <pkName>PK_24小时入出院</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <preferredAbbreviation>discharge_within_day</preferredAbbreviation>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="文档内部序列号" id="D41D60DA-8E3B-1FD1-746B-7E7DE83C360D">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 01:37:29 UTC</createdTime>
+         <generatorID>719E262C-7122-404F-0091-EA7579CF9546</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <shouldEngineer>false</shouldEngineer>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="false"/>
+         </engineerTo>
+         <referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>document_id</preferredAbbreviation>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="3F7978D2-166A-2D76-940A-914791D931E5" name="PK_24小时入出院">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 01:38:07 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <shouldEngineer>false</shouldEngineer>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="false"/>
+         </engineerTo>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>D41D60DA-8E3B-1FD1-746B-7E7DE83C360D</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

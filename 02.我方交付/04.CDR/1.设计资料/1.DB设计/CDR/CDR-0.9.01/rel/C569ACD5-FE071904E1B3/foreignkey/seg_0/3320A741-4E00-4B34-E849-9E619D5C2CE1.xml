@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="3320A741-4E00-4B34-E849-9E619D5C2CE1" directorySegmentName="seg_0" name="fk_anesthesia_procedure">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-14 03:28:28 UTC</createdTime>
+   <comment>为了减轻患者痛苦，开一个刀口，打一次麻醉可以做多次手术。</comment>
+   <generatorID>37657521-9CA4-A367-4016-B6613BE7A7E3</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <containerWithKeyObject>15EA725F-147B-0195-0942-DAB8CE6B621E</containerWithKeyObject>
+   <deleteRule>SET NULL</deleteRule>
+   <localFKIndex>3145BA83-919E-D079-C850-533757D688DE</localFKIndex>
+   <keyObject>4EAD20F1-0628-7F58-4E8F-904D740D8093</keyObject>
+   <mandatory>false</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>

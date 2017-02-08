@@ -1,0 +1,425 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="E0922B6E-563C-9F8F-F614-A943E4F0F566" directorySegmentName="seg_1" name="交易账单信息">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-19 03:57:22 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <pkName>交易账单信息 PK</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <preferredAbbreviation>billing_receipt</preferredAbbreviation>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="账单内部序列号" id="929BD1A4-E734-BC95-34D1-FA21238FE130">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 03:58:38 UTC</createdTime>
+         <comment>交易账单标识</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>receipt_sn</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="就诊内部序列号" id="23FD6BBE-FBF2-EE2F-B6E2-0071BBE66C63">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 03:57:48 UTC</createdTime>
+         <comment>就诊标识</comment>
+         <generatorID>2FDAAB12-0EB4-8921-12F9-A0804070C6E8</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <referedAttribute>0C0406E0-9491-8975-C7D4-DA4A84AECFAA</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>visit_sn</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者内部序列号" id="907727CE-DB53-874F-DDED-86B5636C8686">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-29 03:56:47 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>32</dataTypeSize>
+         <preferredAbbreviation>patient_sn</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="域代码" id="952798B6-99F7-E7CD-2716-A1B955959127">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-29 03:56:47 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>patient_domain</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="患者本地ID" id="E55D6E86-8F4F-375A-6890-48BAC125F90A">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-01-29 03:56:47 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>12</dataTypeSize>
+         <preferredAbbreviation>patient_lid</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="费用类别代码" id="F20B0CF4-749B-9739-D46E-E9E9EA1AAEF9">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 03:20:38 UTC</createdTime>
+         <comment>此账单的费用种类代码&amp;lt;br/&amp;gt;如：01	西药&amp;lt;br/&amp;gt;02	中成药&amp;lt;br/&amp;gt;03	中草药&amp;lt;br/&amp;gt;04	诊察费&amp;lt;br/&amp;gt;05	检查费&amp;lt;br/&amp;gt;06	化验费&amp;lt;br/&amp;gt;07	放射费&amp;lt;br/&amp;gt;08	治疗费&amp;lt;br/&amp;gt;09	手术费&amp;lt;br/&amp;gt;</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>4</dataTypeSize>
+         <preferredAbbreviation>charge_class</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="费用类别名称" id="75BA8678-B500-0819-9709-23EB2E0CEDBA">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 03:23:54 UTC</createdTime>
+         <comment>此账单的费用种类名称&amp;lt;br/&amp;gt;如：01	西药&amp;lt;br/&amp;gt;02	中成药&amp;lt;br/&amp;gt;03	中草药&amp;lt;br/&amp;gt;04	诊察费&amp;lt;br/&amp;gt;05	检查费&amp;lt;br/&amp;gt;06	化验费&amp;lt;br/&amp;gt;07	放射费&amp;lt;br/&amp;gt;08	治疗费&amp;lt;br/&amp;gt;09	手术费</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>10</dataTypeSize>
+         <preferredAbbreviation>charge_class_name</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="账单金额" id="2B4B75C5-D1BA-C241-1C5A-88C6B917EE37">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 03:40:28 UTC</createdTime>
+         <comment>此交易账单的总金额</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+         <dataTypePrecision>9</dataTypePrecision>
+         <dataTypeScale>4</dataTypeScale>
+         <preferredAbbreviation>receipt_total</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="账单日期" id="9B732C97-6DC5-9A3E-2DD7-08E519CE736D">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 06:17:03 UTC</createdTime>
+         <comment>此交易账单的产生日期</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>receipt_date</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="自费标志" id="68EC4043-20FE-9DB5-B38F-CAEC861F7646">
+         <createdBy>jin_peng</createdBy>
+         <createdTime>2011-12-26 01:40:27 UTC</createdTime>
+         <comment>自费标志</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <preferredAbbreviation>own_expense_flag</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="自费比例" id="12451688-F584-369D-A132-7DD9F94153FF">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 06:05:22 UTC</createdTime>
+         <comment>患者此次账单费用的自费比例</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+         <dataTypePrecision>3</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <preferredAbbreviation>own_expense_rate</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="应收金额" id="1AAB839E-0909-8E7C-22B7-87E8FCD47E6E">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 06:07:36 UTC</createdTime>
+         <comment>此账单应收取的金额</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+         <dataTypePrecision>9</dataTypePrecision>
+         <dataTypeScale>4</dataTypeScale>
+         <preferredAbbreviation>amount_receivable</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="收据号" id="96AB5F9F-8DEF-5315-A59C-C62F72FB2BD9">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 06:20:57 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>20</dataTypeSize>
+         <preferredAbbreviation>receipt_no</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="收款人" id="CC2720BB-46B6-5F42-A575-75A49E96EA92">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 11:52:30 UTC</createdTime>
+         <comment>交易账单金额收取人</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>8</dataTypeSize>
+         <preferredAbbreviation>receiver</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="收款日期" id="5248E1F2-D37F-C5B5-FF89-1DCBBBC1A909">
+         <createdBy>ris</createdBy>
+         <createdTime>2011-12-22 11:53:59 UTC</createdTime>
+         <comment>交易账单金额收取日期</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>receipt_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="退药标志" id="31D9E143-4595-B6BF-EFFE-17E6C585AB5E">
+         <createdBy>jin_peng</createdBy>
+         <createdTime>2011-12-26 03:29:02 UTC</createdTime>
+         <comment>退药标志</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <preferredAbbreviation>return_flag</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="退药人" id="C559E053-C001-657C-5D79-388ACA083B5D">
+         <createdBy>jin_peng</createdBy>
+         <createdTime>2011-12-26 03:29:02 UTC</createdTime>
+         <comment>退药执行人</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>8</dataTypeSize>
+         <preferredAbbreviation>return_person</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="退款标志" id="7BC7A1B7-ADE4-43A4-D008-C3AA7362FA7B">
+         <createdBy>jin_peng</createdBy>
+         <createdTime>2011-12-26 03:29:02 UTC</createdTime>
+         <comment>退款标志</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <preferredAbbreviation>refund_flag</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="退款人" id="6090026D-260E-CD9A-9C7F-8C838FF43F52">
+         <createdBy>jin_peng</createdBy>
+         <createdTime>2011-12-26 03:29:02 UTC</createdTime>
+         <comment>退款执行人</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>8</dataTypeSize>
+         <preferredAbbreviation>refund_person</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="红冲账单流水号" id="24BABEBE-D3E7-38FF-FD0E-65544980D238">
+         <createdBy>jin_peng</createdBy>
+         <createdTime>2011-12-28 08:31:06 UTC</createdTime>
+         <comment>在医嘱退费时，当退费完成返回退费信息时，需要打印退费红冲账。&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;1997年6月17日发布的《会计基础工作规范》中，第五十一条&amp;lt;br/&amp;gt;（五）如果在填制记账凭证时发生错误，应当重新填制。&amp;lt;br/&amp;gt;　　已经登记入账的记账凭证，在当年内发现填写错误时，可以用红字填写一张与原内容相同的记账凭证，在摘要栏注明“注销某月某日某号凭证”字样，同时再用蓝字重新填制一张正确的记账凭证，注明“订正某月某日某号凭证”字样。如果会计科目没有错误，只是金额错误，也可以将正确数字与错误数字之间的差额，另编一张调整的记账凭证，调增金额用蓝字，调减金额用红字。发现以前年度记账凭证有错误的，应当用蓝字填制一张更正的记账凭证。</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>20</dataTypeSize>
+         <preferredAbbreviation>write_back_no</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="创建时间" id="714E3F09-75A1-8877-9B9B-6FEB96D5F360">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:23:43 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>create_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="更新时间" id="B95A4C21-4FE8-0ADE-CEE2-278C94637007">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:23:43 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>update_time</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="更新回数" id="03239888-AD6F-2998-EF8A-26F4C3CB8B91">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:23:43 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>update_count</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="删除标志" id="B5D39B51-427E-94EE-6761-5D07512B7310">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:23:43 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
+         <preferredAbbreviation>delete_flag</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="删除时间" id="E17CB040-3CCE-7E65-A2A7-0A82FBCB1CE7">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2012-02-02 02:23:43 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <preferredAbbreviation>delete_time</preferredAbbreviation>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="463656ED-F831-ACF5-1BF7-FE1904A236F0" name="pk_billing_receipt">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 03:58:51 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>929BD1A4-E734-BC95-34D1-FA21238FE130</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

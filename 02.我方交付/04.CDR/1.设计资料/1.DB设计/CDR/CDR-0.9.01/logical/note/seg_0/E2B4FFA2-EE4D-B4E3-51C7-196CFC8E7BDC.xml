@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_5" id="E2B4FFA2-EE4D-B4E3-51C7-196CFC8E7BDC" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-13 10:30:46 UTC</createdTime>
+   <comment>医嘱与诊断之间的多对多关系也需要保存。</comment>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="11AD6D2E-0E15-E33F-B7A2-953B5B5B17CD" value="true"/>
+   </engineerTo>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontSize>12</fontSize>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+   </fonts>
+</Note>

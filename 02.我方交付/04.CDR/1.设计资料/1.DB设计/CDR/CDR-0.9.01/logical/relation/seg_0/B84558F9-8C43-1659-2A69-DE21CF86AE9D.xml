@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_billing_receipt_item" id="B84558F9-8C43-1659-2A69-DE21CF86AE9D" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-19 03:57:55 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <identifying>false</identifying>
+   <optionalSource>true</optionalSource>
+   <optionalTarget>true</optionalTarget>
+   <sourceCardinality>1</sourceCardinality>
+   <sourceEntity>E0922B6E-563C-9F8F-F614-A943E4F0F566</sourceEntity>
+   <targetCardinalityString>*</targetCardinalityString>
+   <targetEntity>C5B2E51F-566D-F5F1-1A5C-8BB1A38A06B6</targetEntity>
+   <transferable>true</transferable>
+</Relation>

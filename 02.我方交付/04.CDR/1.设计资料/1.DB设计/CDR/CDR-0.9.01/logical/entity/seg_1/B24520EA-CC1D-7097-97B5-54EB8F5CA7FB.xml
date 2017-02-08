@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="B24520EA-CC1D-7097-97B5-54EB8F5CA7FB" directorySegmentName="seg_1" name="病案首页">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2011-12-19 00:53:43 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+   </engineerTo>
+   <pkName>PK_病案首页</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <preferredAbbreviation>inpatient_front_sheet</preferredAbbreviation>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>标题</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>属性</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>数据类型</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK 元素</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK 元素</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>非空值</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>关键字</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="文档内部序列号" id="212159B0-CCAF-01F0-0BD0-D0B9A332CFE2">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 01:37:45 UTC</createdTime>
+         <generatorID>09DE6DC4-9ACD-0BF4-06EB-9E04D0A4A3CC</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+         </engineerTo>
+         <referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <preferredAbbreviation>document_id</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="医疗付费方式" id="0647D97E-D939-2713-C9FF-4163FB893B0B">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-28 07:52:04 UTC</createdTime>
+         <comment>1.城镇职工基本医疗保险；&amp;lt;br/&amp;gt;2.城镇居民基本医疗保险；&amp;lt;br/&amp;gt;3.新型农村合作医疗；&amp;lt;br/&amp;gt;4.贫困救助；&amp;lt;br/&amp;gt;5.商业医疗保险；&amp;lt;br/&amp;gt;6.全公费；&amp;lt;br/&amp;gt;7.全自费；&amp;lt;br/&amp;gt;8.其他社会保险；&amp;lt;br/&amp;gt;9.其他&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;其他社会保险指生育保险、工伤保险、农民工保险等。</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>payment_method</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="职业" id="2AF78B02-E75D-613C-4DAB-7B073F13D93E">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-28 07:56:09 UTC</createdTime>
+         <comment>11.国家公务员&amp;lt;br/&amp;gt;13.专业技术人员&amp;lt;br/&amp;gt;17.职员&amp;lt;br/&amp;gt;21.企业管理人员&amp;lt;br/&amp;gt;24.工人&amp;lt;br/&amp;gt;27.农民&amp;lt;br/&amp;gt;31.学生&amp;lt;br/&amp;gt;37.现役军人&amp;lt;br/&amp;gt;51.自由职业者&amp;lt;br/&amp;gt;54.个体经营者&amp;lt;br/&amp;gt;70.无业人员&amp;lt;br/&amp;gt;80.退（离）休人员&amp;lt;br/&amp;gt;90.其他。&amp;lt;br/&amp;gt;</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>patient_career</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="联系人关系" id="5F87C23E-AD23-07E1-31C5-E4CB5D53BA26">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-28 07:57:22 UTC</createdTime>
+         <comment>1.配偶&amp;lt;br/&amp;gt;2.子&amp;lt;br/&amp;gt;3.女&amp;lt;br/&amp;gt;4.孙子、孙女或外孙子、外孙女&amp;lt;br/&amp;gt;5.父母&amp;lt;br/&amp;gt;6.祖父母或外祖父母&amp;lt;br/&amp;gt;7.兄、弟、姐、妹&amp;lt;br/&amp;gt;8/9.其他。&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;对于非家庭关系人员，统一使用“其他”，并可附加说明，如：同事。</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>6</dataTypeSize>
+         <preferredAbbreviation>contact_relationship</preferredAbbreviation>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="损伤中毒原因" id="2186F675-341A-ADCB-FDB3-3702E37CE655">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-28 08:00:01 UTC</createdTime>
+         <comment>损伤、中毒的外部原因</comment>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>200</dataTypeSize>
+         <preferredAbbreviation>injury_poisoning_reason</preferredAbbreviation>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="1BCD2369-A7D3-07C2-A644-8B4C51FB1278" name="PK_病案首页">
+         <createdBy>xu_dengfeng</createdBy>
+         <createdTime>2011-12-19 01:44:08 UTC</createdTime>
+         <generatorID>用户生成</generatorID>
+         <ownerDesignName>CDR</ownerDesignName>
+         <engineerTo>
+            <item key="ED78CE88-17F5-480F-09E1-BFE80D8A240D" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>212159B0-CCAF-01F0-0BD0-D0B9A332CFE2</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

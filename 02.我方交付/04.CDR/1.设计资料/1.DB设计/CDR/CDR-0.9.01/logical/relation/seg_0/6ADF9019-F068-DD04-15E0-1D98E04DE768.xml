@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_medication_order_record" id="6ADF9019-F068-DD04-15E0-1D98E04DE768" directorySegmentName="seg_0">
+   <createdBy>xu_dengfeng</createdBy>
+   <createdTime>2012-02-02 02:21:35 UTC</createdTime>
+   <generatorID>用户生成</generatorID>
+   <ownerDesignName>CDR</ownerDesignName>
+   <engineerTo>
+      <item key="C569ACD5-9D32-D25B-CB96-FE071904E1B3" value="true"/>
+   </engineerTo>
+   <identifying>false</identifying>
+   <optionalSource>true</optionalSource>
+   <optionalTarget>true</optionalTarget>
+   <sourceCardinality>1</sourceCardinality>
+   <sourceEntity>EF154AEB-EE1F-4BAB-1E38-4945A5F8FE0D</sourceEntity>
+   <targetCardinalityString>*</targetCardinalityString>
+   <targetEntity>BEFB254A-F084-2096-790F-DC7F001C1D7A</targetEntity>
+   <transferable>true</transferable>
+</Relation>

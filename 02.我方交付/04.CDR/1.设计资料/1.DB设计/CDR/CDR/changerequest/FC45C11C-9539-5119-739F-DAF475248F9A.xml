@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ChangeRequest class="oracle.dbtools.crest.model.ChangeRequest" name="请求_1" id="FC45C11C-9539-5119-739F-DAF475248F9A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-24 02:38:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<status>Proposed</status>
+</ChangeRequest>

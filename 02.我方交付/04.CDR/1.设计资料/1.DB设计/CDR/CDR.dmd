@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CDR" id="EB0492D3-31D7-4664-7FA8-9BFDC8F8365E" version="3.5">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-11-21 02:00:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>AsIs</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EB0492D3-31D7-4664-7FA8-9BFDC8F8365E</designId>
+</OSDM_Design>
