@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95CA7D07-31FF-F8DC-3F87-B25CA3649065" name="诊疗计划">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 03:53:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>treatment_plan</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="诊疗计划内部序列号" id="583D29CD-EB20-4B6D-2B95-D7F6A62A90ED">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 03:54:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_treatment_plan</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>treatment_plan_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="文档内部序列号" id="F3E59CF5-43CE-D8C6-F93A-86A14FAC4934">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 03:56:19 UTC</createdTime>
+<generatorID>7611BCF6-E4CA-8A9D-4528-DFDD08D100F1</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>document_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="拟做的检查" id="39A9FD3C-07D3-6B58-CB0E-9B800E24C3E0">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:31:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>examination_plan</preferredAbbreviation>
+</Attribute>
+<Attribute name="拟做的医学检验" id="940BEB2D-15BE-4B43-EB84-7B3FB58609B0">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:32:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>lab_test_plan</preferredAbbreviation>
+</Attribute>
+<Attribute name="今后治疗方案" id="4B085568-6CDF-22A9-2A2D-B9C0F92FE64A">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:32:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>clinic_plan</preferredAbbreviation>
+</Attribute>
+<Attribute name="随访标志" id="A232F23E-99E1-EBC6-9F0E-617974A60E1F">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:32:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>follow_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="随访间隔（随诊期限）" id="9D1F33B7-E306-564D-98CE-6E6A23BEACE8">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:32:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>follow_interval</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱" id="2F539153-BCB1-2B02-CBF1-5F285BD464B0">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:32:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>order_content</preferredAbbreviation>
+</Attribute>
+<Attribute name="特别注意事项" id="4B284B58-CDBB-1039-DF5B-0A857943F402">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:32:53 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>special_notice</preferredAbbreviation>
+</Attribute>
+<Attribute name="辨证分型" id="E6C43A07-2D99-8134-8001-BE3D382655D8">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:33:08 UTC</createdTime>
+<comment>Syndrome Differentiation Classification&lt;br/&gt;运用中医理论对疾病进行分析判断后，按证候类型加以区分的过程</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>classification</preferredAbbreviation>
+</Attribute>
+<Attribute name="辨证依据" id="54A6227A-2C57-5004-7D6F-BD89CB48EA87">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:33:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>diagnosis_treatment_basis</preferredAbbreviation>
+</Attribute>
+<Attribute name="治则治法" id="C15F0EFE-22E8-DDD2-FE7A-C2B6BD731B64">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 04:33:17 UTC</createdTime>
+<comment>治则 ,是治疗疾病的法则 ;治法 ,是治疗疾病的具体方法。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>therapeutic_method</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F36088E3-EEA3-D660-F29F-66AEACD2681A" name="pk_treatment_plan">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 03:55:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>583D29CD-EB20-4B6D-2B95-D7F6A62A90ED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

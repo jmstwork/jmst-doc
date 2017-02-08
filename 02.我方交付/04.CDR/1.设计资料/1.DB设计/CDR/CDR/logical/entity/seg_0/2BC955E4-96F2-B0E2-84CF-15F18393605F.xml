@@ -1,0 +1,232 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BC955E4-96F2-B0E2-84CF-15F18393605F" name="地址信息">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:34:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>patient_address</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="地址内部序列号" id="D54C51C3-FEEF-2A2D-F94A-201394C6B515">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:34:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_patient_address</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>address_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="患者内部序列号" id="2FD08378-0F2C-35E2-7552-EE3F740B476F">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:35:19 UTC</createdTime>
+<comment>CDR系统为患者分配的唯一标识</comment>
+<generatorID>141CDBAF-35F9-193D-9502-639A84E121FD</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F6249756-CD89-FBAB-17A8-2AAB706DAAD3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="地址类型代码" id="5AD99588-1638-F30F-CD1E-A587DB49D391">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:36:32 UTC</createdTime>
+<comment>出生地&lt;br/&gt;户口地&lt;br/&gt;现住址&lt;br/&gt;联系人地址&lt;br/&gt;单位地址&lt;br/&gt;</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>address_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="地址类型名称" id="C6B52C36-7355-561C-CF0C-73BFEF9B446F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 06:28:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>address_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="地址区县码" id="F39A16B7-8F41-0318-3BF3-20A807E3B379">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:38:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>district_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="地址区县名称" id="9359EECB-5785-D5FA-913E-75BF6427BE0F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 06:29:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>district_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="乡镇街道名称" id="F3165DBF-8A5B-3897-541B-7E20F6940203">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:38:33 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>sub_district_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="完整地址" id="861E4AF8-A951-0290-3DCC-1A6B0FDC7880">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-21 03:18:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>full_address</preferredAbbreviation>
+</Attribute>
+<Attribute name="邮政编码" id="4D756087-91F3-9C5A-54B4-C46BC300CD47">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 03:31:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>zip_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="71438DB1-CFED-6FE2-6A32-25A0806AE951">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:36:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="F6F3BE5A-D927-B2B1-A74A-6832F7D157C0">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:36:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="E836DEF5-6FD8-80C5-DAB9-DC59C6D61230">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:36:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="698CBE12-F190-F9E1-7098-89F747D9F695">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:36:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="5B02527F-5E62-37F8-4BBC-F14ADE48352E">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:36:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="0463FE80-15F9-4FD1-E5D0-EB82D22796FB">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 04:56:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="24EC83CA-53F4-652D-F5A8-C2ACB4D227FF">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 04:56:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="9FBF35CE-B04B-1409-3999-D3419B1F1B04">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 04:56:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E27C2FAA-6298-10DF-01A9-F51A0DC55F45" name="pk_patient_address">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-13 02:34:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D54C51C3-FEEF-2A2D-F94A-201394C6B515</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

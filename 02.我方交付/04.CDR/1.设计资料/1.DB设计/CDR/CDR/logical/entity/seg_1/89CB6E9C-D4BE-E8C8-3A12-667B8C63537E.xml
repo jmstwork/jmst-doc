@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="89CB6E9C-D4BE-E8C8-3A12-667B8C63537E" name="隐藏药品表">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:35:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>hide_drug</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="隐藏药品内部序列号" id="0CFE5F43-D642-6929-1ACA-A3D9763718E2">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:36:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>hide_drug_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="药品编码" id="BF5BF8DF-7287-547E-6A18-D1BB7BC8F9BE">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:37:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>drug_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="药品名称" id="85AE96D1-ED8D-93BF-97B9-002E2944402B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:38:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>drug_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="药品序列号" id="9A7D4A7C-A785-5F5D-E57D-959350C5FA29">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:38:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>serial_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="用户标识" id="A0EF2874-1CA8-EB37-D3C4-D70466F854B7">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-20 01:44:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>user_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="43DF8DCB-AF0D-248E-C8CF-15D6482E6251">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:39:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="D6BE289F-CE4D-E6ED-8F6E-3E9C8B4AAEF2">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:39:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="9F9C5A1F-857E-B50F-FDAD-D4F19140C051">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:39:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="FB015FF8-214E-9F27-8F4C-E1D311C8DE62">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:39:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="2093B972-CFF5-A7DA-B8CF-52147C070031">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:39:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="85D936F9-6E2F-2817-FD5D-8B3A2BAF5916" name="pk_hide_drug">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-19 05:36:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0CFE5F43-D642-6929-1ACA-A3D9763718E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

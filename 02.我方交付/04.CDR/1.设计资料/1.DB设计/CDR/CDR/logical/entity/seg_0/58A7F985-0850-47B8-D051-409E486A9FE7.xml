@@ -1,0 +1,371 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="58A7F985-0850-47B8-D051-409E486A9FE7" name="过敏/不良反应">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 09:59:14 UTC</createdTime>
+<comment>数据来源于HIS门急诊中的patient_allergic_history表</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>allergic_history</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="过敏/不良反应内部序列号" id="06F8A734-C416-F2D4-CB53-015B19CCE23B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:27:04 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_allergic_history</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>allergic_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="患者内部序列号" id="D210A1BC-00BC-EA51-163D-150D8D05B648">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 10:06:45 UTC</createdTime>
+<generatorID>CDF23019-27B6-A616-5B27-17019829ABBB</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F6249756-CD89-FBAB-17A8-2AAB706DAAD3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="域代码" id="E9D59FE1-4214-421F-8CFF-9DF4DD06476E">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 03:33:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者本地ID" id="56D7736F-E8B8-97E6-47FF-3184B4FB3971">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 03:33:47 UTC</createdTime>
+<comment>门诊号，住院号，或是体检号</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="AB2311F8-BB85-57EC-D434-8785F47990F5">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-09 02:31:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="C796FDAF-709C-E524-2A13-598AFA3C458B">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-09 02:31:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏症状代码" id="21A495D2-1940-5466-93CB-FDD6FF22787F">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:16:02 UTC</createdTime>
+<comment>[CV5101.56过敏症状代码]</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>72</dataTypeSize>
+<preferredAbbreviation>symptom_code</preferredAbbreviation>
+<source>CV5101.56过敏症状代码</source>
+</Attribute>
+<Attribute name="过敏症状" id="9009A9A4-F951-CB80-A414-6C50E1BAB79D">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:15:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>allergic_symptom</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏原代码" id="E9B003F9-F81B-93DC-93C7-C0E1071C1A03">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:16:29 UTC</createdTime>
+<comment>[CV5101.03过敏原代码]</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>48</dataTypeSize>
+<preferredAbbreviation>allergen_code</preferredAbbreviation>
+<source>CV5101.03过敏原代码</source>
+</Attribute>
+<Attribute name="过敏原名称" id="665503C6-C4D7-71BF-ADD9-A9F90E3C7F06">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:16:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>allergic_source</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏病情状态代码" id="AE463A18-6747-F2B2-3973-611FE3BD9F5B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:17:06 UTC</createdTime>
+<comment>[CV5101.57过敏病情状态代码]</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>allergic_condition</preferredAbbreviation>
+<source>CV5101.57过敏病情状态代码</source>
+</Attribute>
+<Attribute name="过敏病情状态名称" id="A02B9E25-0BBE-8D40-41D7-00043AE7A2E6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 05:55:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>allergic_condition_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏严重性代码" id="7F1C84AC-D874-18D2-C486-E198D8E2711D">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:17:26 UTC</createdTime>
+<comment>[CV5101.58过敏严重程度代码]</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>seriousness</preferredAbbreviation>
+<source>CV5101.58过敏严重程度代码</source>
+</Attribute>
+<Attribute name="过敏严重性名称" id="729675EE-ABE9-4005-86E6-66230FBEAFB6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 05:57:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>seriousness_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏开始日期" id="621FAD9B-69C9-D9E2-107E-6D3872B09773">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:17:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>allergic_start_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏症状停止日期" id="44F5C106-0121-D973-0303-8D53F1F803AA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:18:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>allergic_stop_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏类型代码" id="136ED777-4942-3824-4678-2F2435D1F01A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-09 03:07:56 UTC</createdTime>
+<comment>是否是药物过敏</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>allergic_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="过敏类型名称" id="028F9EAA-280D-E4B2-9316-2ED311E03441">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 05:58:04 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>allergic_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否家族史" id="E4F5BA29-7DCF-64EC-F37C-96FA99C084D5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-09 03:10:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>family_history_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="备注" id="F1EBDBF3-BF36-F8B6-9DD2-B942D1FFE5E2">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-09 03:12:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>600</dataTypeSize>
+<preferredAbbreviation>memo</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="E092A59C-296E-DFEF-6B52-2F9AB9C66B17">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="9E333237-2FB2-CB90-719B-BC235791164B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="1C038AE0-DB5B-F17F-90AD-4612E5EF6CFB">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="64C996F4-89AE-D25E-A33A-B8F35ADA4D5F">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="73EADF3E-D91F-E367-FD03-45E681B23714">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="F29E57E2-BB6F-0321-3BDC-B352ACB307DD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:37:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="C1AEF57A-6061-6355-3EDA-D48A2F47E636">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:37:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="27D76281-5EDD-5904-5165-E36BEB453171">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:37:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E11F3CAC-4EE9-0CAD-0E05-F0E6E301C265" name="pk_allergic_history">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-14 02:47:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>06F8A734-C416-F2D4-CB53-015B19CCE23B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

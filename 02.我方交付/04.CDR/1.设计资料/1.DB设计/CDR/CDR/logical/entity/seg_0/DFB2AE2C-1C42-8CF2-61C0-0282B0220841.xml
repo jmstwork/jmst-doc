@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFB2AE2C-1C42-8CF2-61C0-0282B0220841" name="召回记录表">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:50:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>withdraw_record</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="召回记录内部序列号" id="029D666B-543D-F907-63D9-197010C30A14">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:51:05 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_withdraw_record</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>withdraw_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="就诊内部序列号" id="3BDD0C99-8E6C-801A-3A5E-36963E87C1E4">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-21 05:28:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>visit_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告内部序列号" id="D8494600-A708-04B1-F297-0A0FE5BDB1E3">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-19 02:12:56 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>report_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="引用类型" id="E9ADE897-86A3-B485-3D98-10E9148E6C00">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-19 02:12:56 UTC</createdTime>
+<comment>表明影像是检验还是检查</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>ref_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="召回人ID" id="C75C737B-79D1-877C-9F50-3E5A299A12D5">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:51:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>withdraw_person</preferredAbbreviation>
+</Attribute>
+<Attribute name="召回人姓名" id="45D72499-0BA7-DC9B-8AAB-E379F5871F1C">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:52:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>withdraw_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="召回时间" id="903B5FE3-5121-5156-BB0B-9645699F5B88">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:52:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>withdraw_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="召回原因" id="69653A00-53F9-5DEE-59A3-85B8EC280845">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:53:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<preferredAbbreviation>withdraw_reason</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="6EAA68B1-1DD2-E64D-746D-F579A02321CD">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="D861CA77-5860-DB3D-78E7-FB3860AB7029">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="BCB056C1-C64D-197E-58EE-B1F695E04189">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="2EB2786C-93F4-EB52-BF02-E31887FC3C51">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="42EA5142-69C3-B43D-E338-7F5E13806C2A">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="2588F3ED-EFDA-E855-84A8-C6E111CFA078">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 02:47:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="863F4169-C0B4-34AB-6AFE-15597443BBAE">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 02:47:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="D0548A53-53AB-BB10-6F24-EC8BDE6BFB81">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 02:47:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC546B44-82AE-B73A-8D8E-6D935FEAFAD8" name="pk_withdraw_record">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:51:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>029D666B-543D-F907-63D9-197010C30A14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

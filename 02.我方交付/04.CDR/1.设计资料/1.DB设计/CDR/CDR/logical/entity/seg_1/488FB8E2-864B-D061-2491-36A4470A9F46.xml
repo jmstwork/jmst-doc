@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="488FB8E2-864B-D061-2491-36A4470A9F46" name="角色权限表">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:16:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>system_role_auth</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="角色权限内部序列号" id="4F050558-F2B4-48A5-4B6F-1BA7EDF9A244">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:16:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_system_role_auth</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>system_role_auth_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="角色ID" id="7A75FA19-3593-5AD5-DD90-B1D1139E8972">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-28 07:52:32 UTC</createdTime>
+<generatorID>E520894F-3517-7907-0084-687BCCE9A98E</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>68F08984-0BA1-D659-1578-A418FEFDE86B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>system_role_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="权限ID" id="74C4CE2A-D712-4BAD-67A4-4B3C1E040F8E">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-24 03:00:25 UTC</createdTime>
+<generatorID>63F462EA-3FAD-B304-2801-08D6F74F72C3</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>40C04681-94E6-A7F0-3501-DC1FB49BC0F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>system_auth_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="EBCD596B-0A3A-4234-B25F-BB474256CCDC">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:20:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="6AA637C1-8AAC-A85E-2391-1C59101FB0CD">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:20:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="89661727-473C-01B2-3B8B-9C90A86E4E99">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:20:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="29FB665A-EA82-C373-F60F-431955C6EF9B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:20:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="C98A299D-ABD2-98F8-A942-EF40DF669589">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:20:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="205F5D45-7BB2-7A9A-43D0-06FB194CCFC7" name="pk_system_role_auth">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-23 06:17:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4F050558-F2B4-48A5-4B6F-1BA7EDF9A244</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

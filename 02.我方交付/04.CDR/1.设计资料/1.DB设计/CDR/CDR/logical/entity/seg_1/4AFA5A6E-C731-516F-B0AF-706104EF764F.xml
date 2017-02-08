@@ -1,0 +1,255 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="4AFA5A6E-C731-516F-B0AF-706104EF764F" name="预警业务明细表">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:07:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>external_send_report</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="预警业务明细内部序列号" id="ED2107FD-F891-F88A-0653-579C0B8BC51C">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:08:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>report_content_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="预警业务内部序列号" id="A9E5E09A-4C99-78C3-DBDF-B81310706BCD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:20:24 UTC</createdTime>
+<generatorID>6E35883F-ADDE-73D5-6E5C-6FFA6235DAFF</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>C3A78ED2-9EAF-1456-EC20-866C8056736A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>business_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="传染名称" id="8DBA3257-FED9-E446-4F3E-C5FAB7AA66B2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<preferredAbbreviation>infectious_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="传播途径" id="D97C28EF-BDDB-E9E2-4CAF-061FC88825A2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:16:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<preferredAbbreviation>spread_way</preferredAbbreviation>
+</Attribute>
+<Attribute name="发送状态" id="2D7D8F65-E9A6-2272-812E-BB0CD120D703">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:17:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>send_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="发送日期" id="E28DD0E8-FBE4-3E13-204D-20A112CE92F2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-17 02:48:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>send_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="预警内容编码" id="BF55E623-6770-BF91-5777-64DD6936302F">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36</dataTypeSize>
+<preferredAbbreviation>report_content_item_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="预警内容名称" id="FA832350-BF4E-0EE1-E9A4-DE63B54356FE">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<preferredAbbreviation>report_content_item_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="院感科内部发送时间" id="9110FADC-1A43-2161-139A-77C8E0853B9F">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-11 09:00:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>send_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="院感科以外发送时间" id="6D5AED41-30AF-7B59-994F-7460DFEC58A9">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-11 09:00:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>send_others_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="院感科以外发送标识" id="D7979ABF-33EE-5DEC-37C3-5DA0284760F7">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-11 09:00:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>send_others_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="病例分类字段" id="55BE1951-EB6B-2F16-4F69-B1D96401674C">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-11 09:00:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>medical_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="对外发送日期" id="E4D8284B-F0BC-7627-3CE4-9C1316FE5F4E">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-17 02:52:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>send_others_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="对外发送标志" id="27E71A82-F505-82C0-E2D1-DC7991F0C031">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-17 02:55:42 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>send_others_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="感染结果" id="8E47680E-02FA-83D8-EED6-201F94499D25">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-24 02:24:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<preferredAbbreviation>infect_result</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="FBB3CBC3-C318-650C-5960-89FAA34CA01F">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="6D281355-41F4-185D-E4A0-DE0E98AF6370">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="0AA7D1B2-BB9A-E0C3-BB09-4405C0786290">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="BA52E1ED-8582-8B36-984D-CD2FDF0AED46">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="4E81F513-822C-7BF3-AEC5-59CDDFE68025">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:13:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A8D5BEDC-C3CB-8F4E-8B05-14EF27F852F1" name="pk_send_report_content">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 05:11:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ED2107FD-F891-F88A-0653-579C0B8BC51C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9CD87284-B888-C305-F932-1FE87ECBA2BA" name="用药医嘱与发药记录">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 07:51:05 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>med_order_dispensing_record</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="医嘱内部序列号" id="891F7310-AC07-F450-7653-F55C682057BF">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 07:57:51 UTC</createdTime>
+<generatorID>2BDAEE40-8308-E603-B459-836FFA4AB6D6</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>4DBD5964-952C-4AAD-144A-1B017DBFFE5A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>order_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="发药记录内部序列号" id="71A42327-9CC8-4764-B788-0962273797AF">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:00:53 UTC</createdTime>
+<generatorID>19FB3CFB-AA47-E803-E219-1F735D333FCD</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>17CD2AC9-9142-C938-3994-1343C0182E2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>dispensing_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="发药量" id="529B9438-56E4-9F93-49A3-DA62DDD6999A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-29 02:53:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>dispensing_quantity</preferredAbbreviation>
+</Attribute>
+<Attribute name="领量单位" id="48F0CC1D-E8B9-B42F-977B-93B3D4D63342">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-29 02:53:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>dispensing_unit</preferredAbbreviation>
+</Attribute>
+<Attribute name="批次号" id="08A2BD06-8A53-3548-EC17-15C8B471E8DD">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-20 07:54:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>batch_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="5FEE7599-6EF2-3CEF-9DFC-669838DE2E64">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:10:05 UTC</createdTime>
+<comment>只在记录创建时记录系统时间，以后的修改、删除都不变更创建时间。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="7FF486D9-1714-5562-AA6C-D89F6E17D4B8">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:10:05 UTC</createdTime>
+<comment>记录创建时与创建时间一致，取系统时间。以后更新时都去系统时间。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="75ECF208-D623-A795-7F9F-B618EB1A1EE1">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:10:05 UTC</createdTime>
+<comment>记录创建时初始为1，以后每次更新都加一。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="D4FB99C5-AC01-573C-9230-8EF4B0386405">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:10:05 UTC</createdTime>
+<comment>默认为“false”，逻辑删除时修改为“true”。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="5111221D-9A88-7BA1-A594-22532AB1BEC0">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 08:10:05 UTC</createdTime>
+<comment>默认为空。逻辑删除时，记录系统时间。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="0305408E-7C1F-F466-10D9-6B1CF75C5B16">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="8FC6728B-7989-F039-2C12-A8817B46BEF5">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="E4ADD2C8-B418-99BB-98B0-8F26A94D7FC8">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:55:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="708F77A2-8B51-7752-ACDE-9342DD5B6F77" name="pk_med_order_dispensing">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-03 09:15:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71A42327-9CC8-4764-B788-0962273797AF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

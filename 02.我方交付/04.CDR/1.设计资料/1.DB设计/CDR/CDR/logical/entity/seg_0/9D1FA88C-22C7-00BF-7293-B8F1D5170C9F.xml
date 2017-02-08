@@ -1,0 +1,272 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D1FA88C-22C7-00BF-7293-B8F1D5170C9F" name="病理检查标本信息表">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:40:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>pis_specimen</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="标本内部序列号" id="5555F4C7-DC8C-D6C3-A61F-CB10E25B520C">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:41:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_pis_specimen</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>specimen_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="标本切块数" id="FC97B7F4-3764-7184-3DA4-B369A3855CEA">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:42:56 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>total_cut_blocks</preferredAbbreviation>
+</Attribute>
+<Attribute name="全埋/脱钙块数" id="D10711C0-3E78-96E7-D116-DCEE66B9F090">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:45:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>butied_blocks</preferredAbbreviation>
+</Attribute>
+<Attribute name="冰冻片数" id="B78AAB04-10B0-E082-8452-A7CDFA377E33">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:47:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>frozen_pieces</preferredAbbreviation>
+</Attribute>
+<Attribute name="H&amp;E片数" id="043049A2-A9A7-C662-5F89-FCE361054567">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:48:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>h_e_pieces</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫组化片数" id="47900CF3-E27B-8536-2C00-67A4E9D44088">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:48:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>immunity_pieces</preferredAbbreviation>
+</Attribute>
+<Attribute name="标本颜色" id="88722EDE-F569-F66F-EC73-9F120C9FEF88">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:49:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>color</preferredAbbreviation>
+</Attribute>
+<Attribute name="组织" id="67888FBC-15D6-771F-4C83-1FCC76BFD051">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:50:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>organization</preferredAbbreviation>
+</Attribute>
+<Attribute name="送检标本块数" id="D2B32A39-0E11-3CD4-A1CC-B58B92A27945">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 07:08:42 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>send_blocks</preferredAbbreviation>
+</Attribute>
+<Attribute name="标本大小" id="3712AF85-A650-407F-282C-12CE3AC5D5A6">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:51:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>size</preferredAbbreviation>
+</Attribute>
+<Attribute name="标本切面" id="3465F935-2A22-6595-BCD1-2242594AB782">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:52:38 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<preferredAbbreviation>section</preferredAbbreviation>
+</Attribute>
+<Attribute name="标本取材人ID" id="DC4F92A5-3712-2554-68B4-F75EAD3E2724">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:53:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>get_person</preferredAbbreviation>
+</Attribute>
+<Attribute name="标本取材人姓名" id="CCA47583-7900-DC14-7FA6-81EE9427EA90">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:54:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>get_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="记录人ID" id="CA28AE44-3693-5D1F-E40C-D8AEA25714C7">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:55:07 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>record_person</preferredAbbreviation>
+</Attribute>
+<Attribute name="记录人姓名" id="EAF53034-5006-C263-CFB1-E6FD1ECA4F04">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:55:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>record_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="冰冻送检时间" id="60778A2D-7D47-876C-B995-E00A56D248C4">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:56:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<preferredAbbreviation>frozen_check_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="EF4BDEF1-3169-FB3D-B496-D03E2E3904BF">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:58:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="EC63158A-931D-1A01-0F8F-0C11A2314F38">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:58:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="DA733652-089F-9DF1-2CF8-5A845447ADEF">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:58:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="FB775877-AD2C-5595-755A-CF0DC92AD719">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:58:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="FA838C1A-D922-D939-8EB5-C16367557946">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:58:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D464DC69-18E4-3BFE-7A48-605D64703B84" name="pk_pis_specimen">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 06:41:53 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5555F4C7-DC8C-D6C3-A61F-CB10E25B520C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

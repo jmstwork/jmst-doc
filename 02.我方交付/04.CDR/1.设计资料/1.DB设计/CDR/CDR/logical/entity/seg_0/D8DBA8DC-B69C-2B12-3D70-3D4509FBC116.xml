@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D8DBA8DC-B69C-2B12-3D70-3D4509FBC116" name="系统菜单">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:29:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>system_menu</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="菜单内部序列号" id="211251A8-DDF7-0FB0-85D5-A46D05790CBF">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:31:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>menu_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="父菜单内部序列号" id="35768A13-CCE7-E2B3-1349-62C06DC8556A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:31:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>parent_menu_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="菜单代码" id="72B1583C-B963-0244-3580-EAF6DF465454">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:31:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>menu_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="菜单级别" id="88911D6A-9F64-56E5-88E1-933578CAD372">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:32:04 UTC</createdTime>
+<comment>一级菜单，还是二级菜单等等</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>menu_level</preferredAbbreviation>
+</Attribute>
+<Attribute name="菜单名称" id="5187E2AC-1484-151C-9F4D-25EE8F3F60CC">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:32:38 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>menu_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="权限列表" id="77E7DF1E-B302-18F1-4A84-5E258999E594">
+<createdBy>wujf</createdBy>
+<createdTime>2012-09-20 05:41:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>auths</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="22A55B0C-BF79-68AE-89D1-523283A21C9D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:33:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="0D1D8863-2D9B-F08D-7D65-E7F610C05D60">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:33:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="E7EE642F-2D6E-0158-0B1F-9D540D18585F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:33:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="A55523D4-54B8-7A32-0611-A329406AE3D6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:33:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="2EC1A4A4-5EFC-6675-D8D9-21B8EEEEADE9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-11 06:33:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14E838EB-868F-862A-A5BD-D64E4F38A4A9" name="pk_system_menu">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-18 06:58:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>211251A8-DDF7-0FB0-85D5-A46D05790CBF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,396 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="E3F0351A-B80E-D892-0DEC-8A3659B8A237" name="预警业务表">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:53:05 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>external_send_business</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="预警业务内部序列号" id="C3A78ED2-9EAF-1456-EC20-866C8056736A">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:54:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>business_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="域代码" id="8E128EA6-E963-7CCA-C4C6-7A5F0EA5EA5F">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:54:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者本地ID" id="15AA577F-F8E6-E93B-9AAE-D79F4F878395">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:54:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="文档号" id="86FEDFC8-8EFE-CB82-1B3D-1CDB541A4360">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:54:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>business_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="文档类型编码" id="962AAB1A-2E11-BE22-4088-E089D0DF8CE3">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:54:28 UTC</createdTime>
+<comment>01 传染病报卡 02 检验报告</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>business_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="文档类型名称" id="6B23D9BB-AE6C-0868-856F-F8542521C661">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:59:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<preferredAbbreviation>business_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="病区编码" id="1182E84D-B453-74DE-68EA-165C8AD1FDA8">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-07 07:33:56 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>ward_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="病区名称" id="993E00CD-F659-D9C7-75D8-E2DAB4F93780">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:59:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>ward_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="床号" id="14DBD240-7380-2463-7503-FFFE8368FEFA">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:59:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>bed_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者名称" id="12741A49-3141-4BBB-AB69-44B1AA1E0C00">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:59:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>patient_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告日期" id="2946D7B1-D8BD-E5E2-B52C-12E28330FA64">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:05:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>report_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="4E3D0578-67C9-E4B7-FFCE-4BAEDB0142BE">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:16:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="F1E6D20D-3E96-C3F1-4454-BCE14CF94EA0">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:16:33 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="就诊次数" id="8CCB7D6F-11C8-961F-EF71-44873038F4D2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 07:53:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>visit_times</preferredAbbreviation>
+</Attribute>
+<Attribute name="病历号" id="D256BE5F-B6E5-B18F-856B-351FD07DF2E6">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-25 07:55:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>medical_record_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="性别编码" id="A82A81E6-310A-E86D-56C6-8807EDD91217">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-25 07:55:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>gender_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="性别名称" id="638A8C3E-ED68-5531-B5E5-652708F48A9E">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 04:58:05 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36</dataTypeSize>
+<preferredAbbreviation>gender_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="年龄" id="E4AD8695-B6E9-A074-F744-5BB35C7BD04E">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-25 07:55:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36</dataTypeSize>
+<preferredAbbreviation>age</preferredAbbreviation>
+</Attribute>
+<Attribute name="出生日期" id="C40E75CD-4E93-4F08-BCCB-633DDF76EB90">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-25 07:55:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>birth_day</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告医生编码" id="D5647AE8-79E6-8CD9-3E7A-E5D61C1DA1AE">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 04:59:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>report_doctor_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告医生名称" id="7DDEE8CE-BA05-8D35-CD58-724F18621688">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-25 08:01:07 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<preferredAbbreviation>report_doctor_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告科室编码" id="DCECAB55-D130-3303-A484-BD81B3464407">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-03 04:59:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36</dataTypeSize>
+<preferredAbbreviation>visit_dept_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告科室名称" id="8706237C-7792-2A64-99A5-60831CC93CF4">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-25 07:55:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>visit_dept_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告类型编码" id="FE5CEC61-330A-6D8F-4E19-95342A763EE1">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-24 08:03:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>report_type_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="报告类型名称" id="238D49B0-D1E3-5310-AFD8-E7A9185F1275">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-24 08:04:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>report_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="系统源id" id="DE99690B-376F-CCDC-0F39-51EEE7E5FD07">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-04 05:56:19 UTC</createdTime>
+<comment>区分普通lis检验与微生物检验报告</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>source_system_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="审核状态" id="54A5403F-FF1C-265C-A71B-1BAFD52E2665">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-19 08:33:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36</dataTypeSize>
+<preferredAbbreviation>legal_status</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="9E9B8F7A-FA76-094B-49B4-C3BDC76B2617">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:11:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+</Attribute>
+<Attribute name="更新时间" id="F0F450E7-A8F4-CBD9-C505-CE468757E21E">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:11:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="757D79E7-21E6-C6C8-3818-830BBE89FDEB">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:11:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="047F21E9-B5BE-5427-D71B-B2923017B718">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:11:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="0C44053A-31F6-6919-BAD6-5D8B63E2FB0D">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 02:15:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECE537E5-068D-6CDB-CC86-B3444961D945" name="pk_external_send_business">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:55:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C3A78ED2-9EAF-1456-EC20-866C8056736A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

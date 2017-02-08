@@ -1,0 +1,427 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83B432CB-D6E8-BDBD-CF62-F1894A9D2676" name="挂号收费">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 04:59:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>registration_fee</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="挂号内部序列号" id="D48DC7EF-8DE7-4380-F555-CEA4479653D2">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-19 03:41:30 UTC</createdTime>
+<comment>挂号产生费用标识</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_registration_fee</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>registration_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="就诊内部序列号" id="D5146184-60AC-D8F8-DDB4-40603D80DD59">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-13 06:40:51 UTC</createdTime>
+<comment>就诊标识</comment>
+<generatorID>C5593CF4-C3DA-8DBB-864F-03D74F33F239</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>0C0406E0-9491-8975-C7D4-DA4A84AECFAA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>visit_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者内部序列号" id="99D2B4A1-45B5-A065-1E2C-F0DDB35D84B3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-29 03:56:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="域代码" id="DA556A1E-1865-9D99-4C53-2498689B88C3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-29 03:56:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者本地ID" id="485F804A-3D9E-AB65-06D4-B0F965135A04">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-29 03:56:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="F9A7B64C-830E-E29C-83F6-6553C1F2B870">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-09 04:46:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="1B0B064C-83A5-FB86-65A9-651E0C6850BD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-09 04:46:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="结账次数" id="422EBE46-E368-D8BD-89BF-43D79A01C487">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:28:46 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>ledger_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="付款金额" id="2D21BA10-CD8F-034D-1FDD-2714FB3E7D00">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:33:35 UTC</createdTime>
+<comment>表示此次挂号费用</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<preferredAbbreviation>amount</preferredAbbreviation>
+</Attribute>
+<Attribute name="付款方式代码" id="53C58178-9154-1069-330A-E1FC52CFF95D">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:33:35 UTC</createdTime>
+<comment>患者此次就诊挂号所发生费用的付款方式&lt;br/&gt;如：现金 银行卡 预付费卡</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<preferredAbbreviation>payment_method</preferredAbbreviation>
+</Attribute>
+<Attribute name="付款方式名称" id="28634264-C0E1-6CF7-6669-1B02CA286BB6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 05:20:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>payment_method_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="付款状态代码" id="3D732DBB-6BF0-410B-2123-FD71D89CF836">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:33:35 UTC</createdTime>
+<comment>1=交&lt;br/&gt;2=退&lt;br/&gt;3=结转&lt;br/&gt;4=冲帐...</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<preferredAbbreviation>charge_status</preferredAbbreviation>
+</Attribute>
+<Attribute name="付款状态名称" id="4625E519-BFD4-EB1E-09F6-288D3A165603">
+<createdBy>wujf</createdBy>
+<createdTime>2013-03-05 06:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>charge_status_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="数量" id="FA324554-EC02-B2F3-440C-278E3A504831">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-29 08:46:13 UTC</createdTime>
+<comment>患者挂号数量。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>quantity</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否使用医保" id="8C45968B-538A-8D33-0267-F168EC79B068">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-28 03:19:25 UTC</createdTime>
+<comment>患者挂号时是否使用医保卡</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>insurance_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="实收金额" id="4BAC4430-254C-2ADB-98FE-EB53564AF442">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-28 03:22:28 UTC</createdTime>
+<comment>患者此次挂号实际应收金额</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<preferredAbbreviation>received_amount</preferredAbbreviation>
+</Attribute>
+<Attribute name="收款人员ID" id="93EDC877-9053-9174-64E6-82CE10CD0B26">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:33:35 UTC</createdTime>
+<comment>此次费用的收款人</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>payee</preferredAbbreviation>
+</Attribute>
+<Attribute name="收款人员姓名" id="ACA6FFD0-3BA7-D157-D0E4-BAD8EA8B5386">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 05:21:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>payee_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="收款时间" id="B05514CC-AF5D-B0AB-F95D-D38E3C8B8ABB">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:33:35 UTC</createdTime>
+<comment>此次费用的收款时间</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>paid_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="确认人ID" id="177878D3-DFFF-1C40-F6DE-80D3443F5E2C">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-29 09:04:07 UTC</createdTime>
+<comment>挂号确认人</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>confirm_person</preferredAbbreviation>
+</Attribute>
+<Attribute name="确认人姓名" id="32A26E89-B4D5-9DCE-9D23-C9A29D4A22CC">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 05:21:38 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>confirm_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="确认时间" id="380CA8EE-BDE4-A09E-EF79-C8A66321B344">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-29 09:06:08 UTC</createdTime>
+<comment>挂号确认时间</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>confirm_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="确认窗口号" id="80EB3551-82DF-FABB-284D-DEBBE0CD2455">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-29 09:06:40 UTC</createdTime>
+<comment>挂号确认窗口号</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>confirm_window</preferredAbbreviation>
+</Attribute>
+<Attribute name="窗口号" id="B102CE04-D440-706B-99C8-66B5D2DD8D96">
+<createdBy>ris</createdBy>
+<createdTime>2011-12-21 10:48:22 UTC</createdTime>
+<comment>此次收费的窗口号</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>input_window</preferredAbbreviation>
+</Attribute>
+<Attribute name="发票流水号" id="C94B5825-8874-E9DB-E196-8D44C7C4B699">
+<createdBy>jin_peng</createdBy>
+<createdTime>2011-12-29 09:12:32 UTC</createdTime>
+<comment>挂号完成时打印的发票编码</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>receipt_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="BF82D0A0-9407-7CD3-59FF-402D2DF1D499">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:23:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="FDDAC1AC-546D-0F14-2FCA-FEC3175CCDBA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:23:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="386E303F-04F9-19B6-9F58-9E9B6DFD6E57">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:23:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="69C626F4-4B36-1024-9E36-B8C79A6A9A02">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:23:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="D94FF364-ACD0-E644-894B-B77A416D447C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:23:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="BD8B15D9-5E73-A42A-BB06-BB12FD58D8C6">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-11-28 06:43:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="13E5F7C4-6E63-41E2-B70F-D96709AE5324">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-11-28 06:43:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="00832D9A-0383-737A-1B09-2EDF61119C69">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-11-28 06:43:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D4CA361-B100-110F-A545-E86482DADDA8" name="pk_registration_fee">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-19 03:41:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D48DC7EF-8DE7-4380-F555-CEA4479653D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

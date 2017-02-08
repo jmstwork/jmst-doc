@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B8F5519B-252C-4140-2756-0DD271EF5DA4" name="系统设置">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 01:45:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>system_setting</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="登陆用户编码" id="C25E5C71-3962-B8FC-2511-6F824727979B">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 01:46:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>user_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="显示菜单项目" id="F3E11B8D-E57F-E8C5-4325-29F0755CBC96">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-26 01:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>display_menus</preferredAbbreviation>
+</Attribute>
+<Attribute name="就诊索引视图设置" id="182880B6-4C5D-A3DC-D2ED-4F3BB4F56041">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-25 09:02:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>visit_index_views</preferredAbbreviation>
+</Attribute>
+<Attribute name="门诊视图设置" id="1BBB4A70-D03D-232F-0E75-76B4062C268B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-25 09:03:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>outpatient_views</preferredAbbreviation>
+</Attribute>
+<Attribute name="住院视图设置" id="B2201112-7D65-03ED-1FA2-B4F540CBAE91">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-25 09:04:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>inpatient_views</preferredAbbreviation>
+</Attribute>
+<Attribute name="时间轴视图设置" id="AF83EB42-C66C-A784-500D-93DE045E1694">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-25 09:04:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>timer_views</preferredAbbreviation>
+</Attribute>
+<Attribute name="综合视图设置" id="8522E457-5940-1BC9-688E-18C29918BEFC">
+<createdBy>wujf</createdBy>
+<createdTime>2012-12-25 09:05:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>normal_views</preferredAbbreviation>
+</Attribute>
+<Attribute name="每页显示行数" id="30A37AA4-251A-A234-D43B-13E6D8679ADC">
+<createdBy>wujf</createdBy>
+<createdTime>2013-01-17 10:31:06 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>rows_per_page</preferredAbbreviation>
+</Attribute>
+<Attribute name="检验历史曲线对比结果显示条数" id="C7C22092-3E66-D2F6-DAC2-C46E47E0F271">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-19 03:17:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>rows_per_page_lab</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="122D6F49-FF00-2D21-D579-C14216903DC6">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 01:57:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="B276CDE9-AB99-584A-14DA-C5444218086E">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 01:57:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="04C8CE8C-7EAF-56F2-9AC6-E14EC79BA5DF">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 02:00:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="26A7D118-B1F8-7471-DB35-19D74B050B17">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 02:02:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="17AA0DCA-E178-40CB-71AF-06B0DB285818">
+<createdBy>guo_hongyan</createdBy>
+<createdTime>2012-03-22 02:03:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="85676CE8-3BF5-6591-7E01-D1FDD3389F8C" name="pk_system_setting">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-18 06:59:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C25E5C71-3962-B8FC-2511-6F824727979B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

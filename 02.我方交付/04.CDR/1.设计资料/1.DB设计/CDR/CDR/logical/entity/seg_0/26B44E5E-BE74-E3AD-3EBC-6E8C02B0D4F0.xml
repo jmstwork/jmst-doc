@@ -1,0 +1,328 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26B44E5E-BE74-E3AD-3EBC-6E8C02B0D4F0" name="人员字典">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 03:00:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>code_person</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="人员ID" id="55C31D3E-2840-06B3-1B85-A11C143FEDE2">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:48:12 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_code_person</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>code_person_id</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="编码ID" id="1DA5439D-BB14-F2D2-B9A1-BD305E3B5B74">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:49:22 UTC</createdTime>
+<generatorID>80883ECE-EAC8-C717-15D7-CFD615486D14</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F9793AB8-5E2C-39CE-F653-9E6D9C37A446</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>cs_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="人员编码" id="00183BFE-71D1-C956-F241-493FA0EE4216">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:50:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>code</preferredAbbreviation>
+</Attribute>
+<Attribute name="人员名称" id="28BD88ED-0B83-E575-6B8A-072DFB18208C">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:51:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>name</preferredAbbreviation>
+</Attribute>
+<Attribute name="拼音码" id="845F705C-26DC-B192-A5CE-A528932AB787">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:51:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>38</dataTypeSize>
+<preferredAbbreviation>py_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="性别码" id="832F67D6-B0B9-527E-D296-6F80F3593EB5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:51:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>32</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<preferredAbbreviation>sex_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="在岗状态码" id="9FA6814B-7C09-E1B8-C281-6E38A957D8D5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:51:38 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>employment_status_cd</preferredAbbreviation>
+</Attribute>
+<Attribute name="岗位类别" id="C8E74DD7-D056-1271-D363-1BC01587623E">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:51:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>job_category</preferredAbbreviation>
+</Attribute>
+<Attribute name="科室编码" id="066BD836-AE6B-528A-28BF-04BA6152E45D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:51:53 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>32</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<preferredAbbreviation>depart_cd</preferredAbbreviation>
+</Attribute>
+<Attribute name="电话号码" id="ABC743EE-7F52-44AB-AD44-E03908EF8864">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:52:05 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>32</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<preferredAbbreviation>phone_number</preferredAbbreviation>
+</Attribute>
+<Attribute name="人员类型码" id="7DBCACA6-99EF-1690-1787-748A66DC3D0A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:52:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>32</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<preferredAbbreviation>employee_type_cd</preferredAbbreviation>
+</Attribute>
+<Attribute name="邮箱" id="07FB2047-725A-AEFA-B0B3-36DE171D69CA">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:52:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>mail_address</preferredAbbreviation>
+</Attribute>
+<Attribute name="入职日期" id="1271A42F-E7E2-F420-EAE7-17AE81AB9295">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:52:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>service_start_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="科室名称" id="7CB58B07-1F30-8F8E-DDD6-9657F82495D9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-30 06:53:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>depart_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="出生日期" id="3948F227-07BE-4C8D-5D5D-63EEDEDEDA35">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-30 06:53:55 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>birthday</preferredAbbreviation>
+</Attribute>
+<Attribute name="身份证号" id="26D19B5F-1606-40C4-389E-4D5B5A47341E">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-30 06:55:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>national_identifier</preferredAbbreviation>
+</Attribute>
+<Attribute name="财务科室编码" id="B33CA478-AF02-74DB-C5ED-CC340F07A9BE">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-30 06:55:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<preferredAbbreviation>financial_depart_cd</preferredAbbreviation>
+</Attribute>
+<Attribute name="财务科室名称" id="EB89863F-2CB3-5F4E-9F43-72C092C73586">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-30 06:55:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>financial_depart_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="排序" id="80DEEF98-200B-D5C4-0B84-855C409FC1A9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 06:07:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>seq_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="版本号" id="5B04CE3D-F06A-9600-ACCB-7FDCF764BBE0">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-31 05:29:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>version_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="8DB1B429-0CDB-5CB0-9E63-D7CF4C7038D9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:53:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="A8E0FF16-683B-8FCE-E68D-E7527CAC4409">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:53:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="A790B496-3121-51DB-3B05-5A7881F5AC3D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:53:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="08D5A916-A569-B16E-3E5F-E75AAE2AD04E">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:53:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="6A40B869-D249-63B6-14DE-AF340A79844F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:53:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E988796-D9D8-A7E2-8475-A0C9304C069F" name="pk_code_person">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-14 05:48:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55C31D3E-2840-06B3-1B85-A11C143FEDE2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

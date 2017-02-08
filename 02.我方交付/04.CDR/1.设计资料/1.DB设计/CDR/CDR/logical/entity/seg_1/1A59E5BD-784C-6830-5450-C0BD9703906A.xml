@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="1A59E5BD-784C-6830-5450-C0BD9703906A" name="警告通知">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 07:57:06 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>warning_notice</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="警告通知内部序列号" id="B6A01FD1-D6E3-E319-F629-8D6193EE2FE0">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 07:57:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>warning_notice_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="B20E2E8F-6B62-5312-6331-CB2882D260DA">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-16 02:27:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="7CBE9F24-A700-24EA-7239-2D11C717B634">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-16 02:27:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="科室编码" id="AAEF77D7-3BA3-CC10-1D5C-900D9DB9B89D">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 07:58:56 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>unit_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="用户编码" id="9A699F6B-AC30-93B7-7EDA-58E258C5F4AB">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:00:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>user_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="规则组编码" id="F9BEC504-B150-56A2-53FF-CF69F75F9601">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:01:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>rulegroup_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="用户类型编码" id="BB0953F7-0DC2-00D1-9A74-8B7AC7BBC57A">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:02:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<preferredAbbreviation>user_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="病区名称" id="A33D2F46-FE89-4858-C998-DC4A63CB467B">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-03-24 01:38:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>ward_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="6F6B538F-13CF-A764-2464-17EA05CE4B40">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:03:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="CD9DD907-C186-573D-001A-889025E52846">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:03:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="1388D4DE-ABA0-D17F-F9BF-89256A1F680E">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:03:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="9DFEED93-DC74-472C-13B4-AE700837560F">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:03:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="6B06CC6D-FAD7-BF0B-423C-A03D153A8DA5">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:03:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7778B159-B0B4-4F6B-FE65-5C3243F09E87" name="pk_warning_notice">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:03:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B6A01FD1-D6E3-E319-F629-8D6193EE2FE0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

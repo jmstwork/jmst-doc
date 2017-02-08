@@ -1,0 +1,219 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="87F71C52-D7C2-5267-F359-4D8633699A44" name="审计日志表">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:35:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>system_audit_log</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="审计日志内部序列号" id="1B019595-9D85-6F55-0CBB-2CD340EECC21">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:35:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>audit_log_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="唯一标识" id="59C23559-C261-F823-1E2F-17C36D778DBD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 06:12:31 UTC</createdTime>
+<generatorID>0B5AA166-91A1-11C7-C454-EE7A0000996E</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>61D34E8C-7FDB-3098-7E23-6D4CF48A4375</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>account_log_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者本地ID" id="02CD9B3F-F8E7-1761-797F-D2E4367E9CC2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:35:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="域代码" id="A5D35B14-080C-63AA-5AFA-AE42DBC9E4D3">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:35:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="44E3F4EC-744B-58C1-1C4B-1AA21BB02311">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-23 06:38:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="79E08FBC-B5C2-5A7C-DBC1-FF06079A7200">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-23 06:38:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="操作时间" id="A36A0F39-4975-403D-3213-0F80ECCEB061">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:35:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>operation_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="数据类型名称" id="466515CD-2A57-EB03-DBCD-8621B96F2F1A">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<preferredAbbreviation>data_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="业务数据编号" id="598E5A71-A2FB-4777-4F6C-C446C2207B6C">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<preferredAbbreviation>business_data_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="项目名称" id="214A3530-0897-5558-9ECC-EE0CCD6F72E0">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1200</dataTypeSize>
+<preferredAbbreviation>item_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="消息内容" id="2DA2A2A7-D6D8-A4BB-EFD6-43E7D4F920EF">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<preferredAbbreviation>message_content</preferredAbbreviation>
+</Attribute>
+<Attribute name="成功发送标记" id="FE422C5B-92A8-94CC-F119-907D231E5313">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>success_send_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="CA649CB5-B275-CE0F-BC42-069AE725CCEB">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="10906B3C-D1EF-EDD3-DA0F-08598B8894FD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:48:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="D68EF311-C5EF-235E-17C3-79892F45E429">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:53:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="4359BA0B-CB32-8CD9-E376-3470A3152EF0">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:53:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="9FDF6D38-F309-4A74-09BF-F7B4C2F96FA1">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:53:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B7C57839-8D93-48D8-E00B-6A1D14925A79" name="pk_system_audit_log">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 05:42:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1B019595-9D85-6F55-0CBB-2CD340EECC21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

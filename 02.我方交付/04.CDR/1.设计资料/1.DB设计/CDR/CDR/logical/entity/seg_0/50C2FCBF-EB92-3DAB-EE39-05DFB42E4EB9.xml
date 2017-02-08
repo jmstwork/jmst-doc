@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="50C2FCBF-EB92-3DAB-EE39-05DFB42E4EB9" name="值域字典">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-17 03:10:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>code_value</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="值域ID" id="EE627F7C-BBC6-333D-91DF-D6D2843FCF4B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-17 03:11:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_code_value</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>cv_id</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="编码ID" id="9B12DE98-F644-E8FD-CA00-BBE34188677B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-17 03:10:41 UTC</createdTime>
+<generatorID>F66BA2D3-15B5-FC91-417B-C280477C11CA</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F9793AB8-5E2C-39CE-F653-9E6D9C37A446</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>cs_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="值域编码" id="16DB2FB9-B3ED-4371-1B7F-1C373682235A">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-17 03:12:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>cv_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="值域名称" id="58699C1B-F8BD-7726-4C64-5B82651BC706">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-17 03:13:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>cv_value</preferredAbbreviation>
+</Attribute>
+<Attribute name="拼音码" id="D141EC03-83C3-00F2-6EF3-F38CB8B59A38">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 09:56:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>py_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="显示顺序" id="FD65A1C3-1BBD-94C9-6338-2935AF113EEB">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 09:56:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>seq_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="版本号" id="2BA6DB23-728B-8DB7-CA3C-5A3F6EABF70D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-31 05:26:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>version_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="编码类型" id="AC9D8C56-1B23-EA3F-0E1B-6CD0A4BF28A4">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 06:34:47 UTC</createdTime>
+<comment>采用标准</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>standard_flg</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="F9834CD1-F2E0-A5EB-6F69-602621CD2C43">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 02:51:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="E27A4640-4C3E-9096-292B-F71547194833">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 02:51:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="103314C3-AB1B-FFA3-BA7D-00497FE65ABF">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 02:51:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="B219B4EF-F5BA-7EBF-B0DB-75483E76F9DF">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 02:51:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="B1D1E4D1-370A-0323-3CD1-A6922F1A298C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 02:51:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D76BA9AC-8278-9EA1-79CA-75051EC3F716" name="pk_code_value">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-17 03:11:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE627F7C-BBC6-333D-91DF-D6D2843FCF4B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="479CC39A-D451-A24C-2184-1D235AF49B1C" name="麻醉事件">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-16 09:21:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>anesthesia_event</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="麻醉记录内部序列号" id="35C0DFAB-5048-7EEC-67E7-0C060CEAFB6D">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-16 09:21:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_anesthesia_event</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>event_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="麻醉内部序列号" id="87252F3B-F216-3AB0-F837-300E3CADF6C8">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-16 09:21:41 UTC</createdTime>
+<generatorID>98D9D481-F3D5-3855-8AFD-D255A1881DC8</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>72C26092-CDB4-02A8-2285-AFCC938C7211</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>anesthesia_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="操作人员ID" id="5CA4BC89-7916-40B4-DB9D-4040692863E9">
+<createdBy>wen_ruichao</createdBy>
+<createdTime>2011-12-30 02:02:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>operator</preferredAbbreviation>
+<source>人民医院人员代码</source>
+</Attribute>
+<Attribute name="操作人员姓名" id="87CD5FF2-0D0B-67EB-2F18-DB40891A0849">
+<createdBy>founder</createdBy>
+<createdTime>2012-03-16 05:22:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>operator_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="操作类型" id="680D8D5E-21CB-FE89-8D96-01498F2E1389">
+<createdBy>wen_ruichao</createdBy>
+<createdTime>2011-12-28 07:10:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>operation_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="开始时间" id="788FCAF6-1A69-30DF-5DA9-C04CB2F255E6">
+<createdBy>wen_ruichao</createdBy>
+<createdTime>2011-12-28 08:09:11 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>start_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="结束时间" id="78674304-776C-CAD8-278A-AD615E41DD9A">
+<createdBy>wen_ruichao</createdBy>
+<createdTime>2011-12-28 08:09:11 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>finished_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="操作内容" id="FF569CE1-57C2-B281-052A-D3E6E3E369B0">
+<createdBy>wen_ruichao</createdBy>
+<createdTime>2011-12-30 03:38:33 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>operation_content</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="33769CF9-C354-BD77-BA9D-94DE01C4E169">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:16:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="DBE52B6E-6C5B-F008-3CEC-0D6C80DAC4A8">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:16:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="B483E140-1E3B-AF46-2517-C33A3A0B9782">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:16:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="F83048D7-8E17-12D9-3D6B-4F11D8DDF0BE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:16:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="B719A7D4-8DC8-C129-5EFB-C3E84F136576">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:16:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29CB7B8A-028C-F071-5984-40DB4CBDB89F" name="pk_anesthesia_event">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-16 09:21:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35C0DFAB-5048-7EEC-67E7-0C060CEAFB6D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

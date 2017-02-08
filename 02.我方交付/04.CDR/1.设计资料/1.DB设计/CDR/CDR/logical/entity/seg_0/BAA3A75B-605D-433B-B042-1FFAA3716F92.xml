@@ -1,0 +1,246 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BAA3A75B-605D-433B-B042-1FFAA3716F92" name="危险性信息">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-09 01:47:51 UTC</createdTime>
+<comment>卫生部定义的个体危险性标识有如下项目：&lt;br/&gt;01	过敏体质&lt;br/&gt;02	高龄&lt;br/&gt;03	妊娠&lt;br/&gt;04	精神病&lt;br/&gt;05	艾滋病&lt;br/&gt;06	传染病&lt;br/&gt;&lt;br/&gt;HIS门急诊的patient_physiological_status表有如下项目：&lt;br/&gt;•肝功能不全&lt;br/&gt;•肾功能不全&lt;br/&gt;•孕妇&lt;br/&gt;•哺乳期&lt;br/&gt;&lt;br/&gt;其中的孕妇与妊娠是重复的。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>risk_information</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="危险性信息内部序列号" id="FFC8B0C7-9F2D-25F4-F216-1CF38D64188C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-23 01:40:48 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_risk_information</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>risk_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="患者内部序列号" id="A1DA922A-63F5-7569-5DEE-FA9D8DB099EF">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-09 01:48:55 UTC</createdTime>
+<generatorID>B9F29863-892D-33D3-A366-0965308E9CBA</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F6249756-CD89-FBAB-17A8-2AAB706DAAD3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="2C1F5567-BBDB-5306-4EBC-88AD6BB8C2A2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-11 06:23:55 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="5FF46DF0-9DCA-E07B-3226-A92CA903A2F9">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-11 06:23:56 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="域代码" id="B04BD537-7FD6-E4AB-2D84-B808DD06CCE4">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 03:34:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者本地ID" id="51ED7FB2-3866-2244-F5FC-A3580385C7CE">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 03:34:25 UTC</createdTime>
+<comment>门诊号，住院号，或是体检号</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="危险性代码" id="D6E3C8B8-E7CA-7570-89E1-4EBEFA0B9E71">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-09 01:48:02 UTC</createdTime>
+<comment>[CV0103.01个体危险性标识代码]&lt;br/&gt;&lt;br/&gt;包括生理状态的肝功能不全、肾功能不全两项。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>risk_code</preferredAbbreviation>
+<source>CV0103.01个体危险性标识代码</source>
+</Attribute>
+<Attribute name="危险性名称" id="57C6214B-F0AF-111B-CAB1-B793206C5880">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-20 08:01:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>180</dataTypeSize>
+<preferredAbbreviation>risk_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="失效日期" id="54DEF6E3-83D8-314C-4B82-6F8B5381541E">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-23 01:39:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>expiration_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="信息来源" id="BF66A36D-A0F6-984C-D1A4-DB09F89E8BFD">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-28 06:24:09 UTC</createdTime>
+<comment>来自各系统还是有CDR根据规则从诊断信息中抽取的</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>info_source</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="724A457B-0B9F-6B2D-791B-65C99A134F70">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="77B4C526-EA31-1E0E-99B7-C490300F8829">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="908171C5-5785-AC6F-B0D4-FD2FC47652C0">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="CB2498F7-806D-41C9-6E28-E5145BAB5006">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="D660B188-176D-1742-563B-B20E2A983FC6">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:13:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="17714545-C1F9-5EC7-B3B2-81EB0FC52042">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-31 00:09:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="C3A7D77C-E310-6136-253A-E3E46189726C">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-31 00:09:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="653C6F98-322B-3D3A-59AD-710F855A8766">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-31 00:09:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05DAD5B9-66EA-DFDA-BA22-A62F775559B8" name="pk_risk_information">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2011-12-09 01:48:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FFC8B0C7-9F2D-25F4-F216-1CF38D64188C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

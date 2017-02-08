@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="584E7B28-81D3-C955-E3BE-3D6D404577D5" name="手术参与者">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-12 07:13:38 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>procedure_participants</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="参与者内部序列号" id="9E65D121-8A69-FFBD-DD1D-E11E2C405E65">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-12 07:14:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_procedure_participants</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>participant_sn</preferredAbbreviation>
+<source>人民医院人员代码</source>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="手术内部序列号" id="A75C98F5-A5F7-18DE-8EFB-6D3F2713742D">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-12 07:15:27 UTC</createdTime>
+<generatorID>366FFE23-BCC0-9984-B37B-50A9F57F82E4</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>6EA9A10E-5AE3-D74B-7329-BA5273D341B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>procedure_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="参与者身份代码" id="BF83CB9B-1857-E606-B4F2-F887669C7EB5">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-12 07:15:44 UTC</createdTime>
+<comment>主刀、主麻、辅麻、麻醉助手、上台护士、巡回护士等</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>participant_identity</preferredAbbreviation>
+</Attribute>
+<Attribute name="参与者身份名称" id="1A2112C8-9841-2EB9-B6C6-4A3B0E56A65D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-02 07:09:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>participant_identity_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="参与者ID" id="25728301-4375-2EB5-F78D-6D644D3CF6DA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-15 12:03:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>participant_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="参与者姓名" id="5A2AB938-5B72-769E-A38F-53CAD514497B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-12 07:17:04 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>participant_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="137F154B-45FB-457A-C9EF-FA83C783F490">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:17:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="8FD630BD-94C9-FC92-33D5-5AC2B50E5BC3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:17:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="4D8E74B0-B5B0-FE1C-A815-B457D7CCF0C5">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:17:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="D1AD74B5-D4AB-6332-B6EA-4478E9918DA9">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:17:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="885F4FB3-8EAF-E3BB-7C87-A753E4464703">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 02:17:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0886782C-F5EF-5DD5-63B3-D3203C04C1D9" name="pk_procedure_participants">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-01-12 07:15:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E65D121-8A69-FFBD-DD1D-E11E2C405E65</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

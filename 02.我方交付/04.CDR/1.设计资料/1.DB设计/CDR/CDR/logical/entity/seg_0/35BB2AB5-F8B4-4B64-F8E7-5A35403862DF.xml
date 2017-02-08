@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35BB2AB5-F8B4-4B64-F8E7-5A35403862DF" name="免疫接种史">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:57:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>immunization_history</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="免疫接种史内部序列号" id="BB5E9847-B485-C1FA-7B05-1AC98FF2E5D3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:58:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_immunization_history</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>immunization_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="文档内部序列号" id="BF3E53CA-62D4-D983-36FD-C9D07D7419FD">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:58:58 UTC</createdTime>
+<generatorID>1301D15B-BFFD-07A1-CD25-8DA7DAA9E20B</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>document_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="疫苗名称代码" id="84869922-4DFB-B8F8-094D-D287D4ED0A21">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:00:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>vaccine_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="疫苗名称" id="A9FEC111-488E-5D2A-8274-40152FC4BC75">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:00:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>vaccine_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="疫苗批号" id="732C4B2F-9D5D-C76A-332A-95992A6BF7BE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:00:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>vaccine_lot</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫类型代码" id="D4AC65FC-5EA8-133E-682A-67854083E7F3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:00:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>vaccine_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫类型名称" id="92B97EC6-0378-BF3F-3E27-19AE608D3BCD">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 02:24:38 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>vaccine_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="疫苗接种日期" id="01A63DCE-6DAE-678C-4E93-D9F2523CD876">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:01:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>inoculation_date</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫接种方法代码" id="2AE35EEE-4629-6786-3407-333777B38569">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:01:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>inoculation_method</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫接种方法名称" id="2AEF3DD4-AB09-4FE8-C387-6D3854F7A0CF">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 02:25:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>inoculation_method_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫接种状态代码" id="70EB1783-4CF6-7038-99FE-1C37E1FEB249">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:01:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>inoculation_status</preferredAbbreviation>
+</Attribute>
+<Attribute name="免疫接种状态名称" id="2EF80CCB-5E9E-CE47-28F9-665BB1B2C338">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 02:25:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>inoculation_status_name</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="892D29BE-29FF-4C24-4C68-9E29915230CF" name="pk_immunization_history">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:58:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB5E9847-B485-C1FA-7B05-1AC98FF2E5D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7BD8AF10-B184-E0F3-92A9-9C1AB193E1EC" name="警告通知详细">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:06:25 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>warning_notice_detail</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="警告通知详细内部序列号" id="FBD7F915-2559-37EC-58AF-051DB0B965CB">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:06:55 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>warning_notice_detail_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="警告通知内部序列号" id="5CCD4066-B6A1-E701-DA96-1CA67C42F80F">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:09:09 UTC</createdTime>
+<generatorID>A1A540F1-7957-E2A0-EA1E-C6CE57612567</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>B6A01FD1-D6E3-E319-F629-8D6193EE2FE0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>warning_notice_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="通知方式" id="2DD71AE6-4E77-F21B-20CC-83F07DA258C8">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:08:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>notice_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="设定值" id="600AAF81-8CBF-0A1A-87B0-AC2AC526D640">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:10:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>setting_value</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周一)" id="89DCC370-5E8D-AC76-2706-4097F44CBB9A">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:10:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>mon_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周二)" id="4C384C7D-F110-FD78-6307-DA6257955638">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:11:04 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>tus_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周三)" id="FB5457BF-769A-ECAB-EE30-5F0B67224746">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:11:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>wed_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周四)" id="2DDA4F58-48DC-983D-FD07-67E7AD45506F">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:11:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>thu_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周五)" id="76756A0F-8B55-EBD4-C120-FA48DD90453C">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:11:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>fri_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周六)" id="D05D0CEC-9D8A-686E-2470-CB7D3321C133">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:11:46 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>sat_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="标示(周日)" id="147C44B8-BD01-463B-E8D2-1584B11333C2">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:11:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>sun_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="A60BB5A4-747A-DB00-0EF9-ED327268C4F3">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:14:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="70A0FEA6-6D0D-425E-693A-98D879900CF3">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:14:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="B0EC1F2A-AAB2-B57D-EE8A-DF9369B4DF37">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:14:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="72C6C78A-866F-F66F-EF1E-F4FB358EE010">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:14:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="7B12B612-4839-CEEB-23D3-661685E0265A">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:14:57 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B334AE0A-240A-2F35-05A6-7B279D6841F8" name="pk_warning_notice_detail">
+<createdBy>wujf</createdBy>
+<createdTime>2013-05-06 08:08:11 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FBD7F915-2559-37EC-58AF-051DB0B965CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

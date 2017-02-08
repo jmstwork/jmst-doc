@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="A3E69FAA-62F4-0780-0ADC-A59631CCD1D7" name="用户反馈意见表">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:00:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>user_feedback</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="反馈意见唯一标识" id="C9B2C42D-61E3-D424-5B70-7062B0DE67A2">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:01:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_user_feedback</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>feedback_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="用户ID" id="690ED8AA-DD87-305C-CC47-B2713F49DA0C">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:02:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>user_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="意见内容" id="48E17CFB-977B-10BB-BA7F-A547DC8E0B4A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:03:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<preferredAbbreviation>content</preferredAbbreviation>
+</Attribute>
+<Attribute name="回复次数" id="1DFC72F3-F0C4-1CA8-2C74-074E47AC4F80">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-19 05:50:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<preferredAbbreviation>reply_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="反馈父记录内部序列号" id="423F0DB1-7EE8-8B9C-D655-31AAD872476A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-19 05:50:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>parent_feedback_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="用户名称" id="2A0AF739-28DA-8915-A015-DF7440A24E63">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-19 05:50:03 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56</dataTypeSize>
+<preferredAbbreviation>user_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="69423700-F703-0067-BB8E-2F1D914C5186">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:04:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="59820A67-CB0F-A7D2-9E94-22FC717CAE6F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:04:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="51C21C32-8FE7-6C25-198E-0B2EA85917BB">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:04:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="D96F640D-72A9-84D6-F924-CAD5AEE4F1F9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:04:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="FD67EB66-00E3-8F05-1988-15A44F1149F4">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:04:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B7AC6443-E8EE-9DC9-2FFB-E6D338411F74" name="pk_user_feedback">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-12 05:01:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9B2C42D-61E3-D424-5B70-7062B0DE67A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

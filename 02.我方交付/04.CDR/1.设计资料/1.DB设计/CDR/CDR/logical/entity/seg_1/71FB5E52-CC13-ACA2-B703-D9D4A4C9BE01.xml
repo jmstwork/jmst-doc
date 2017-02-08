@@ -1,0 +1,345 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="71FB5E52-CC13-ACA2-B703-D9D4A4C9BE01" name="输血记录单主表">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>blood_record_menu</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="内部序列号" id="E949BE43-CB4B-80F1-0507-C51DF704BC7D">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_blood_record_menu</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>menu_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="申请单内部序列号" id="EFE1162A-C820-24A3-7ADC-BF2378686520">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:46:33 UTC</createdTime>
+<generatorID>C114C51D-A75D-BFD6-CBA8-F9DE92D8B151</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>BBCB8941-37CC-AFEC-0D97-078D51E60685</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>request_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者就诊序列号" id="B6ABA881-AACB-DBD2-CEED-37044438697F">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>visit_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者序列号" id="CD7F133C-A14A-6D91-5D36-543057B64604">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者ID" id="C19DE662-683B-993E-FFC2-E615FF9F944D">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="输血记录单ID" id="8F6AAB99-BBA5-DCC7-197F-B36B8071E7E2">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>menu_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构ID" id="34262DCF-21B8-DFC3-F694-04E70E14C589">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗结构名称" id="059A9106-7529-D4AD-F8B1-2D943F7DC923">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="域ID" id="EE2B2E04-DEAE-6E05-C167-F85EFF1DEED1">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="申请ABO血型编码" id="0FD77E0B-EFD8-7586-CC07-CBC3C5E756A5">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>request_blood_abo_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="申请ABO血型名称" id="FB32F41A-2C9B-BB46-2616-B1AA4B631B4B">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>request_blood_abo_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="申请RH血型编码" id="9B453E3D-D58F-98BE-AFFE-967317006F84">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>request_blood_rh_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="申请RH血型名称" id="1C39A4E7-86C5-DB3F-0AE9-25F719B48777">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>request_blood_rh_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="复检ABO血型编码" id="B1FDA252-CC0B-0D8A-6717-5E795DDF6B48">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>recheck_blood_abo_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="复检ABO血型名称" id="54120A50-E4F4-4C34-40EE-BF73F33DB9D6">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>recheck_blood_abo_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="复检RH血型编码" id="5AD8C918-0670-0E09-0ADB-F77A487EC4B3">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>recheck_blood_rh_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="复检RH血型名称" id="C5C92F18-21F7-B2F4-B931-864F3F076A1D">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>recheck_blood_rh_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="备注" id="8C20E3E8-FA34-9F57-4A49-E49973F94A9F">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<preferredAbbreviation>remark</preferredAbbreviation>
+</Attribute>
+<Attribute name="输血记录单生效日期" id="E0E27DC3-3623-E59A-BB13-A63A5AECF671">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>effective_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建人" id="BAE32404-8201-AFA3-2CF5-974ABE721151">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="412067C0-E497-6800-CF5A-6312384E53A3">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新人" id="8265587A-FECF-4DA8-0962-A2D46900B7DF">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="788102DC-BD08-14B9-7677-EA7168498D29">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新次数" id="5F668A68-696C-0D06-05CC-156722EC015F">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除人" id="4432680F-F115-2747-A9B6-5488581FD085">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标识" id="DFA7F704-EA63-649B-4FD4-E095FE86A7E8">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="C8488AB7-608F-9C3C-0B55-31C8FB731BE2">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA1BC5B1-0BB7-5E69-5A5D-A98A47F986FB" name="pk_blood_record_menu">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 05:45:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E949BE43-CB4B-80F1-0507-C51DF704BC7D</attributeRef>
+<attributeRef>EFE1162A-C820-24A3-7ADC-BF2378686520</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="A283BB4E-833A-B77F-637F-8B644F46B9F8" name="患者就诊医生">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:12:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>patient_doctor</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="患者就诊医生唯一标识" id="FE05BFB6-F5E8-9335-FBCC-BFCB8776A3C2">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:13:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_patient_doctor</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_doctor_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="患者内部序列号" id="541BC145-84C1-3FC0-6632-C5E80F0DFB63">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:15:25 UTC</createdTime>
+<comment>CDR系统为患者分配的唯一标识</comment>
+<generatorID>6260B760-6570-1ED5-A36C-8E76258FE497</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F6249756-CD89-FBAB-17A8-2AAB706DAAD3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="就诊内部序列号" id="35ADF555-2AE4-E639-D89D-7C0C412AC7F4">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-12 02:00:18 UTC</createdTime>
+<generatorID>7D405062-ABEA-F3F9-66C7-0A6C32D65CA8</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>0C0406E0-9491-8975-C7D4-DA4A84AECFAA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>visit_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="医生编码" id="AD1392B9-177E-07CC-AF94-F0D4993DFFB5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:17:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>doctor_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医生名称" id="4D452403-AD33-AF7F-D806-0598EE65C937">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:17:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>doctor_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="8626A7CD-4023-C245-5A3F-74CBFFC1DF2B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:19:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="AD5AE1EE-07BB-2A9A-66C6-C3F13F9DE4F9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:19:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="497BC369-12CE-4920-DC98-8E52945AB6F4">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:19:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="150F7418-671E-0E39-A785-74CF1A14563D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:19:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="8A80042F-AD6B-BFA6-49E1-3C1C77B2A371">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:19:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="A4BBB87D-F686-38B2-A591-A70DAF4F7F58">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 05:00:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="E3D2B491-E01F-D0ED-5819-39D479968166">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 05:00:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="F11D3194-CFD6-4298-0C8A-3BC4FECF8475">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 05:00:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2244ACFE-41CD-98B1-8D6A-C7B03D3F6839" name="pk_patient_doctor">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-07 08:14:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FE05BFB6-F5E8-9335-FBCC-BFCB8776A3C2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

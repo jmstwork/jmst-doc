@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD786C65-6573-B223-89B3-894DC9DB4781" name="问诊">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:29:01 UTC</createdTime>
+<comment>个人史&lt;br/&gt;家族史&lt;br/&gt;社会史&lt;br/&gt;生育史&lt;br/&gt;暴露史&lt;br/&gt;</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>inquiry</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="问诊内部序列号" id="20FC9CEE-34AA-8C3D-040C-F61C4F0D9376">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:54:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_inquiry</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>inquiry_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="文档内部序列号" id="8280AA7A-6014-B7C0-A2CA-301FBD3C4C19">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:54:43 UTC</createdTime>
+<generatorID>070F1E26-1885-144B-B1A2-F2CAA4E642BE</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>document_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="问诊分类代码" id="79991C38-98F4-F5CA-DDD8-AB9CEF30C776">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:55:28 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>inquiry_category</preferredAbbreviation>
+</Attribute>
+<Attribute name="问诊分类名称" id="973FED80-EACD-60B3-2E39-68D73BC1AF6B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 02:30:46 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>inquiry_category_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="问诊项目代码" id="75D44F98-EB87-BF9A-DC84-8A4345264593">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:56:05 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>inquiry_item</preferredAbbreviation>
+</Attribute>
+<Attribute name="问诊项目名称" id="14B1C514-71DC-767F-EC41-B501BCB3C4B9">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 02:33:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>inquiry_item_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="问诊结果" id="599BFA93-1DD3-6333-A10F-20B6F55B4423">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:56:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>inquiry_result</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4BE18D1-9C88-0EF9-33BA-A9E6BA98236A" name="pk_inquiry">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 05:54:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>20FC9CEE-34AA-8C3D-040C-F61C4F0D9376</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

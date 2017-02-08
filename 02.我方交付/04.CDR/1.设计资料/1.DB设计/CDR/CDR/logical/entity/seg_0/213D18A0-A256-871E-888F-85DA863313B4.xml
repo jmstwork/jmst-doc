@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="213D18A0-A256-871E-888F-85DA863313B4" name="消息表">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 08:54:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>message</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="唯一标识" id="A0EF1E8B-C731-729F-3E82-1A4EC72F0532">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 08:55:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>id</preferredAbbreviation>
+</Attribute>
+<Attribute name="消息ID" id="71157CC4-DD4E-4A47-EDAA-6CAD56A9B1FB">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 08:56:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<preferredAbbreviation>vid</preferredAbbreviation>
+</Attribute>
+<Attribute name="日期时间" id="7EA6F878-6949-72DC-5CEF-4739378B62A0">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 09:04:07 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>datetime</preferredAbbreviation>
+</Attribute>
+<Attribute name="消息状态" id="F25398D4-B9C2-8099-D18F-BE259FC2331D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 09:04:58 UTC</createdTime>
+<comment>0:未运行&lt;br/&gt;1:正在运行&lt;br/&gt;2:保留</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>state</preferredAbbreviation>
+</Attribute>
+<Attribute name="batch ID" id="4EA2AB47-F98C-C305-64F3-53B588A3ED1D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 09:06:22 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<preferredAbbreviation>batch_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="service ID" id="A6663B50-449B-5E79-C140-3568A798DC98">
+<createdBy>wujf</createdBy>
+<createdTime>2013-03-05 06:47:11 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>service_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="domain ID" id="97ABB632-85AB-B483-1D12-5146988A892F">
+<createdBy>wujf</createdBy>
+<createdTime>2013-03-05 06:47:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>domain_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="执行科室" id="68FC8F6D-1387-2812-0219-F7751FE9D93E">
+<createdBy>wujf</createdBy>
+<createdTime>2013-03-05 06:48:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<preferredAbbreviation>exec_unit_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱小分类" id="2E6F2636-4EFF-D773-9836-46E12C9F093A">
+<createdBy>wujf</createdBy>
+<createdTime>2013-03-05 06:49:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>order_dispatch_type_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="64BD7BC7-C68E-E3AB-46D5-E54560AD4ECE">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-03 05:31:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="消息源系统编码" id="4085C09A-625D-8B19-8355-84446E588E0C">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-12-05 02:16:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>source_sys_cd</preferredAbbreviation>
+</Attribute>
+<Attribute name="预警状态" id="F3F70E16-EB51-2C17-226D-6BD4AF7463F2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2014-02-24 01:21:41 UTC</createdTime>
+<comment>传染病报卡相关</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>external_state</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="BFEAF2D2-5768-1A01-E55A-C5FEB2E2B4A1">
+<createdBy>wujf</createdBy>
+<createdTime>2013-02-27 02:54:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="C106287A-3591-45C5-9209-697CC468CD04">
+<createdBy>wujf</createdBy>
+<createdTime>2013-02-27 02:54:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="消息内容" id="7AF457DE-27A6-DBB7-B98A-9BC17B097A2B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 09:00:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<preferredAbbreviation>content</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7911C21E-416C-7804-604E-39DBA51B07B5" name="pk_message">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-23 08:56:12 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0EF1E8B-C731-729F-3E82-1A4EC72F0532</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

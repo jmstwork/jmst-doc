@@ -1,0 +1,806 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECAC715F-14D2-1EC6-71BD-CADBDAD71B81" name="其他医嘱">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:31:42 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>general_order</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="医嘱内部序列号" id="0137C0C1-4C23-B78B-8A21-0170C8DDE795">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:34:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_general_order</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>order_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="就诊内部序列号" id="10CB4EC5-5E6E-016F-C570-28570CCE1CE2">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:35:17 UTC</createdTime>
+<generatorID>67A5E013-DFB6-7B8F-8F38-4325172D8EDE</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0C0406E0-9491-8975-C7D4-DA4A84AECFAA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>visit_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者内部序列号" id="68DF7532-5207-A6E2-76A2-C2D63CDA0168">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>patient_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="域代码" id="1EBF354C-C956-A709-9B6E-99CA57FBE446">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<preferredAbbreviation>patient_domain</preferredAbbreviation>
+</Attribute>
+<Attribute name="患者本地ID" id="2F23D91E-0EC8-9E99-3F8D-502F00526ECC">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>patient_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构编码" id="3A6E2FD3-969C-FEA6-B342-06424104E0F0">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-09 02:25:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医疗机构名称" id="2C534407-EBBF-B86C-BA28-8209029AA60B">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-09 02:25:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>org_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="本地医嘱号" id="8BFDC540-CEAB-07F6-C8D0-B7732FC30004">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>该医嘱在业务系统中的唯一标识。</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<preferredAbbreviation>order_lid</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱类型代码" id="34AFBC7E-D64D-6553-35BF-67CE8E7DFC1C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>护理医嘱、材料医嘱</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>order_type_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱类型名称" id="2A90D4C6-63C1-9422-FA05-0C2B4E8509AC">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 06:48:45 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>order_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱编码" id="DA921753-172E-F8FC-F006-952E2EF30415">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:17:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>order_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱名称" id="E1FAE447-8297-49CA-E2F5-3C6389683ED0">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱名称</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>order_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱状态代码" id="05B76CB4-56B3-3D5A-E120-CD17560D6B89">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>order_status_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱状态名称" id="C33D4E02-96C8-4077-2E63-A89FA77DEE23">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:37:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>order_status_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱预定开始时间" id="99987174-4D22-7FB7-72B8-CDDC25BD0C2E">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>预定执行时间</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>plan_exec_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱停止时间" id="6ED14919-33E7-4F8A-FEFD-D7FC54AB6886">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-08 04:30:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>order_end_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱执行频率代码" id="05C30456-94E0-1766-8BCE-E4AE513DF928">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>exec_freq_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱执行频率名称" id="F5807E2A-D301-675E-FF24-A26A21AE8744">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:23:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>exec_freq_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱执行科室ID" id="28548856-550D-F3BA-0470-09B516DE6E3F">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱执行科室</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>exec_dept_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱执行科室名称" id="13ECC082-C870-6444-6EE6-B72E38AF8F66">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:26:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>exec_dept_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="病区ID" id="B7CC031F-5734-1F5D-D50B-C75552ADBD03">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-18 06:55:23 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>ward_id</preferredAbbreviation>
+<source>人民医院病区代码</source>
+</Attribute>
+<Attribute name="病区名称" id="F0233305-AAFC-E0B6-A67E-8233D8DD0118">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:33:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>ward_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="床号" id="49E8C976-D43A-EE7E-5CFF-8973EAE06232">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-08 04:36:33 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<preferredAbbreviation>bed_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="数量" id="8DD8FADE-A3C2-C538-3DE8-473D2BB36B28">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<preferredAbbreviation>quantity</preferredAbbreviation>
+</Attribute>
+<Attribute name="数量单位" id="A8A98CB2-E784-76FD-0433-2859661F050F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-25 05:34:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>quantity_unit</preferredAbbreviation>
+</Attribute>
+<Attribute name="描述" id="7CB2904F-6C18-29D5-EAE7-1D0F0317482D">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱的内容描述</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1530</dataTypeSize>
+<preferredAbbreviation>description</preferredAbbreviation>
+</Attribute>
+<Attribute name="嘱托" id="8ACD7F62-0141-2153-A554-C6CE4D523910">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-08 04:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>384</dataTypeSize>
+<preferredAbbreviation>comments</preferredAbbreviation>
+</Attribute>
+<Attribute name="父医嘱内部序列号" id="62D264D6-5401-24F9-C96D-351419F7B791">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>父医嘱标识</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>parent_order_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="长期临时标志" id="92F9BC81-2119-DAD2-317C-4F91FB5938DE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>药物使用方法描述</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>usage</preferredAbbreviation>
+</Attribute>
+<Attribute name="互斥类型代码" id="7B6074E1-A208-C6E4-E6F4-1FC276E68654">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>非排斥型，全排斥性医嘱等等</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>mutexes_order_type_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="互斥类型名称" id="A54C8C73-5BDD-2381-8BE7-A110C2A9140A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:36:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>mutexes_order_type_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="互斥医嘱号类型" id="C6606F5C-2978-EBE8-8314-B7039E967CAA">
+<createdBy>wujf</createdBy>
+<createdTime>2013-03-14 03:24:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>mutexes_order_no_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="互斥医嘱内部序列号" id="9FD002C2-9641-D235-CBB0-9AD13BEDA6FA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>mutexes_order_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="费用状态编码" id="1D4FE3D4-F614-2BBD-F116-DE514F0309C6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-15 06:36:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<preferredAbbreviation>charge_status_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="费用状态名称" id="B2815BD3-5C09-ADA0-66B4-D8AB9CB356D1">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-15 06:36:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>charge_status_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="医生确认人ID" id="42CD5FDA-3A62-5C71-AF28-D72246A8B10C">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-19 02:39:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>doctor_confirm_person_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="医生确认人姓名" id="5B4EEFD5-AAAE-1851-53E7-F9DDB382CEA6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-19 02:39:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>doctor_confirm_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="医生确认时间" id="97CA2AEC-064C-8CD8-9F55-480383012723">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-19 02:39:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>doctor_confirm_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="护士确认人ID" id="7DAC79A4-A724-642C-593A-2377D9E4F0AE">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-19 02:40:10 UTC</createdTime>
+<comment>对医嘱进行确认的医务人员描述，一般是护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>nurse_confirm_person_id</preferredAbbreviation>
+<source>人民医院人员代码</source>
+</Attribute>
+<Attribute name="护士确认人姓名" id="8AE57D11-2FE6-48A6-FC55-5F119554918B">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-19 02:40:10 UTC</createdTime>
+<comment>对医嘱进行确认的医务人员描述，一般是护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>nurse_confirm_person_name</preferredAbbreviation>
+<source>人民医院人员代码</source>
+</Attribute>
+<Attribute name="护士确认时间" id="64484382-64C1-8E45-49A6-A32E37937A7F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-19 02:40:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>nurse_confirm_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="下医嘱科室ID" id="062A3535-6F67-2EA5-608D-6329E114D184">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>开立医嘱科室</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>order_dept_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="下医嘱科室名称" id="0A0FDC35-A25C-12BB-D1D2-92BDDA779FC1">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 11:32:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>order_dept_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="下医嘱人ID" id="B396AEDA-776F-5C0E-EA74-3A7CA5AA1BD4">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>order_person_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="下医嘱人姓名" id="05E31233-E10E-10B8-7CCF-410C442E25D3">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>开立医嘱的医生或者护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>order_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="开嘱时间" id="4C5C6C8D-E993-C5FB-EE84-B907E2CE087C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱开立时间</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>input_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱取消人ID" id="0EF4FADE-E702-7F4A-C0B7-12D5306BB374">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>取消医嘱的医生或者护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>cancel_person_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱取消人姓名" id="8C79AA9D-3526-656F-4804-8D157598CA56">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>取消医嘱的医生或者护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>cancel_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="取消时间" id="FC384754-BF0F-AD9E-2656-82DB991DA354">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>cancel_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱停嘱人ID" id="D4FD0F53-4D33-02A4-2D26-44750CA5839B">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱停止医生或者护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>stop_person_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="医嘱停嘱人姓名" id="66F1F779-6EA0-3E6D-0E14-3F6AD6A7C57A">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱停止医生或者护士</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>stop_person_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="停止时间" id="2930AC7D-D06A-A046-2D3A-6F6A24061B8F">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱停止时间</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>stop_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否皮试" id="14C32C25-0849-BEDE-DE49-7DF9EB0A1EA7">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-08 04:34:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>skin_test_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否适应" id="6CB9B0E6-FEC5-2473-1D16-A8D97B7075DC">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-08 04:34:31 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>adaptive_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否加急" id="CAE7B626-2866-F491-C900-00F5AEA15272">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<comment>医嘱是否加密处理，一般为false</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>urgent_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否药观" id="4FDB44C3-C139-F3BC-40D4-DCE9E4352592">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-08 04:34:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>med_view_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="93366820-6FAB-51E8-3778-C14B75A16294">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="28773BBB-0E90-E530-15EF-D42D53A80E73">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="2152EED9-6B33-F817-DC02-FE2E02ACE322">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="E1E03C08-0A0C-D245-ACA0-F3B1E36ED48C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="5895503F-7921-F1EF-7002-02CA6BF27664">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:36:24 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="81780348-0AA5-E179-D4C3-4406A7800E43">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:30:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="4A49C1A7-E0AE-E66E-4039-53E379A50A55">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:30:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="B5B1B2EA-C182-EF9C-A3AE-E82BB345E101">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 01:30:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EE8D7743-B5A3-9FDB-E02D-E70B2FCA67C4" name="pk_general_order">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-29 03:34:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0137C0C1-4C23-B78B-8A21-0170C8DDE795</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

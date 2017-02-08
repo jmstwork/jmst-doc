@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77D4662E-1C34-2DA9-53A0-A25AA66260E5" name="医学影像">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:07:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>medical_imaging</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="影像内部序列号" id="1A43AFB6-3869-7233-307B-5AA060F0D689">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:12:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_medical_imaging</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>imaging_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="报告内部序列号" id="FA41ADB4-F893-E989-F67B-EC6901A39BE4">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-19 01:58:08 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>report_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="引用类型" id="AE6C54FA-F296-806D-E1D2-CF26C31AA152">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-19 01:55:41 UTC</createdTime>
+<comment>表明影像是检验还是检查</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>ref_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="文档内部序列号" id="E93DB0C2-ECB3-B92B-DEA9-88B5E4AD0DBD">
+<createdBy>wujf</createdBy>
+<createdTime>2012-10-26 01:40:46 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>document_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="影像内容" id="9B87F285-F874-894C-6FAF-84155310D6D5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:09:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<preferredAbbreviation>image_content</preferredAbbreviation>
+</Attribute>
+<Attribute name="提示信息" id="0B97F948-C8B9-B05A-47DA-B1B53145AC57">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:09:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>prompt_message</preferredAbbreviation>
+</Attribute>
+<Attribute name="影像格式" id="87AA3DDB-1FD6-CFD2-000E-CCE6D7D0F963">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:09:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>image_format</preferredAbbreviation>
+</Attribute>
+<Attribute name="影像类型" id="28B43FD4-9730-7C97-0059-3DBC0963C4BE">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-28 08:52:04 UTC</createdTime>
+<comment>标识字段用来区分是整张报告的图片信息还是报告中图像的信息</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<preferredAbbreviation>image_type</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="9D062FA7-0CE0-BF10-3731-DD40244FF3E1">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:38:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="B5B87769-089E-EBFE-8447-3AE28AADFC9A">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:38:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="31689ADD-53CF-B6DD-BF98-AD68D9B958E7">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:38:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="C591579D-4B54-F00C-B35E-61F18AE58F5D">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:38:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="3B34808F-7A61-BB62-FFDC-526686070FDC">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:38:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="B2E42324-2920-B02E-9C75-75344CA2BC01">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-31 00:23:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="E1E486B1-79F9-81EA-B0D7-009010D35805">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-31 00:23:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="3B20F986-5140-698C-D80A-B8AC9A70F938">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-31 00:23:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="54033A8E-BF31-6233-BFB9-8C41AAC5386A" name="pk_medical_imaging">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-10 07:19:43 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A43AFB6-3869-7233-307B-5AA060F0D689</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

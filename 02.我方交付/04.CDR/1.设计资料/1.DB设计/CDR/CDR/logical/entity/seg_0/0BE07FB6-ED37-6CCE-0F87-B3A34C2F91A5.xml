@@ -1,0 +1,255 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0BE07FB6-ED37-6CCE-0F87-B3A34C2F91A5" name="中药配方表">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 03:25:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>herbal_formula</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="配方项目内部序列号" id="74F21B6C-53C8-4173-E7FB-245B74C8D429">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 03:32:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_herbal_formula</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>formula_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="医嘱内部序列号" id="29712031-14B0-0843-08F4-B07E4EAF99EE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 03:31:46 UTC</createdTime>
+<generatorID>0F791C3E-E4BA-419A-5BDF-729432FA04D9</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>4DBD5964-952C-4AAD-144A-1B017DBFFE5A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>order_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="药物名称代码" id="5FD7CEB2-10DE-63E7-6DE9-AE3C100D815C">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 11:09:47 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>herb_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="药物名称" id="B1EA95E4-D3D8-E7BE-AEA8-334A2D885DAE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 11:10:08 UTC</createdTime>
+<comment>商品名</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>herb_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="药物通用名称" id="B81C4263-E7E2-BADC-64E1-F944A21A3A40">
+<createdBy>wujf</createdBy>
+<createdTime>2012-11-12 02:16:39 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>180</dataTypeSize>
+<preferredAbbreviation>approved_herb_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="药物数量" id="30816FC1-1F78-3F93-73D2-CB4AFF730548">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 11:14:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<preferredAbbreviation>quantity</preferredAbbreviation>
+</Attribute>
+<Attribute name="药物数量单位" id="DA54A338-87B8-19CF-7101-ACF90CEFCDBC">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 11:15:27 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>192</dataTypeSize>
+<preferredAbbreviation>unit</preferredAbbreviation>
+</Attribute>
+<Attribute name="煎煮法代码" id="F2D2D915-7090-3288-7BBB-D6713A443F81">
+<createdBy>wujf</createdBy>
+<createdTime>2012-06-25 06:39:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>decoction_method_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="煎煮法名称" id="4180DE59-B343-42E0-FA01-B4ED184D62BA">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-22 10:13:31 UTC</createdTime>
+<comment>先煎&lt;br/&gt;后下&lt;br/&gt;布包&lt;br/&gt;另炖&lt;br/&gt;研碎&lt;br/&gt;</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>768</dataTypeSize>
+<preferredAbbreviation>decoction_method_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="是否与付数无关" id="EF1416AD-E7B3-D199-7577-2C76FAC980D7">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-16 11:11:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>num_unconcerned_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="药物包装序号" id="00644B51-FC6F-8E9E-8189-0047C885E84C">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-28 06:24:59 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>serial_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="75B4C0F3-623A-D0A4-BDF5-5C292AA400E5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-16 11:13:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="24DAB1A2-AD58-6CA8-A904-42F41C7419C6">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-16 11:13:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="1F4FD42E-0E52-549A-8823-0C2BD9D6FB40">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-16 11:13:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="8BEEB798-3B50-E7E4-6FF6-EE985BB018AB">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-16 11:13:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="9F3BAF1A-6C54-C162-501B-C0A359AADD1C">
+<createdBy>wujf</createdBy>
+<createdTime>2012-05-16 11:13:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="C5D337D4-0016-BDBD-83C4-7B3F7D747936">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 02:29:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="9E827C16-72A9-7F67-2285-A7C932C430FD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 02:29:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="EA6FBB63-05F7-8CDB-1FEC-8A18A38CC646">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 02:29:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0705B5EB-CFE8-84F5-6B83-67FB8DE9A879" name="pk_herbal_formula">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-16 03:32:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>74F21B6C-53C8-4173-E7FB-245B74C8D429</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

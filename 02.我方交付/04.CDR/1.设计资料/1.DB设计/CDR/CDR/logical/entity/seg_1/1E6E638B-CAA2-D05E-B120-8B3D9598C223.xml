@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="1E6E638B-CAA2-D05E-B120-8B3D9598C223" name="手术与操作字典">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:04:04 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>code_operation</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="手术与操作ID" id="66B8F21A-A700-0B7A-4835-5525482A81DD">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:05:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>code_operation_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="编码ID" id="B826491A-F711-F315-ACE4-6D20F24CCE53">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:39:20 UTC</createdTime>
+<generatorID>ED80CE24-636E-A843-7E36-3C1C9896049F</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>F9793AB8-5E2C-39CE-F653-9E6D9C37A446</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>cs_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="项目编码" id="4A469C08-2FEF-587A-80FD-53857C9F2EF2">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:05:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>38</dataTypeSize>
+<preferredAbbreviation>code</preferredAbbreviation>
+</Attribute>
+<Attribute name="ICD编码" id="61739BE8-3868-17C8-42A1-1319E1E43506">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:05:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>38</dataTypeSize>
+<preferredAbbreviation>icd_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="ICD名称" id="C51040A5-C0F5-BEF0-CAE5-87E5F4439E62">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:05:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<preferredAbbreviation>icd_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="拼音码" id="2ABFF3D2-59A3-5670-D933-B4C8601283AA">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:05:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>py_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="来源" id="8A65F44F-B4B9-7082-26EF-E992DEE69FE8">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:26:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>38</dataTypeSize>
+<preferredAbbreviation>source</preferredAbbreviation>
+</Attribute>
+<Attribute name="显示顺序" id="489ACBA9-0110-1A42-4796-3FBA92EAE42C">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:26:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>seq_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="版本号" id="48CC5308-7A48-601A-3059-9FBA2EE93036">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:26:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<preferredAbbreviation>version_no</preferredAbbreviation>
+</Attribute>
+<Attribute name="编码类型" id="32AB565B-1971-7579-382C-1E6F89C77F39">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:30:29 UTC</createdTime>
+<comment>采用标准</comment>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>standard_flg</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="461CC8EF-1998-886C-3D31-23B6F42FBD39">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:30:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="A48AE795-33CB-4531-9963-00FC71B539D6">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:30:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="9B144EDA-6973-5F3E-2601-1B63A0856052">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:30:29 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="6968B28B-257A-180E-40D6-DBDC97B7F0EC">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:32:49 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="C1216D19-CE14-E865-877F-377DE7EBD7ED">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:32:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A077FE13-B643-7445-2B06-D5DC007890F2" name="pk_code_operation">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-10-14 07:09:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>66B8F21A-A700-0B7A-4835-5525482A81DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

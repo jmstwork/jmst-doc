@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="105C91D0-F205-E3E0-E5F9-9A41C5C1EF35" name="输血特殊要求">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 02:53:51 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>blood_special_request</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="特殊要求内部序列号" id="1C8FB319-F175-9B5E-C042-81BBB079EC88">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:24:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_blood_special_request</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>special_request_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="申请单内部序列号" id="5607BA93-709E-C290-398A-B1206550A318">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:22:00 UTC</createdTime>
+<generatorID>F95F7706-0B9C-C377-71D1-A748B044586B</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>BBCB8941-37CC-AFEC-0D97-078D51E60685</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>request_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="输血特殊要求编码" id="9682564B-820D-27A0-E236-23A7E80A2288">
+<createdBy>wujf</createdBy>
+<createdTime>2012-08-17 08:04:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>special_request_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="输血特殊要求" id="C3B37EE7-18A7-F795-0FB2-0690CD315301">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:17:10 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<preferredAbbreviation>special_request</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="CBA3A486-4DED-24D8-A445-1838BB514170">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:47:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="378DF505-0B16-E5B1-7015-43F8B5F8B75E">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:47:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新回数" id="F6B5A848-2A7E-B208-33F1-7B451155280F">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:47:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标志" id="645B2BF1-3BC7-7C9B-B137-175DFFD0D865">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:47:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="E9DDFD6B-31F6-E0EE-33EB-D36CE9F988F5">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 03:47:36 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建者" id="F5526E37-2A88-A507-7B3A-0EF18A1CD91A">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 03:36:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="修改者" id="174A7828-9450-970A-2206-4C9F29421B94">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 03:36:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除者" id="935C6402-02E1-3BD1-85EC-85F927627F42">
+<createdBy>jing_chunlin</createdBy>
+<createdTime>2013-08-30 03:36:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="90A43476-0873-3643-3668-27059832233E" name="pk_blood_special_request">
+<createdBy>wujf</createdBy>
+<createdTime>2012-04-17 02:54:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1C8FB319-F175-9B5E-C042-81BBB079EC88</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

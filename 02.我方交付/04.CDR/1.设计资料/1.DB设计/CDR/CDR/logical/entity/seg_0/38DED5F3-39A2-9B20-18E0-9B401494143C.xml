@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38DED5F3-39A2-9B20-18E0-9B401494143C" name="卫生事件">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:15:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>clinical_event</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="卫生事件内部序列号" id="BCA5AD9B-1535-E8AE-535B-89D28A66438E">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:15:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_clinical_event</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>clinical_event_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="文档内部序列号" id="996C63B2-2A03-880B-C5C2-D4F5FB6F0828">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:22:30 UTC</createdTime>
+<generatorID>91EED052-128E-D278-7C03-6C25F95708C8</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>869FC058-EF9F-1E4D-658F-852BB3A9DD24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>document_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="卫生事件(动作)名称" id="393AC141-29AC-F4A3-91D5-A9705C441A55">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:15:58 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>event_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件分类代码" id="85CE437E-44B5-83AD-E0B0-69C29095C045">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:16:17 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>event_category</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件分类名称" id="9348662E-BD13-4869-371A-7F699D876106">
+<createdBy>wujf</createdBy>
+<createdTime>2012-07-03 02:26:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<preferredAbbreviation>event_category_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件开始时间" id="91C8E34A-92E4-9376-27CC-679CFBADB152">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:17:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>start_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件结束时间" id="0F3B6C97-1DDF-1005-0FBD-2E27E1320200">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:17:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<preferredAbbreviation>end_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件发生地点" id="972E4B99-563E-068A-F334-4E8FC137AECE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:17:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>occured_in</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件发生场所" id="9681C7B4-4C42-3AD7-194F-2E0FEDC1DDDE">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:17:13 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>ocurred_place</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件参与方" id="459D1A6B-A41E-4B68-2029-8906D3044819">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:17:04 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<preferredAbbreviation>event_participants</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件发生原因" id="F05D00E7-1A40-89D5-ED18-B87F39589134">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:16:55 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>event_reason</preferredAbbreviation>
+</Attribute>
+<Attribute name="事件结局" id="42431DC4-B3F6-A342-A208-7CFF3A01DC11">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:16:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<preferredAbbreviation>event_result</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C0B18ECF-BCE7-5E20-068D-69E51B9E5448" name="pk_clinical_event">
+<createdBy>xu_dengfeng</createdBy>
+<createdTime>2012-02-02 06:15:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BCA5AD9B-1535-E8AE-535B-89D28A66438E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

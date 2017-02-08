@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="B30A7858-3774-0C0D-16E1-06DA9F718ACD" name="血液特殊要求记录">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:28:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>blood_record_special_request</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="内部序列号" id="DFDDE311-1AEC-37DA-5127-3FFD58919DAF">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:28:55 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<constraintName>seq_record_special_request</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>special_sn</preferredAbbreviation>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="内部序列号1" id="868B6D90-F433-C387-0F15-1115942E665D">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:33:50 UTC</createdTime>
+<generatorID>1EEA13F6-9C8A-B299-DE61-EA4A7F365303</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>E949BE43-CB4B-80F1-0507-C51DF704BC7D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>menu_sn</preferredAbbreviation>
+</Attribute>
+<Attribute name="血液特殊要求编码" id="4A989F13-DB4B-FF83-BE45-E6528AE16DCC">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:29:21 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<preferredAbbreviation>special_request_code</preferredAbbreviation>
+</Attribute>
+<Attribute name="血液特殊要求名称" id="EAABA4FA-67A7-AD46-10A8-5A91D53D3E0B">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:29:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<preferredAbbreviation>special_request_name</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建人" id="FD82F016-3467-F68B-994D-F0A8F9EEE0D0">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:30:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>createby</preferredAbbreviation>
+</Attribute>
+<Attribute name="创建时间" id="4BC2689C-B71F-F336-9751-CE150EDF0670">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:30:18 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>create_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新人" id="5C48CCD9-71D2-3414-2295-BA17CDB7D79A">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:30:34 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>updateby</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新时间" id="983888D2-5B79-12F7-196A-18AAC06963DD">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:30:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>update_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="更新次数" id="206EF011-AF68-D4F1-8460-F8F9D21965FD">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:31:16 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<preferredAbbreviation>update_count</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除人" id="9483C1C9-BCBE-723B-D622-30CC7716B7C2">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:31:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<preferredAbbreviation>deleteby</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除标识" id="CE7B9533-BD79-9789-8243-84853C63E351">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:31:55 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<preferredAbbreviation>delete_flag</preferredAbbreviation>
+</Attribute>
+<Attribute name="删除时间" id="70D7E0D5-906B-4309-54FA-BC1E777E85E3">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:32:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<preferredAbbreviation>delete_time</preferredAbbreviation>
+</Attribute>
+<Attribute name="申请单内部序列号" id="E95112F3-34F2-C3CB-A019-7C523DB7C184">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 07:10:56 UTC</createdTime>
+<generatorID>1EEA13F6-9C8A-B299-DE61-EA4A7F365303</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<referedAttribute>EFE1162A-C820-24A3-7ADC-BF2378686520</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87FA2F21-4B09-6F9B-CE1B-7CA949EC9F02" name="pk_special_request">
+<createdBy>lxt</createdBy>
+<createdTime>2014-06-03 06:29:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>CDR</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DFDDE311-1AEC-37DA-5127-3FFD58919DAF</attributeRef>
+<attributeRef>868B6D90-F433-C387-0F15-1115942E665D</attributeRef>
+<attributeRef>E95112F3-34F2-C3CB-A019-7C523DB7C184</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
