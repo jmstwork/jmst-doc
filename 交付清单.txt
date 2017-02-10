@@ -1,0 +1,16 @@
+最新业务系统交互图+调研报告：
+链接：http://pan.baidu.com/s/1i5n0NjR 密码：ij3n
+
+主数据相关需求+设计+数据标准+维护手册：
+链接：http://pan.baidu.com/s/1eSC9zSu 密码：jglu
+
+CDR数据模型（ORACLE库，data modler的dmd文件）
+链接：http://pan.baidu.com/s/1o8PkqUY 密码：wgl7
+data modeler的下载地址：
+http://pan.baidu.com/s/1cFzwXg 
+
+CDR数据模型（sql server库， power designer的pdm文件）
+链接：http://pan.baidu.com/s/1c3ohp8 密码：wb0c
+
+3个PPT录屏，用Windows媒体播放器即可打开：
+链接：http://pan.baidu.com/s/1hs0ucnU 密码：6iwu
