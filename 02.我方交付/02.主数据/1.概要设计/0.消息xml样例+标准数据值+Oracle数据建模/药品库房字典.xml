@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- HIS-药品库房字典-消息定义 -->
+<msg>
+    <head>
+        <!-- 消息类别代码 -->
+        <msgId>MS052</msgId>
+        <!-- 消息名称 -->
+        <msgName>药品库房字典</msgName>
+        <!-- 消息源系统编码（发送方系统ID） -->
+        <sourceSysCode>1.2.156.112636.1.2.1</sourceSysCode>
+        <!-- 消息目标系统编码 由平台统一管理 可以为空 -->
+        <targetSysCode>xxx</targetSysCode>
+        <!-- 消息创建时间 -->
+        <createTime>20140911123000</createTime>
+    </head>
+    <body>
+        <!-- 操作类型 取值范围( insert、delete、update) -->
+        <row action = "insert">
+            <!-- 组号                                      -->
+            <groupNo>组号                                    </groupNo>
+            <!-- 科室序号                                  -->
+            <deptSn>科室序号                                </deptSn>
+            <!-- 科室简名                                  -->
+            <deptName>科室简名                                </deptName>
+            <!-- 拼音码                                    -->
+            <pyCode>拼音码                                  </pyCode>
+            <!-- 自定义码                                  -->
+            <dCode>自定义码                                </dCode>
+            <!-- 删除标记                                  -->
+            <deletedFlag>删除标记                                </deletedFlag>
+            <!-- 入库单号  -->
+            <inPageno>入库单号</inPageno>
+            <!-- 出库单号  -->
+            <outPageno>出库单号</outPageno>
+            <!-- 先入先出标志  -->
+            <batchFlag>先入先出标志</batchFlag>
+            <!-- 盘点单号  -->
+            <pandianPageno>盘点单号</pandianPageno>
+            <!-- 采购单号  -->
+            <inplanPageno>采购单号</inplanPageno>
+            <!-- 调价单号  -->
+            <repricePageno>调价单号</repricePageno>
+            <!-- 采购天数  -->
+            <caigoudays>采购天数</caigoudays>
+            <!-- 版本号  -->
+            <itemVersion>版本号</itemVersion>
+            <!-- 停用标志  -->
+            <stopflag>停用标志</stopflag>
+        </row>
+    </body>
+</msg>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 主数据管理系统-与患者关系字典-消息定义 -->
+<msg>
+    <head>
+        <!-- 消息类别代码 -->
+        <msgId>MS069</msgId>
+        <!-- 消息名称 -->
+        <msgName>与患者关系字典</msgName>
+        <!-- 消息源系统编码（发送方系统ID） -->
+        <sourceSysCode>1.2.156.112636.1.2.1</sourceSysCode>
+        <!-- 消息目标系统编码 由平台统一管理 可以为空 -->
+        <targetSysCode>xxx</targetSysCode>
+        <!-- 消息创建时间 -->
+        <createTime>20140911123000</createTime>
+    </head>
+    <body>
+        <!-- 操作类型 取值范围( insert、delete、update) -->
+        <row action = "insert">
+            <!-- 名称  -->
+            <name>名称</name>
+            <!-- 编码  -->
+            <code>编码</code>
+            <!-- 是否可用  -->
+            <defaultFlag>是否可用</defaultFlag>
+            <!-- 显示顺序  -->
+            <showOrder>显示顺序</showOrder>
+            <!-- 拼音码  -->
+            <inputCode>拼音码</inputCode>
+            <!-- 版本号  -->
+            <itemVersion>版本号</itemVersion>
+            <!-- 停用标志  -->
+            <stopflag>停用标志</stopflag>
+        </row>
+    </body>
+</msg>

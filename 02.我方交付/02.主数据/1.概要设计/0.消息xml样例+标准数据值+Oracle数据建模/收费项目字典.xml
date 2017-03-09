@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- HIS-收费项目字典-消息定义 -->
+<msg>
+    <head>
+        <!-- 消息类别代码 -->
+        <msgId>MS031</msgId>
+        <!-- 消息名称 -->
+        <msgName>收费项目字典</msgName>
+        <!-- 消息源系统编码（发送方系统ID） -->
+        <sourceSysCode>1.2.156.112636.1.2.1</sourceSysCode>
+        <!-- 消息目标系统编码 由平台统一管理 可以为空 -->
+        <targetSysCode>xxx</targetSysCode>
+        <!-- 消息创建时间 -->
+        <createTime>20140911123000</createTime>
+    </head>
+    <body>
+        <!-- 操作类型 取值范围( insert、delete、update) -->
+        <row action = "insert">
+            <!-- 收费项目编码                              -->
+            <code>收费项目编码                            </code>
+            <!-- 项目名称                                  -->
+            <name>项目名称                                </name>
+            <!-- 打印名称  -->
+            <printName>打印名称</printName>
+            <!-- 拼音码                                    -->
+            <pyCode>拼音码                                  </pyCode>
+            <!-- 自定义码                                  -->
+            <dCode>自定义码                                </dCode>
+            <!-- 执行科室                                  -->
+            <execUnit>执行科室                                </execUnit>
+            <!-- 借方科目                                  -->
+            <debitCode>借方科目                                </debitCode>
+            <!-- 贷方科目                                  -->
+            <creditCode>贷方科目                                </creditCode>
+            <!-- 项目分类码                                -->
+            <auditCode>项目分类码                              </auditCode>
+            <!-- 财务核算码                                -->
+            <auditCode2>财务核算码                              </auditCode2>
+            <!-- 实收金额                                  -->
+            <chargePrice>实收金额                                </chargePrice>
+            <!-- 收费单位                                  -->
+            <chargeUnit>收费单位                                </chargeUnit>
+            <!-- 生效金额                                  -->
+            <effectivePrice>生效金额                                </effectivePrice>
+            <!-- 生效日期                                  -->
+            <effectiveDate>生效日期                                </effectiveDate>
+            <!-- 住院帐单码                                -->
+            <zyBillItem>住院帐单码                              </zyBillItem>
+            <!-- 门诊帐单码                                -->
+            <mzBillItem>门诊帐单码                              </mzBillItem>
+            <!-- 门诊住院标志                              -->
+            <zyMzFlag>门诊住院标志                            </zyMzFlag>
+            <!-- 比例1                                     -->
+            <percentag1>比例1                                   </percentag1>
+            <!-- 比例2                                     -->
+            <percentag2>比例2                                   </percentag2>
+            <!-- 比例3                                     -->
+            <percentag3>比例3                                   </percentag3>
+            <!-- 比例4                                     -->
+            <percentag4>比例4                                   </percentag4>
+            <!-- 比例5                                     -->
+            <percentag5>比例5                                   </percentag5>
+            <!-- 金额1                                     -->
+            <amount1>金额1                                   </amount1>
+            <!-- 金额2                                     -->
+            <amount2>金额2                                   </amount2>
+            <!-- 金额3                                     -->
+            <amount3>金额3                                   </amount3>
+            <!-- 金额4                                     -->
+            <amount4>金额4                                   </amount4>
+            <!-- 金额5                                     -->
+            <amount5>金额5                                   </amount5>
+            <!-- 自费标志                                  -->
+            <selfFlag>自费标志                                </selfFlag>
+            <!-- 单列标志                                  -->
+            <separateFlag>单列标志                                </separateFlag>
+            <!-- 贵重标志                                  -->
+            <supriceFlag>贵重标志                                </supriceFlag>
+            <!-- 组合项  -->
+            <co>组合项</co>
+            <!-- 发票标识  -->
+            <flagFp>发票标识</flagFp>
+            <!-- 住院项目类别                              -->
+            <zyChargeGroup>住院项目类别                            </zyChargeGroup>
+            <!-- 门诊项目类别                              -->
+            <mzChargeGroup>门诊项目类别                            </mzChargeGroup>
+            <!-- 项目分类                                  -->
+            <chargeClass>项目分类                                </chargeClass>
+            <!-- 住院确认标志                              -->
+            <zyConfirmFlag>住院确认标志                            </zyConfirmFlag>
+            <!-- 门诊确认标志                              -->
+            <mzConfirmFlag>门诊确认标志                            </mzConfirmFlag>
+            <!-- 备注                                      -->
+            <comment>备注                                    </comment>
+            <!-- 删除标志                                  -->
+            <deletedFlag>删除标志                                </deletedFlag>
+            <!-- 扩展码  -->
+            <extendCode>扩展码</extendCode>
+            <!-- 扩展标志  -->
+            <extendFlag>扩展标志</extendFlag>
+            <!-- 内部码  -->
+            <internalCode>内部码</internalCode>
+            <!-- 标本类型  -->
+            <sampType>标本类型</sampType>
+            <!-- 最小价格  -->
+            <minPrice>最小价格</minPrice>
+            <!-- 最大价格  -->
+            <maxPrice>最大价格</maxPrice>
+            <!-- 生效日期  -->
+            <ineffectiveDate>生效日期</ineffectiveDate>
+            <!-- 调价标识  -->
+            <logSn>调价标识</logSn>
+            <!-- 细目名称  -->
+            <xmName>细目名称</xmName>
+            <!-- 细目编码  -->
+            <xmCode>细目编码</xmCode>
+            <!-- NULL  -->
+            <compuCode>NULL</compuCode>
+            <!-- 细目自定义码  -->
+            <xmDcode>细目自定义码</xmDcode>
+            <!-- 别名  -->
+            <otherName>别名</otherName>
+            <!-- 购入价  -->
+            <buyPrice>购入价</buyPrice>
+            <!-- 中标1  -->
+            <zhongbiao1>中标1</zhongbiao1>
+            <!-- 中标2  -->
+            <zhongbiao2>中标2</zhongbiao2>
+            <!-- 中标价  -->
+            <zhongbiaoPrice>中标价</zhongbiaoPrice>
+            <!-- 规格  -->
+            <specifications>规格</specifications>
+            <!-- 生产厂家  -->
+            <production>生产厂家</production>
+            <!-- 价格批号  -->
+            <chargeGist>价格批号</chargeGist>
+            <!-- 内容说明  -->
+            <contentExpound>内容说明</contentExpound>
+            <!-- 分院1  -->
+            <dept1>分院1</dept1>
+            <!-- 分院2  -->
+            <dept2>分院2</dept2>
+            <!-- 分院3  -->
+            <dept3>分院3</dept3>
+            <!-- 分院4  -->
+            <dept4>分院4</dept4>
+            <!-- 分院5  -->
+            <dept5>分院5</dept5>
+            <!-- 分院6  -->
+            <dept6>分院6</dept6>
+            <!-- 分院7  -->
+            <dept7>分院7</dept7>
+            <!-- 分院8  -->
+            <dept8>分院8</dept8>
+            <!-- 分院9  -->
+            <dept9>分院9</dept9>
+            <!-- 分院10  -->
+            <dept10>分院10</dept10>
+            <!-- 新财务核算码  -->
+            <auditCode3>新财务核算码</auditCode3>
+            <!-- 版本号  -->
+            <itemVersion>版本号</itemVersion>
+            <!-- 停用标志  -->
+            <stopflag>停用标志</stopflag>
+        </row>
+    </body>
+</msg>
