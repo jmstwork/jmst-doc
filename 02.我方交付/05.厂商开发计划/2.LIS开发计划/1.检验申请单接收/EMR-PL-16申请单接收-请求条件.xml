@@ -24,9 +24,10 @@
 				<!--电子申请单编号-->
 				<id root="2.16.156.10011.1.24" extension="HA201102113366666"/>
 				<!--申请单类型-->
-				<code/>
+				<code code="02" displayName="检验"/>
 				<!--申请单项目内容-->
-				<text/>
+				<!--申请单项目内容-->
+				<text xsi:type="SC" code="10001001">生化20</text>
 				<!--申请单状态-->
 				<statusCode code="active"/>
 				<!--申请单有效期间-->
@@ -42,7 +43,7 @@
 				<specimen typeCode="SPC" contextControlCode="OP">
 					<specimen classCode="SPEC">
 						<!--标本号-->
-						<id root="2.16.156.10011.1.14" extension="SP1234567890"/>
+						<id root="2.16.156.10011.1.14" extension=""/>
 						<!--标本类别-->
 						<code/>
 						<specimenNatural classCode="ENT" determinerCode="INSTANCE">
@@ -52,17 +53,17 @@
 							<additive classCode="ADTV">
 								<additive3 classCode="MAT" determinerCode="INSTANCE">
 									<!--标本固定液名称-->
-									<desc xsi:type="ST">福尔马林</desc>
+									<desc xsi:type="ST"></desc>
 								</additive3>
 							</additive>
 						</specimenNatural>
 						<productOf typeCode="PRD">
 							<!--标本采样日期时间-->
-							<time value="20130303020404"/>
+							<time value=""/>
 							<!--标本接收-->
 							<specimenProcessStep classCode="ACSN" moodCode="EVN">
 								<!--接收标本日期时间-->
-								<effectiveTime value="20130303040404"/>
+								<effectiveTime value=""/>
 							</specimenProcessStep>
 						</productOf>
 					</specimen>
@@ -125,14 +126,14 @@
 					<!--现病史-->
 					<observation classCode="OBS" moodCode="EVN">
 						<code code="DE04.01.119.00" displayName="主诉" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
-						<value xsi:type="ST">对患者本次疾病相关的主要症状及其持续时间的描述</value>
+						<value xsi:type="ST"></value>
 					</observation>
 				</reason>
 				<reason typeCode="RSON" contextControlCode="OP" contextConductionInd="true">
 					<!--症状描述-->
 					<observation classCode="OBS" moodCode="EVN">
 						<code code="DE04.01.117.00" displayName="症状描述" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
-						<value xsi:type="ST">对患者出现症状的详细描述</value>
+						<value xsi:type="ST"></value>
 					</observation>
 				</reason>
 				<!--申请单备注信息-->
@@ -140,21 +141,21 @@
 					<seperatableInd value="false"/>
 					<annotation>
 						<!--申请单备注信息-->
-						<text>对下达申请单的补充说明和注意事项提示</text>
+						<text></text>
 						<statusCode code="completed"/>
 						<author>
 							<assignedEntity classCode="ASSIGNED">
 								<!--医务人员ID-->
-								<id root="2.16.156.10011.1.4" extension="120109197706015518"/>
+								<id root="2.16.156.10011.1.4" extension=""/>
 								<assignedPerson classCode="PSN" determinerCode="INSTANCE">
 									<!--申请单开立者-->
-									<name>李医生</name>
+									<name></name>
 								</assignedPerson>
 								<representedOrganization classCode="ORG" determinerCode="INSTANCE">
 									<!--医疗卫生机构（科室）ID-->
-									<id root="2.16.156.10011.1.26" extension="1234567890"/>
+									<id root="2.16.156.10011.1.26" extension=""/>
 									<!--申请单开立科室-->
-									<name>呼吸内科</name>
+									<name></name>
 								</representedOrganization>
 							</assignedEntity>
 						</author>
@@ -177,7 +178,7 @@
 								<statusCode code="active"/>
 								<patientPerson classCode="PSN" determinerCode="INSTANCE">
 									<!--患者身份证号-->
-									<id root="2.16.156.10011.1.3" extension="1234567890"/>
+									<id root="2.16.156.10011.1.3" extension=""/>
 									<name use="L">王患者</name>
 									<!--性别-->
 									<administrativeGenderCode code="1" codeSystem="2.16.156.10011.2.3.3.4" displayName="男性" codeSystemName="生理性别代码表（GB/T 2261.1）"/>
@@ -185,9 +186,9 @@
 									<birthTime value="19570323"/>
 									<asOtherIDs classCode="ROL">
 										<!--健康档案编号-->
-										<id root="2.16.156.10011.1.2" extension="1234567890"/>
+										<id root="2.16.156.10011.1.2" extension=""/>
 										<!--健康卡号-->
-										<id root="2.16.156.10011.1.19" extension="1234567890"/>
+										<id root="2.16.156.10011.1.19" extension=""/>
 									</asOtherIDs>
 								</patientPerson>
 							</patient>
