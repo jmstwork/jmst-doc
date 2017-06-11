@@ -1,0 +1,424 @@
+{
+	"MessageControlId": {
+		"desc": "文档流水号",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:id/@extension"
+	},
+	"documentTitle": {
+		"desc": "文档标题",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:title"
+	},
+	"TimeOfMessage": {
+		"desc": "文档机器生成时间",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:effectiveTime/@value"
+	},
+
+	"ExamTime": {
+		"desc": "医生检查时间",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "date",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:authenticator[s:assignedEntity/s:code/@displayName='检查医师']/s:time/@value"
+	},
+	"ApplyTime": {
+		"desc": "检查申请时间",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:participant/s:time/@value"
+	},
+	"PatientId": {
+		"desc": "患者ID",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": ""
+	},
+	"OutPatientNo": {
+		"desc": "门诊号",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:id[@root='2.16.156.10011.1.11']/@extension",
+		"display": "",
+		"type": "string",
+		"format": "",
+		"multiplicity": "0..1"
+	},
+	"InPatientNo": {
+		"desc": "住院号",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:id[@root='2.16.156.10011.1.12']/@extension",
+		"display": "",
+		"type": "string",
+		"format": "",
+		"multiplicity": "0..1"
+	},
+	"PatientName": {
+		"desc": "患者名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:patient/s:name"
+	},
+	"GenderCode": {
+		"desc": "性别编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:patient/s:administrativeGenderCode/@code"
+	},
+	"GenderName": {
+		"desc": "性别名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:patient/s:administrativeGenderCode/@displayName"
+	},
+	"Age": {
+		"desc": "患者年龄",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:patient/s:age/@value"
+	},	"MedicalType": {
+		"desc": "就诊类别编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:patientType/s:patienttypeCode/@code"
+	},
+	"MedicalTypeName": {
+		"desc": "就诊类别名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:patientType/s:patienttypeCode/@displayName"
+	},
+	"VisitTimes": {
+		"desc": "就诊次数",
+		"path": "",
+		"display": "无",
+		"type": "string",
+		"format": "",
+		"multiplicity": "0..1"
+	},
+	"VisitOrdNo": {
+		"desc": "就诊流水号",
+		"path": "",
+		"display": "无",
+		"type": "string",
+		"format": "",
+		"multiplicity": "0..1"
+	},
+
+	"BedNo": {
+		"desc": "床位号",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:componentOf/s:encompassingEncounter/s:location/s:healthCareFacility/s:serviceProviderOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:id/@extension"
+	},
+	"WardCode": {
+		"desc": "病区编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:componentOf/s:encompassingEncounter/s:location/s:healthCareFacility/s:serviceProviderOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:id/@extension"
+	},
+	"Ward": {
+		"desc": "病区名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:componentOf/s:encompassingEncounter/s:location/s:healthCareFacility/s:serviceProviderOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:name"
+	},
+	"DeptCode": {
+		"desc": "病人科室编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:componentOf/s:encompassingEncounter/s:location/s:healthCareFacility/s:serviceProviderOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:id/@extension"
+	},
+	"DeptNm": {
+		"desc": "病人科室名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:componentOf/s:encompassingEncounter/s:location/s:healthCareFacility/s:serviceProviderOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:asOrganizationPartOf/s:wholeOrganization/s:name"
+	},
+	"ApplyNo": {
+		"desc": "申请单号",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "complex",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:id[@root='2.16.156.10011.1.24']/@extension"
+	},
+	"CheckTypeName": {
+		"desc": "检查类型编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:component/s:structuredBody/s:component/s:section[s:code/@code='29545-1']/s:entry/s:observation[s:code/@code='DE04.30.018.00']/s:value"
+	},
+	"CheckItemCode": {
+		"desc": "检查项目编码",
+		"path": "",
+		"display": "无",
+		"type": "string",
+		"format": "",
+		"multiplicity": "0..1"
+	},
+	"CheckItemName": {
+		"desc": "检查方法名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:component/s:structuredBody/s:component/s:section/s:entry/s:observation[s:code/@code='DE02.10.027.00']/s:value"
+	},
+	"ReportTime": {
+		"desc": "报告日期",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "date",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:author/s:time/@value"
+	},
+	"ReportDoctorCode": {
+		"desc": "报告医生编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:author/s:assignedAuthor/s:id/@extension"
+	},
+	"ReportDoctorNm": {
+		"desc": "报告医生名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:author/s:assignedAuthor/s:assignedPerson/s:name"
+	},
+	"HospitalCode": {
+		"desc": "医疗机构编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:custodian/s:assignedCustodian/s:representedCustodianOrganization/s:id/@extension"
+	},
+	"HospitalName": {
+		"desc": "医疗机构名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:custodian/s:assignedCustodian/s:representedCustodianOrganization/s:name"
+	},
+
+	"ReportId": {
+		"desc": "报告号",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:recordTarget/s:patientRole/s:id[@root='2.16.156.10011.1.32']/@extension"
+	},
+	"CheckedTime": {
+		"desc": "审核日期",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "date",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:authenticator[s:assignedEntity/s:code/@displayName='检查技师']/s:time/@value"
+	},
+	"CheckedDoctorCode": {
+		"desc": "审核医生编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:authenticator[s:assignedEntity/s:code/@displayName='检查技师']/s:assignedEntity/s:id/@extension"
+	},
+	"CheckedDoctorNm": {
+		"desc": "审核医生名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:authenticator[s:assignedEntity/s:code/@displayName='检查技师']/s:assignedEntity/s:assignedPerson/s:name"
+	},
+	"ApplyDeptName": {
+		"desc": "申请科室名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:participant/s:associatedEntity/s:scopingOrganization/s:name"
+	},
+	"ApplyDeptCode": {
+		"desc": "申请科室编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:participant/s:associatedEntity/s:scopingOrganization/s:id/@extension"
+	},
+	"ExamDoctorCode": {
+		"desc": "检查医生编码",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:authenticator/s:assignedEntity[s:code/@displayname='检查医师']/s:id/@extension"
+	},
+	"ExamDoctorName": {
+		"desc": "检查医生名称",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:authenticator/s:assignedEntity[s:code/@displayname='检查医师']/s:assignedPerson/s:name"
+	},
+	"Obxs": {
+		"desc": "定量检查信息",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..n",
+		"type": "complex",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:component/s:structuredBody/s:component/s:section[s:code/@code='29545-1']/s:entry[s:organizer/s:component/s:observation/s:code/@code='DE04.30.019.00' and s:organizer/s:component/s:observation[s:code/@code='DE04.30.019.00']/s:value!='base64']",
+		"child": {
+			"ObsIdentifierCode": {
+				"desc": "检查项目编码",
+				"control_node": "",
+				"display": "",
+				"multiplicity": "0..1",
+				"type": "string",
+				"format": "",
+				"path": "s:organizer/s:component/s:observation[s:code/@code='DE04.30.019.00']/s:value"
+			},
+			"ObsIdentifierName": {
+				"desc": "检查项目名称",
+				"control_node": "",
+				"display": "",
+				"multiplicity": "0..1",
+				"type": "string",
+				"format": "",
+				"path": "s:organizer/s:component/s:observation[s:code/@code='DE04.30.019.00']/s:value"
+			},
+			"ObsTime": {
+				"desc": "检查日期",
+				"control_node": "",
+				"display": "",
+				"multiplicity": "0..1",
+				"type": "date",
+				"format": "",
+				"path": "s:organizer/s:component/s:observation[s:code/@code='DE04.30.019.00']/s:effectiveTime/@value"
+			},
+			"ObsValue": {
+				"desc": "检查定量结果",
+				"control_node": "",
+				"display": "",
+				"multiplicity": "0..1",
+				"type": "string",
+				"format": "",
+				"path": "s:organizer/s:component/s:observation[s:code/@code='DE04.30.015.00']/s:value/@value"
+			},
+			"ObsValueUnit": {
+				"desc": "检查定量结果单位",
+				"control_node": "",
+				"display": "",
+				"multiplicity": "0..1",
+				"type": "string",
+				"format": "",
+				"path": "s:organizer/s:component/s:observation[s:code/@code='DE04.30.015.00']/s:entryRelationship/s:observation[s:code/@code='DE04.30.016.00']/s:value"
+			}
+		}
+	},
+	"examRemark": {
+		"desc": "检查备注",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:component/s:structuredBody/s:component/s:section/s:entry/s:observation[s:code/@code='DE06.00.179.00']/s:value"
+	},
+	"ObjectiveResults": {
+		"desc": "检查报告客观结果所见内容",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:component/s:structuredBody/s:component/s:section/s:entry/s:observation[s:code/@code='DE04.50.131.00']/s:value"
+	},
+	"SubjectiveResults": {
+		"desc": "检查报告结果主观提示内容",
+		"control_node": "",
+		"display": "",
+		"multiplicity": "0..1",
+		"type": "string",
+		"format": "",
+		"path": "/s:ClinicalDocument/s:component/s:structuredBody/s:component/s:section/s:entry/s:observation[s:code/@code='DE04.50.132.00']/s:value"
+	}
+}
